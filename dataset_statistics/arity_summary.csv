@@ -1,0 +1,6 @@
+arity,n_tokens,n_types,top_pos,top_pos_pct,top_index,top_index_pct,top_length,top_length_pct,top_head_dist,top_head_dist_pct,top_relation_type,top_relation_type_pct
+0,129064,7581,PUNCT,17.14,1,6.53,3,22.93,1,42.04,punct,17.14
+1,20239,6441,NOUN,45.31,6,5.68,4,19.97,-2,38.72,obj,15.83
+2,18037,5846,NOUN,51.82,2,6.32,4,22.05,-3,27.3,obl,16.97
+3,13546,4621,VERB,44.92,3,8.25,4,23.67,0,18.88,root,18.88
+4,7856,3169,VERB,54.88,4,8.95,4,26.03,0,31.73,root,31.73
