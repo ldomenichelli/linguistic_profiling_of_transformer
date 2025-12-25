@@ -19,17 +19,21 @@ Welcome to the accompanying repository for the paper **“Linguistic Profiling o
 ## Repository structure
 
 ```text
-.
+
 ├── dataset_statistics/
 ├── data/
-├── plots_extra/
+├── plots_extra/            --> first index kept
 │   ├── information_imbalance/
-│   ├── baseline/
+│   ├── baseline/           --> unpretrained BERT and GPT-2 models
 │   ├── metrics/
-│   ├── pos_x_right_left/
-│   └── pos_x_head_dist/
+│   │   ├── all_tokens/     
+│   │   ├── features/
+│   │   ├── fixed_freq/     --> features but fixed frequency per classes
+│   │   └── fixed_type/     --> features but fixed #types per class
+│   ├── pos_x_right_left/   --> fixed left or right of head on feature "pos"
+│   └── pos_x_head_dist/    --> fixed head distance on feature "pos"
 ├── code/
-├── plots_main/
+├── plots_main/             --> first index removed
 │   ├── plots_all/
 │   └── plots_features/
 ├── correlation/
