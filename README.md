@@ -16,31 +16,23 @@ Welcome to the accompanying repository for the paper **“Linguistic Profiling o
 | **plots_extra/**         | Additional plots that complement the main figures. |
 
 
+## Repository structure
+
 ```text
 .
 ├── dataset_statistics/
-│   └── .ipynb_checkpoints/
 ├── data/
-├── .ipynb_checkpoints/
 ├── plots_extra/
 │   ├── information_imbalance/
 │   ├── baseline/
 │   ├── metrics/
 │   ├── pos_x_right_left/
-│   ├── pos_x_head_dist/
-│   └── .ipynb_checkpoints/
+│   └── pos_x_head_dist/
 ├── code/
-│   └── .ipynb_checkpoints/
 ├── plots_main/
 │   ├── plots_all/
-│   ├── plots_features/
-│   └── .ipynb_checkpoints/
+│   └── plots_features/
 ├── correlation/
 │   ├── plots/
-│   ├── tables/
-│   └── .ipynb_checkpoints/
+│   └── tables/
 └── outlier_dim/
-    └── .ipynb_checkpoints/
-
-
-
