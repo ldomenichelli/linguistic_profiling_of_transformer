@@ -10,7 +10,7 @@ Welcome to the accompanying repository for the paper **“Linguistic Profiling o
 | **3dpca/**        | Interactive 3D PCA visualizations for different layers and model. |
 | **code/**         | Notebooks. |
 | **correlation/**  | Analyses of correlations between geometric measures and linguistic variables. |
-| **data/**         | Dataset used in the study|
+| **data/**         | Dataset used in the study.|
 | **dataset_statistics/** | Statistics and summaries for the dataset.|
 | **outliers/**     | Results of outlier-dimension analyses.|
 | **plots_extra/**  | Additional plots that complement the main figures.|
