@@ -29,7 +29,9 @@ This repository contains a lightweight subset of the full experimental codebase.
 │   │   ├── fixed_freq/     --> features but fixed frequency per classes
 │   │   └── fixed_type/     --> features but fixed #types per class
 │   ├── pos_x_right_left/   --> fixed left or right of head on feature "pos"
-│   └── pos_x_head_dist/    --> fixed head distance on feature "pos"
+│   ├── pos_x_head_dist/    --> fixed head distance on feature "pos"
+│   ├──pca3d_alltok/        --> 3D interactive PCA on all tokens
+│   └──pca3d_features/      --> 3D interactive PCA x feature
 ├── code/
 ├── plots_main/             --> first index removed
 │   ├── plots_all/
