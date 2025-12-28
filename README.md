@@ -1,25 +1,23 @@
 # Linguistic Profiling of Transformer Embedding Geometry
 
-Welcome to the accompanying repository for the paper **“Linguistic Profiling of Transformer Embedding Geometry.”**
-
-## Folder Guide
-
-| Folder                    | Description |
-|--------------------------|-------------|
-| **3dpca/**               | Interactive 3D PCA visualizations for different layers and model. |
-| **code/**                | Notebooks (experiments, analysis, and figure generation). |
-| **data/**                | Dataset used in the study. |
-| **dataset_statistics/**  | Dataset statistics, summaries, and descriptive analyses. |
-| **correlation/**         | Correlation analyses between geometric measures and linguistic variables. |
-| **outlier_dim/**         | Outlier-dimension analyses and related outputs. |
-| **plots_main/**          | Main plots used in the paper’s figures. |
-| **plots_extra/**         | Additional plots that complement the main figures. |
+Code and plots for the paper “Linguistic Profiling of Transformer Embedding Geometry”.
+This repository contains a lightweight subset of the full experimental codebase.
 
 
-## Repository structure
+## Repository layout
+
+| Folder | What it contains |
+|---|---|
+| `code/` | Notebooks for experiments / analyses / figure generation. |
+| `code/data/` | Preprocessed dataset used by notebooks. |
+| `dataset_statistics/` | Dataset statistics + distribution plots for linguistic features. |
+| `outlier_dim/` | Outlier-dimension analyses. |
+| `correlation/` | Metric–metric correlation analyses (Spearman heatmaps + tables). |
+| `3dpca/` | Interactive 3D PCA visualizations by layer/class. |
+| `plots_main/` | Plots used in the main paper figures. |
+| `plots_extra/` | Additional / ablation plots (balancing controls, extra metrics, etc.). |
 
 ```text
-
 ├── dataset_statistics/
 ├── data/
 ├── plots_extra/            --> first index kept
