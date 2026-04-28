@@ -18,6 +18,37 @@ python3 -m pip install -r requirements.txt
 The transformer model downloads/caches are handled by Hugging Face `transformers`. For the
 large experiments, a CUDA GPU is strongly recommended.
 
+## Interactive HTML visualizations
+
+The interactive PCA visualizations are Plotly HTML files tracked with Git LFS. After cloning
+the repository, fetch the LFS files before opening them:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+Then serve the repository locally:
+
+```bash
+cd linguistic_profiling_of_transformer
+python3 -m http.server 8000
+```
+
+Open these URLs in a browser:
+
+```text
+http://localhost:8000/plots_extra/pca3d_alltok/bert-base-uncased_pca3d_layers.html
+http://localhost:8000/plots_extra/pca3d_alltok/gpt2_pca3d_layers.html
+http://localhost:8000/plots_extra/pca3d_features/bert-base-uncased_pca3d_pos_classes.html
+```
+
+The files are large, so they can take a little while to load. Once loaded, they are interactive:
+drag to rotate, scroll to zoom, and use the legend/layer controls inside the Plotly page.
+
+GitHub's normal repository file view does not render these HTML files as interactive pages. For
+interactive viewing, clone the repo and use the local server above, or publish smaller HTML
+exports through a static site/release asset page.
 
 ## Repository layout
 
