@@ -1,0 +1,17 @@
+numpy
+pandas
+torch
+transformers
+tokenizers
+tqdm
+matplotlib
+seaborn
+scikit-learn
+scipy
+plotly
+adjustText
+IsoScore
+dadapy
+scikit-dimension
+jupyter
+ipywidgets
