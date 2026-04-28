@@ -18,6 +18,21 @@ python3 -m pip install -r requirements.txt
 The transformer model downloads/caches are handled by Hugging Face `transformers`. For the
 large experiments, a CUDA GPU is strongly recommended.
 
+## Lightweight checks
+
+Before running the long model notebooks, you can audit the preprocessed dataset and validate
+the notebooks without launching the expensive experiments:
+
+```bash
+python3 scripts/audit_dataset.py
+python3 scripts/validate_notebooks.py --execute-setup
+```
+
+`audit_dataset.py` prints sentence/token counts, checks that token-level feature lists are
+aligned, and reports distributions for index, length, POS, head distance, dependency relation,
+and arity. `validate_notebooks.py` checks notebook schema, Python syntax, cleared outputs,
+repo-relative path helpers, setup cells, and guards against slow direct IsoScore calls.
+
 ## Interactive HTML visualizations
 
 The interactive PCA visualizations are Plotly HTML files tracked with Git LFS. After cloning
