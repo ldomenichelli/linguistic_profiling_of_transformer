@@ -1,0 +1,27 @@
+model,metric,class_group,layer,mean,ci_low,ci_high,n_tokens,pos_members,aggregation
+bert-base-uncased,iso,Open classes,0,0.04777600670763974,0.046600805331587225,0.04888569122354013,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,1,0.048617416042265264,0.047159704820154864,0.049973264213979414,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,2,0.04798874454257793,0.04670479543740441,0.04919212593155717,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,3,0.04698555679639609,0.04589249447552811,0.04793763833467606,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,4,0.0458034140724109,0.04487254121502682,0.04668898079785389,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,5,0.04617241098203897,0.04535758639860378,0.046958838400676564,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,6,0.045638430291163455,0.04480667549825631,0.046344315918364395,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,7,0.044488298736399014,0.043656331088658774,0.045061862374069415,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,8,0.042377659938416634,0.04169269665808626,0.04294592536144924,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,9,0.04094381573379175,0.04027331521120371,0.04155724290730466,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,10,0.038090668148718476,0.03748788857544445,0.03862243715342733,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,11,0.034916104165625995,0.03432023899349351,0.035527770620273985,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Open classes,12,0.0334226814615044,0.032695177408429504,0.03412926183519265,89466,"ADJ,ADV,NOUN,PROPN,VERB",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,0,0.007460566493892672,0.007306653916113474,0.007604406030675835,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,1,0.008765585165258926,0.008588295475091469,0.008928131677670563,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,2,0.009976687212645042,0.00977853308719943,0.01016312998423751,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,3,0.011399713076551044,0.011187669107201391,0.011601383993633568,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,4,0.012712854679294313,0.012472737723103706,0.012950032642388259,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,5,0.014692569065751754,0.014434464995900237,0.014948485195028274,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,6,0.017673432892803233,0.017379583423009267,0.01797563482933158,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,7,0.019723037918586834,0.019422391188858645,0.02005067205992188,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,8,0.021807809104303896,0.021477323977379136,0.022142331568009307,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,9,0.0225228450489139,0.022150940167304286,0.022850265029911575,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,10,0.024581413329537883,0.02415171303857873,0.024954756995467883,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,11,0.024278843277714977,0.023891770850707757,0.024697111521451567,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
+bert-base-uncased,iso,Closed classes,12,0.018861448773203976,0.018507069771262975,0.01920027263138318,73903,"ADP,AUX,CCONJ,DET,PRON,SCONJ",token_weighted_mean_of_pos_curves
