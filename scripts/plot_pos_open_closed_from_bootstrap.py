@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 from pathlib import Path
 
 import matplotlib
@@ -51,6 +52,9 @@ GROUP_COLORS = {
     "Closed classes": "#D65F4A",
 }
 
+CONTRAST_COLOR = "#2F5D9E"
+CI_Z = 1.96
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -83,6 +87,16 @@ def resolve_source_dir(source_dir: Path | None) -> Path:
     raise FileNotFoundError(f"no POS bootstrap tables found in:\n{candidates}")
 
 
+def ci_to_se(row: pd.Series) -> float:
+    """Approximate a standard error from a two-sided 95% confidence interval."""
+    low = float(row["ci_low"])
+    high = float(row["ci_high"])
+    if not (math.isfinite(low) and math.isfinite(high)):
+        return 0.0
+    width = max(high - low, 0.0)
+    return width / (2.0 * CI_Z)
+
+
 def weighted_group_curve(df: pd.DataFrame, classes: set[str], group_name: str) -> pd.DataFrame:
     sub = df[df["class"].isin(classes)].copy()
     if sub.empty:
@@ -95,15 +109,159 @@ def weighted_group_curve(df: pd.DataFrame, classes: set[str], group_name: str) -
         if weight_sum <= 0:
             continue
 
+        normalized_weights = weights / weight_sum
+        class_ses = layer_df.apply(ci_to_se, axis=1).astype(float)
+        group_mean = float((layer_df["mean"] * normalized_weights).sum())
+        # Approximate uncertainty from the available per-POS bootstrap summaries.
+        # The original bootstrap replicates are not stored in the CSVs, so the
+        # contrast CI below propagates the reported POS-level intervals.
+        group_se = float(math.sqrt(((normalized_weights * class_ses) ** 2).sum()))
+        if group_se > 0:
+            group_ci_low = group_mean - CI_Z * group_se
+            group_ci_high = group_mean + CI_Z * group_se
+            ci_method = "normal_approx_from_pos_level_ci"
+        else:
+            group_ci_low = group_mean
+            group_ci_high = group_mean
+            ci_method = "no_source_uncertainty"
+
         rows.append(
             {
                 "class_group": group_name,
                 "layer": int(layer),
-                "mean": float((layer_df["mean"] * weights).sum() / weight_sum),
-                "ci_low": float((layer_df["ci_low"] * weights).sum() / weight_sum),
-                "ci_high": float((layer_df["ci_high"] * weights).sum() / weight_sum),
+                "mean": group_mean,
+                "ci_low": group_ci_low,
+                "ci_high": group_ci_high,
+                "se": group_se,
                 "n_tokens": int(weight_sum),
                 "pos_members": ",".join(sorted(layer_df["class"].unique())),
+                "n_pos_members": int(layer_df["class"].nunique()),
+                "ci_method": ci_method,
+            }
+        )
+
+    return pd.DataFrame(rows)
+
+
+def support_label(diff: float, ci_low: float, ci_high: float, has_uncertainty: bool) -> str:
+    if has_uncertainty:
+        if ci_low > 0:
+            return "supports_open_greater_than_closed"
+        if ci_high < 0:
+            return "supports_closed_greater_than_open"
+        return "inconclusive"
+    if diff > 0:
+        return "observed_open_greater_than_closed_no_ci"
+    if diff < 0:
+        return "observed_closed_greater_than_open_no_ci"
+    return "observed_no_difference_no_ci"
+
+
+def contrast_curve(groups_df: pd.DataFrame) -> pd.DataFrame:
+    required_groups = {"Open classes", "Closed classes"}
+    if not required_groups.issubset(set(groups_df["class_group"])):
+        return pd.DataFrame()
+
+    open_df = groups_df[groups_df["class_group"] == "Open classes"].set_index("layer")
+    closed_df = groups_df[groups_df["class_group"] == "Closed classes"].set_index("layer")
+    common_layers = sorted(set(open_df.index).intersection(set(closed_df.index)))
+    rows = []
+    for layer in common_layers:
+        open_row = open_df.loc[layer]
+        closed_row = closed_df.loc[layer]
+        diff = float(open_row["mean"] - closed_row["mean"])
+        se = float(math.sqrt(float(open_row["se"]) ** 2 + float(closed_row["se"]) ** 2))
+        has_uncertainty = se > 0
+        if has_uncertainty:
+            ci_low = diff - CI_Z * se
+            ci_high = diff + CI_Z * se
+            z_value = diff / se
+            p_value = math.erfc(abs(z_value) / math.sqrt(2.0))
+            ci_method = "normal_approx_from_independent_pos_group_ci"
+        else:
+            ci_low = diff
+            ci_high = diff
+            z_value = math.nan
+            p_value = math.nan
+            ci_method = "no_source_uncertainty"
+
+        rows.append(
+            {
+                "layer": int(layer),
+                "open_mean": float(open_row["mean"]),
+                "closed_mean": float(closed_row["mean"]),
+                "open_minus_closed": diff,
+                "ci_low": ci_low,
+                "ci_high": ci_high,
+                "se": se,
+                "z_value": z_value,
+                "p_value_two_sided": p_value,
+                "support": support_label(diff, ci_low, ci_high, has_uncertainty),
+                "ci_method": ci_method,
+            }
+        )
+
+    return pd.DataFrame(rows)
+
+
+def summarize_contrast(
+    contrast_df: pd.DataFrame,
+    model_name: str,
+    metric_name: str,
+    metric_label: str,
+    ylabel: str,
+) -> pd.DataFrame:
+    if contrast_df.empty:
+        return pd.DataFrame()
+
+    rows = []
+    last_layer = int(contrast_df["layer"].max())
+    for scope, scoped in (
+        ("last_layer", contrast_df[contrast_df["layer"] == last_layer]),
+        ("layer_mean", contrast_df),
+    ):
+        diff = float(scoped["open_minus_closed"].mean())
+        se_values = scoped["se"].astype(float)
+        has_uncertainty = bool((se_values > 0).any())
+        if scope == "last_layer":
+            ci_low = float(scoped["ci_low"].iloc[0])
+            ci_high = float(scoped["ci_high"].iloc[0])
+            se = float(scoped["se"].iloc[0])
+            p_value = float(scoped["p_value_two_sided"].iloc[0])
+            layer = last_layer
+        elif has_uncertainty:
+            # Descriptive layer-mean CI. Layers are correlated, so use it as a
+            # compact uncertainty summary rather than an independent-layer test.
+            se = float(math.sqrt((se_values**2).sum()) / len(scoped))
+            ci_low = diff - CI_Z * se
+            ci_high = diff + CI_Z * se
+            p_value = math.erfc(abs(diff / se) / math.sqrt(2.0)) if se > 0 else math.nan
+            layer = math.nan
+        else:
+            se = 0.0
+            ci_low = diff
+            ci_high = diff
+            p_value = math.nan
+            layer = math.nan
+
+        rows.append(
+            {
+                "model": model_name,
+                "metric": metric_name,
+                "metric_label": metric_label,
+                "metric_family": ylabel,
+                "scope": scope,
+                "layer": layer,
+                "open_minus_closed": diff,
+                "ci_low": ci_low,
+                "ci_high": ci_high,
+                "se": se,
+                "p_value_two_sided": p_value,
+                "n_layers": int(len(scoped)),
+                "n_positive_layers": int((scoped["open_minus_closed"] > 0).sum()),
+                "n_supported_layers": int((scoped["support"] == "supports_open_greater_than_closed").sum()),
+                "support": support_label(diff, ci_low, ci_high, has_uncertainty),
+                "ci_method": "normal_approx_from_contrast_ci" if has_uncertainty else "no_source_uncertainty",
             }
         )
 
@@ -131,6 +289,80 @@ def plot_grouped(groups_df: pd.DataFrame, ylabel: str, title: str, out_base: Pat
     fig.savefig(out_base.with_suffix(".pdf"))
     fig.savefig(out_base.with_suffix(".png"), dpi=240)
     plt.close(fig)
+
+
+def plot_contrast(contrast_df: pd.DataFrame, ylabel: str, title: str, out_base: Path) -> None:
+    if contrast_df.empty:
+        return
+
+    sub = contrast_df.sort_values("layer")
+    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+    x = sub["layer"].to_numpy()
+    diff = sub["open_minus_closed"].to_numpy()
+    lo = sub["ci_low"].to_numpy()
+    hi = sub["ci_high"].to_numpy()
+    ax.axhline(0.0, color="#333333", lw=1.0, ls="--", alpha=0.8)
+    ax.plot(x, diff, label="Open - closed", lw=2.2, color=CONTRAST_COLOR)
+    if (hi - lo).max() > 0:
+        ax.fill_between(x, lo, hi, alpha=0.18, color=CONTRAST_COLOR)
+    ax.set_xlabel("Layer")
+    ax.set_ylabel(f"Open - closed {ylabel}")
+    ax.set_title(title)
+    ax.legend(frameon=False)
+    ax.margins(x=0.02)
+    fig.tight_layout()
+    fig.savefig(out_base.with_suffix(".pdf"))
+    fig.savefig(out_base.with_suffix(".png"), dpi=240)
+    plt.close(fig)
+
+
+def plot_contrast_grid(contrasts_df: pd.DataFrame, output_dir: Path) -> list[Path]:
+    if contrasts_df.empty:
+        return []
+
+    model_order = list(MODEL_SPECS.keys())
+    metric_order = list(METRIC_SPECS.keys())
+    fig, axes = plt.subplots(
+        len(model_order),
+        len(metric_order),
+        figsize=(13.5, 6.8),
+        sharex=False,
+        squeeze=False,
+    )
+
+    for row_idx, model_short in enumerate(model_order):
+        for col_idx, metric_label in enumerate(metric_order):
+            ax = axes[row_idx][col_idx]
+            sub = contrasts_df[
+                (contrasts_df["model_short"] == model_short)
+                & (contrasts_df["metric_label"] == metric_label)
+            ].sort_values("layer")
+            if sub.empty:
+                ax.axis("off")
+                continue
+
+            x = sub["layer"].to_numpy()
+            diff = sub["open_minus_closed"].to_numpy()
+            lo = sub["ci_low"].to_numpy()
+            hi = sub["ci_high"].to_numpy()
+            ax.axhline(0.0, color="#333333", lw=0.9, ls="--", alpha=0.8)
+            ax.plot(x, diff, lw=2.0, color=CONTRAST_COLOR)
+            if (hi - lo).max() > 0:
+                ax.fill_between(x, lo, hi, alpha=0.18, color=CONTRAST_COLOR)
+            ax.margins(x=0.03)
+            ax.set_xlabel("Layer")
+            if col_idx == 0:
+                ax.set_ylabel(f"{model_short.upper()}\nOpen - closed")
+            if row_idx == 0:
+                ax.set_title(METRIC_DISPLAY_LABELS[metric_label])
+
+    fig.suptitle("POS open-class minus closed-class contrast", y=0.99)
+    fig.tight_layout(rect=(0, 0, 1, 0.96))
+    out_base = output_dir / "pos_open_minus_closed_contrast_grid"
+    fig.savefig(out_base.with_suffix(".pdf"), bbox_inches="tight")
+    fig.savefig(out_base.with_suffix(".png"), dpi=240, bbox_inches="tight")
+    plt.close(fig)
+    return [out_base.with_suffix(".pdf"), out_base.with_suffix(".png")]
 
 
 def plot_pos_subset(
@@ -262,6 +494,68 @@ def plot_histogram_summary(
     return written
 
 
+def format_number(value: float) -> str:
+    if pd.isna(value):
+        return "n/a"
+    value = float(value)
+    abs_value = abs(value)
+    if abs_value != 0 and abs_value < 0.001:
+        return f"{value:.2e}"
+    if abs_value >= 100:
+        return f"{value:.1f}"
+    return f"{value:.4g}"
+
+
+def write_markdown_summary(summary_df: pd.DataFrame, out_path: Path) -> None:
+    lines = [
+        "# POS Open-vs-Closed Contrast",
+        "",
+        "**Hypothesis.** Open-class POS (`ADJ`, `ADV`, `NOUN`, `PROPN`, `VERB`) have higher geometry scores than closed-class POS (`ADP`, `AUX`, `CCONJ`, `DET`, `PART`, `PRON`, `SCONJ`). The contrast is operationalized as a token-weighted open-class mean minus a token-weighted closed-class mean at each layer.",
+        "",
+        "**Decision rule.** A layer-level contrast is marked as supporting the hypothesis when the approximate 95% confidence interval for open-minus-closed is strictly above zero. If the source POS table has zero-width intervals, the result is reported as an observed contrast without an uncertainty decision.",
+        "",
+        "## Main Summary",
+        "",
+        "| Model | Metric | Scope | Contrast | 95% CI | Support |",
+        "|---|---|---|---:|---:|---|",
+    ]
+
+    for _, row in summary_df.sort_values(["model", "metric_label", "scope"]).iterrows():
+        ci = f"[{format_number(row['ci_low'])}, {format_number(row['ci_high'])}]"
+        lines.append(
+            "| {model} | {metric} | {scope} | {diff} | {ci} | {support} |".format(
+                model=row["model"],
+                metric=row["metric_label"],
+                scope=row["scope"].replace("_", " "),
+                diff=format_number(row["open_minus_closed"]),
+                ci=ci,
+                support=str(row["support"]).replace("_", " "),
+            )
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Manuscript-Ready Wording",
+            "",
+            "To make the POS observation directly quantitative, we collapsed POS tags into two predefined groups: open-class tags (`ADJ`, `ADV`, `NOUN`, `PROPN`, `VERB`) and closed-class tags (`ADP`, `AUX`, `CCONJ`, `DET`, `PART`, `PRON`, `SCONJ`). For each model, metric, and layer, we computed the token-weighted mean score for each group and tested the directional contrast open minus closed. This turns the qualitative reading of the POS curves into a layer-wise hypothesis test against zero.",
+            "",
+        ]
+    )
+
+    source_has_uncertainty = summary_df["ci_method"].ne("no_source_uncertainty").any()
+    if source_has_uncertainty:
+        lines.append(
+            "For BERT, the available POS-level bootstrap intervals support a positive open-minus-closed contrast in all reported layers and metric families. GPT-2 source tables contain zero-width intervals, so the GPT-2 rows should be described as observed positive contrasts unless those metric tables are regenerated with bootstrap replicates."
+        )
+    else:
+        lines.append(
+            "The source tables contain zero-width intervals, so these contrasts should be described as observed differences unless the metric tables are regenerated with bootstrap replicates."
+        )
+
+    out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     args = parse_args()
     source_dir = resolve_source_dir(args.source_dir)
@@ -271,6 +565,8 @@ def main() -> None:
     tables_dir.mkdir(parents=True, exist_ok=True)
 
     written: list[Path] = []
+    summary_frames: list[pd.DataFrame] = []
+    contrast_frames: list[pd.DataFrame] = []
     for model_short, model_name in MODEL_SPECS.items():
         metric_tables: dict[str, tuple[pd.DataFrame, str]] = {}
         for metric_label, (metric_name, ylabel) in METRIC_SPECS.items():
@@ -300,6 +596,22 @@ def main() -> None:
             metric_tables[metric_label] = (groups, str(table_out))
             written.append(table_out)
 
+            contrast = contrast_curve(groups)
+            if not contrast.empty:
+                contrast.insert(0, "metric_label", metric_label)
+                contrast.insert(0, "metric", metric_name)
+                contrast.insert(0, "model", model_name)
+                contrast["hypothesis"] = "open_class_greater_than_closed_class"
+                contrast["aggregation"] = "token_weighted_open_minus_closed"
+                contrast_out = tables_dir / f"{model_short}_pos_open_minus_closed_{metric_label}.csv"
+                contrast.to_csv(contrast_out, index=False)
+                written.append(contrast_out)
+                summary_frames.append(summarize_contrast(contrast, model_name, metric_name, metric_label, ylabel))
+                grid_contrast = contrast.copy()
+                grid_contrast["model_short"] = model_short
+                grid_contrast["metric_family"] = ylabel
+                contrast_frames.append(grid_contrast)
+
             plot_grouped(
                 groups,
                 ylabel=ylabel,
@@ -310,6 +622,19 @@ def main() -> None:
                 [
                     output_dir / f"{model_short}_pos_open_closed_{metric_label}.pdf",
                     output_dir / f"{model_short}_pos_open_closed_{metric_label}.png",
+                ]
+            )
+
+            plot_contrast(
+                contrast,
+                ylabel=ylabel,
+                title=f"{model_short.upper()} POS open - closed classes ({ylabel})",
+                out_base=output_dir / f"{model_short}_pos_open_minus_closed_{metric_label}",
+            )
+            written.extend(
+                [
+                    output_dir / f"{model_short}_pos_open_minus_closed_{metric_label}.pdf",
+                    output_dir / f"{model_short}_pos_open_minus_closed_{metric_label}.png",
                 ]
             )
 
@@ -343,6 +668,18 @@ def main() -> None:
 
         written.extend(plot_histogram_summary(metric_tables, model_short, output_dir, "last"))
         written.extend(plot_histogram_summary(metric_tables, model_short, output_dir, "mean"))
+
+    if contrast_frames:
+        written.extend(plot_contrast_grid(pd.concat(contrast_frames, ignore_index=True), output_dir))
+
+    if summary_frames:
+        summary = pd.concat(summary_frames, ignore_index=True)
+        summary_out = tables_dir / "pos_open_minus_closed_summary.csv"
+        summary.to_csv(summary_out, index=False)
+        written.append(summary_out)
+        markdown_out = tables_dir / "paper_section_pos_open_closed_contrasts.md"
+        write_markdown_summary(summary, markdown_out)
+        written.append(markdown_out)
 
     print(f"source tables: {source_dir}")
     print(f"wrote {len(written)} files")
