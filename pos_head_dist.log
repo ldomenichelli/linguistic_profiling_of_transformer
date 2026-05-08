@@ -1,0 +1,3647 @@
+nohup: input ignorato
+POS experiments:   0%|          | 0/4 [00:00<?, ?it/s]2026-05-07 16:29:02.201764: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+POS=VERB: 15,167 tokens across head distances ['-6', '-5', '-4', '-3', '-2', '-1', '1', '2', '3', '4', '5', '6']
+{'-6': 4532, '-5': 1058, '-4': 1488, '-3': 1839, '-2': 3726, '-1': 765, '1': 505, '2': 213, '3': 131, '4': 116, '5': 107, '6': 687}
+
+bert-base-uncased embed VERB:   0%|          | 0/6920 [00:00<?, ?it/s][A
+bert-base-uncased embed VERB:   0%|          | 1/6920 [00:00<1:09:34,  1.66it/s][A
+bert-base-uncased embed VERB:   0%|          | 5/6920 [00:00<15:27,  7.46it/s]  [A
+bert-base-uncased embed VERB:   0%|          | 17/6920 [00:00<04:06, 28.02it/s][A
+bert-base-uncased embed VERB:   0%|          | 29/6920 [00:01<02:27, 46.64it/s][A
+bert-base-uncased embed VERB:   1%|          | 41/6920 [00:01<01:49, 62.85it/s][A
+bert-base-uncased embed VERB:   1%|          | 53/6920 [00:01<01:30, 75.86it/s][A
+bert-base-uncased embed VERB:   1%|          | 65/6920 [00:01<01:18, 86.88it/s][A
+bert-base-uncased embed VERB:   1%|          | 78/6920 [00:01<01:11, 96.36it/s][A
+bert-base-uncased embed VERB:   1%|▏         | 90/6920 [00:01<01:06, 102.29it/s][A
+bert-base-uncased embed VERB:   1%|▏         | 103/6920 [00:01<01:03, 108.10it/s][A
+bert-base-uncased embed VERB:   2%|▏         | 115/6920 [00:01<01:01, 111.36it/s][A
+bert-base-uncased embed VERB:   2%|▏         | 127/6920 [00:01<00:59, 113.54it/s][A
+bert-base-uncased embed VERB:   2%|▏         | 140/6920 [00:01<00:58, 115.63it/s][A
+bert-base-uncased embed VERB:   2%|▏         | 152/6920 [00:02<00:58, 115.55it/s][A
+bert-base-uncased embed VERB:   2%|▏         | 165/6920 [00:02<00:57, 117.06it/s][A
+bert-base-uncased embed VERB:   3%|▎         | 177/6920 [00:02<00:57, 116.69it/s][A
+bert-base-uncased embed VERB:   3%|▎         | 189/6920 [00:02<00:57, 116.90it/s][A
+bert-base-uncased embed VERB:   3%|▎         | 201/6920 [00:02<00:57, 117.45it/s][A
+bert-base-uncased embed VERB:   3%|▎         | 213/6920 [00:02<00:57, 117.38it/s][A
+bert-base-uncased embed VERB:   3%|▎         | 225/6920 [00:02<00:57, 116.71it/s][A
+bert-base-uncased embed VERB:   3%|▎         | 238/6920 [00:02<00:56, 119.13it/s][A
+bert-base-uncased embed VERB:   4%|▎         | 251/6920 [00:02<00:55, 120.39it/s][A
+bert-base-uncased embed VERB:   4%|▍         | 264/6920 [00:02<00:55, 120.71it/s][A
+bert-base-uncased embed VERB:   4%|▍         | 277/6920 [00:03<00:55, 120.19it/s][A
+bert-base-uncased embed VERB:   4%|▍         | 290/6920 [00:03<00:55, 120.09it/s][A
+bert-base-uncased embed VERB:   4%|▍         | 303/6920 [00:03<00:55, 119.19it/s][A
+bert-base-uncased embed VERB:   5%|▍         | 315/6920 [00:03<00:55, 119.37it/s][A
+bert-base-uncased embed VERB:   5%|▍         | 327/6920 [00:03<00:55, 118.00it/s][A
+bert-base-uncased embed VERB:   5%|▍         | 339/6920 [00:03<00:55, 117.96it/s][A
+bert-base-uncased embed VERB:   5%|▌         | 351/6920 [00:03<00:55, 118.53it/s][A
+bert-base-uncased embed VERB:   5%|▌         | 364/6920 [00:03<00:54, 120.09it/s][A
+bert-base-uncased embed VERB:   5%|▌         | 377/6920 [00:03<00:55, 118.52it/s][A
+bert-base-uncased embed VERB:   6%|▌         | 389/6920 [00:04<00:57, 113.80it/s][A
+bert-base-uncased embed VERB:   6%|▌         | 401/6920 [00:04<00:56, 115.51it/s][A
+bert-base-uncased embed VERB:   6%|▌         | 414/6920 [00:04<00:55, 116.92it/s][A
+bert-base-uncased embed VERB:   6%|▌         | 426/6920 [00:04<00:55, 117.41it/s][A
+bert-base-uncased embed VERB:   6%|▋         | 438/6920 [00:04<00:55, 116.18it/s][A
+bert-base-uncased embed VERB:   7%|▋         | 450/6920 [00:04<00:55, 116.39it/s][A
+bert-base-uncased embed VERB:   7%|▋         | 462/6920 [00:04<00:56, 114.90it/s][A
+bert-base-uncased embed VERB:   7%|▋         | 475/6920 [00:04<00:54, 118.40it/s][A
+bert-base-uncased embed VERB:   7%|▋         | 488/6920 [00:04<00:53, 120.53it/s][A
+bert-base-uncased embed VERB:   7%|▋         | 501/6920 [00:05<00:53, 120.82it/s][A
+bert-base-uncased embed VERB:   7%|▋         | 514/6920 [00:05<00:52, 121.25it/s][A
+bert-base-uncased embed VERB:   8%|▊         | 527/6920 [00:05<00:52, 121.79it/s][A
+bert-base-uncased embed VERB:   8%|▊         | 540/6920 [00:05<00:52, 122.40it/s][A
+bert-base-uncased embed VERB:   8%|▊         | 553/6920 [00:05<00:52, 121.77it/s][A
+bert-base-uncased embed VERB:   8%|▊         | 566/6920 [00:05<00:52, 121.22it/s][A
+bert-base-uncased embed VERB:   8%|▊         | 579/6920 [00:05<00:53, 119.43it/s][A
+bert-base-uncased embed VERB:   9%|▊         | 592/6920 [00:05<00:52, 120.40it/s][A
+bert-base-uncased embed VERB:   9%|▊         | 605/6920 [00:05<00:52, 121.16it/s][A
+bert-base-uncased embed VERB:   9%|▉         | 618/6920 [00:05<00:52, 118.97it/s][A
+bert-base-uncased embed VERB:   9%|▉         | 631/6920 [00:06<00:52, 119.96it/s][A
+bert-base-uncased embed VERB:   9%|▉         | 644/6920 [00:06<00:51, 120.88it/s][A
+bert-base-uncased embed VERB:   9%|▉         | 657/6920 [00:06<00:51, 121.33it/s][A
+bert-base-uncased embed VERB:  10%|▉         | 670/6920 [00:06<00:52, 119.03it/s][A
+bert-base-uncased embed VERB:  10%|▉         | 683/6920 [00:06<00:51, 120.50it/s][A
+bert-base-uncased embed VERB:  10%|█         | 696/6920 [00:06<00:51, 121.22it/s][A
+bert-base-uncased embed VERB:  10%|█         | 709/6920 [00:06<00:51, 120.84it/s][A
+bert-base-uncased embed VERB:  10%|█         | 722/6920 [00:06<00:51, 120.82it/s][A
+bert-base-uncased embed VERB:  11%|█         | 735/6920 [00:06<00:51, 119.79it/s][A
+bert-base-uncased embed VERB:  11%|█         | 748/6920 [00:07<00:51, 120.58it/s][A
+bert-base-uncased embed VERB:  11%|█         | 761/6920 [00:07<00:50, 120.93it/s][A
+bert-base-uncased embed VERB:  11%|█         | 774/6920 [00:07<00:50, 121.51it/s][A
+bert-base-uncased embed VERB:  11%|█▏        | 787/6920 [00:07<00:50, 120.88it/s][A
+bert-base-uncased embed VERB:  12%|█▏        | 800/6920 [00:07<00:50, 120.57it/s][A
+bert-base-uncased embed VERB:  12%|█▏        | 813/6920 [00:07<00:50, 121.04it/s][A
+bert-base-uncased embed VERB:  12%|█▏        | 826/6920 [00:07<00:50, 120.26it/s][A
+bert-base-uncased embed VERB:  12%|█▏        | 839/6920 [00:07<00:50, 121.07it/s][A
+bert-base-uncased embed VERB:  12%|█▏        | 852/6920 [00:07<00:49, 121.50it/s][A
+bert-base-uncased embed VERB:  12%|█▎        | 865/6920 [00:08<00:50, 121.06it/s][A
+bert-base-uncased embed VERB:  13%|█▎        | 878/6920 [00:08<00:50, 120.63it/s][A
+bert-base-uncased embed VERB:  13%|█▎        | 891/6920 [00:08<00:50, 119.93it/s][A
+bert-base-uncased embed VERB:  13%|█▎        | 904/6920 [00:08<00:49, 121.24it/s][A
+bert-base-uncased embed VERB:  13%|█▎        | 917/6920 [00:08<00:48, 122.77it/s][A
+bert-base-uncased embed VERB:  13%|█▎        | 930/6920 [00:08<00:48, 122.50it/s][A
+bert-base-uncased embed VERB:  14%|█▎        | 943/6920 [00:08<00:48, 122.89it/s][A
+bert-base-uncased embed VERB:  14%|█▍        | 956/6920 [00:08<00:48, 123.61it/s][A
+bert-base-uncased embed VERB:  14%|█▍        | 969/6920 [00:08<00:47, 124.44it/s][A
+bert-base-uncased embed VERB:  14%|█▍        | 982/6920 [00:08<00:47, 124.73it/s][A
+bert-base-uncased embed VERB:  14%|█▍        | 995/6920 [00:09<00:47, 124.31it/s][A
+bert-base-uncased embed VERB:  15%|█▍        | 1008/6920 [00:09<00:47, 124.45it/s][A
+bert-base-uncased embed VERB:  15%|█▍        | 1021/6920 [00:09<00:47, 124.73it/s][A
+bert-base-uncased embed VERB:  15%|█▍        | 1034/6920 [00:09<00:46, 125.31it/s][A
+bert-base-uncased embed VERB:  15%|█▌        | 1047/6920 [00:09<00:46, 126.36it/s][A
+bert-base-uncased embed VERB:  15%|█▌        | 1060/6920 [00:09<00:46, 126.20it/s][A
+bert-base-uncased embed VERB:  16%|█▌        | 1073/6920 [00:09<00:46, 126.08it/s][A
+bert-base-uncased embed VERB:  16%|█▌        | 1086/6920 [00:09<00:46, 125.59it/s][A
+bert-base-uncased embed VERB:  16%|█▌        | 1099/6920 [00:09<00:46, 126.21it/s][A
+bert-base-uncased embed VERB:  16%|█▌        | 1112/6920 [00:09<00:45, 126.66it/s][A
+bert-base-uncased embed VERB:  16%|█▋        | 1125/6920 [00:10<00:45, 127.39it/s][A
+bert-base-uncased embed VERB:  16%|█▋        | 1138/6920 [00:10<00:45, 128.10it/s][A
+bert-base-uncased embed VERB:  17%|█▋        | 1151/6920 [00:10<00:45, 127.91it/s][A
+bert-base-uncased embed VERB:  17%|█▋        | 1164/6920 [00:10<00:45, 127.53it/s][A
+bert-base-uncased embed VERB:  17%|█▋        | 1178/6920 [00:10<00:44, 128.37it/s][A
+bert-base-uncased embed VERB:  17%|█▋        | 1191/6920 [00:10<00:44, 128.13it/s][A
+bert-base-uncased embed VERB:  17%|█▋        | 1204/6920 [00:10<00:45, 125.91it/s][A
+bert-base-uncased embed VERB:  18%|█▊        | 1217/6920 [00:10<00:45, 126.62it/s][A
+bert-base-uncased embed VERB:  18%|█▊        | 1230/6920 [00:10<00:44, 127.56it/s][A
+bert-base-uncased embed VERB:  18%|█▊        | 1243/6920 [00:11<00:44, 127.09it/s][A
+bert-base-uncased embed VERB:  18%|█▊        | 1256/6920 [00:11<00:44, 126.38it/s][A
+bert-base-uncased embed VERB:  18%|█▊        | 1269/6920 [00:11<00:44, 126.71it/s][A
+bert-base-uncased embed VERB:  19%|█▊        | 1282/6920 [00:11<00:44, 126.28it/s][A
+bert-base-uncased embed VERB:  19%|█▊        | 1295/6920 [00:11<00:44, 127.30it/s][A
+bert-base-uncased embed VERB:  19%|█▉        | 1308/6920 [00:11<00:44, 125.25it/s][A
+bert-base-uncased embed VERB:  19%|█▉        | 1321/6920 [00:11<00:44, 126.56it/s][A
+bert-base-uncased embed VERB:  19%|█▉        | 1334/6920 [00:11<00:44, 126.75it/s][A
+bert-base-uncased embed VERB:  19%|█▉        | 1347/6920 [00:11<00:43, 127.17it/s][A
+bert-base-uncased embed VERB:  20%|█▉        | 1360/6920 [00:11<00:43, 128.00it/s][A
+bert-base-uncased embed VERB:  20%|█▉        | 1373/6920 [00:12<00:43, 128.16it/s][A
+bert-base-uncased embed VERB:  20%|██        | 1386/6920 [00:12<00:43, 127.84it/s][A
+bert-base-uncased embed VERB:  20%|██        | 1399/6920 [00:12<00:43, 127.85it/s][A
+bert-base-uncased embed VERB:  20%|██        | 1412/6920 [00:12<00:43, 125.66it/s][A
+bert-base-uncased embed VERB:  21%|██        | 1425/6920 [00:12<00:43, 126.40it/s][A
+bert-base-uncased embed VERB:  21%|██        | 1438/6920 [00:12<00:43, 127.14it/s][A
+bert-base-uncased embed VERB:  21%|██        | 1451/6920 [00:12<00:43, 126.16it/s][A
+bert-base-uncased embed VERB:  21%|██        | 1464/6920 [00:12<00:42, 126.98it/s][A
+bert-base-uncased embed VERB:  21%|██▏       | 1477/6920 [00:12<00:42, 127.14it/s][A
+bert-base-uncased embed VERB:  22%|██▏       | 1490/6920 [00:12<00:42, 126.89it/s][A
+bert-base-uncased embed VERB:  22%|██▏       | 1503/6920 [00:13<00:42, 127.13it/s][A
+bert-base-uncased embed VERB:  22%|██▏       | 1517/6920 [00:13<00:42, 128.15it/s][A
+bert-base-uncased embed VERB:  22%|██▏       | 1531/6920 [00:13<00:41, 129.06it/s][A
+bert-base-uncased embed VERB:  22%|██▏       | 1544/6920 [00:13<00:41, 128.92it/s][A
+bert-base-uncased embed VERB:  22%|██▎       | 1557/6920 [00:13<00:41, 128.46it/s][A
+bert-base-uncased embed VERB:  23%|██▎       | 1570/6920 [00:13<00:41, 128.69it/s][A
+bert-base-uncased embed VERB:  23%|██▎       | 1583/6920 [00:13<00:41, 129.02it/s][A
+bert-base-uncased embed VERB:  23%|██▎       | 1596/6920 [00:13<00:42, 124.69it/s][A
+bert-base-uncased embed VERB:  23%|██▎       | 1609/6920 [00:14<00:56, 93.75it/s] [A
+bert-base-uncased embed VERB:  23%|██▎       | 1620/6920 [00:14<01:04, 81.93it/s][A
+bert-base-uncased embed VERB:  24%|██▎       | 1630/6920 [00:14<01:11, 74.32it/s][A
+bert-base-uncased embed VERB:  24%|██▎       | 1639/6920 [00:14<01:15, 70.01it/s][A
+bert-base-uncased embed VERB:  24%|██▍       | 1647/6920 [00:14<01:17, 68.36it/s][A
+bert-base-uncased embed VERB:  24%|██▍       | 1655/6920 [00:14<01:17, 68.25it/s][A
+bert-base-uncased embed VERB:  24%|██▍       | 1668/6920 [00:14<01:03, 82.60it/s][A
+bert-base-uncased embed VERB:  24%|██▍       | 1682/6920 [00:14<00:54, 95.32it/s][A
+bert-base-uncased embed VERB:  24%|██▍       | 1695/6920 [00:15<00:50, 104.16it/s][A
+bert-base-uncased embed VERB:  25%|██▍       | 1708/6920 [00:15<00:47, 110.61it/s][A
+bert-base-uncased embed VERB:  25%|██▍       | 1721/6920 [00:15<00:44, 115.75it/s][A
+bert-base-uncased embed VERB:  25%|██▌       | 1734/6920 [00:15<00:43, 118.58it/s][A
+bert-base-uncased embed VERB:  25%|██▌       | 1747/6920 [00:15<00:42, 121.25it/s][A
+bert-base-uncased embed VERB:  25%|██▌       | 1760/6920 [00:15<00:42, 122.85it/s][A
+bert-base-uncased embed VERB:  26%|██▌       | 1773/6920 [00:15<00:41, 123.83it/s][A
+bert-base-uncased embed VERB:  26%|██▌       | 1786/6920 [00:15<00:41, 124.45it/s][A
+bert-base-uncased embed VERB:  26%|██▌       | 1799/6920 [00:15<00:40, 125.58it/s][A
+bert-base-uncased embed VERB:  26%|██▌       | 1812/6920 [00:15<00:40, 126.47it/s][A
+bert-base-uncased embed VERB:  26%|██▋       | 1825/6920 [00:16<00:40, 126.35it/s][A
+bert-base-uncased embed VERB:  27%|██▋       | 1838/6920 [00:16<00:40, 126.67it/s][A
+bert-base-uncased embed VERB:  27%|██▋       | 1851/6920 [00:16<00:39, 126.92it/s][A
+bert-base-uncased embed VERB:  27%|██▋       | 1864/6920 [00:16<00:39, 127.09it/s][A
+bert-base-uncased embed VERB:  27%|██▋       | 1878/6920 [00:16<00:39, 128.12it/s][A
+bert-base-uncased embed VERB:  27%|██▋       | 1891/6920 [00:16<00:39, 127.36it/s][A
+bert-base-uncased embed VERB:  28%|██▊       | 1904/6920 [00:16<00:39, 127.19it/s][A
+bert-base-uncased embed VERB:  28%|██▊       | 1917/6920 [00:16<00:39, 126.60it/s][A
+bert-base-uncased embed VERB:  28%|██▊       | 1930/6920 [00:16<00:39, 126.26it/s][A
+bert-base-uncased embed VERB:  28%|██▊       | 1943/6920 [00:17<00:39, 126.40it/s][A
+bert-base-uncased embed VERB:  28%|██▊       | 1956/6920 [00:17<00:39, 126.27it/s][A
+bert-base-uncased embed VERB:  28%|██▊       | 1969/6920 [00:17<00:39, 126.94it/s][A
+bert-base-uncased embed VERB:  29%|██▊       | 1982/6920 [00:17<00:39, 125.49it/s][A
+bert-base-uncased embed VERB:  29%|██▉       | 1995/6920 [00:17<00:39, 125.35it/s][A
+bert-base-uncased embed VERB:  29%|██▉       | 2008/6920 [00:17<00:38, 126.15it/s][A
+bert-base-uncased embed VERB:  29%|██▉       | 2021/6920 [00:17<00:38, 126.28it/s][A
+bert-base-uncased embed VERB:  29%|██▉       | 2034/6920 [00:17<00:38, 127.24it/s][A
+bert-base-uncased embed VERB:  30%|██▉       | 2047/6920 [00:17<00:38, 127.40it/s][A
+bert-base-uncased embed VERB:  30%|██▉       | 2060/6920 [00:17<00:38, 126.89it/s][A
+bert-base-uncased embed VERB:  30%|██▉       | 2073/6920 [00:18<00:38, 127.23it/s][A
+bert-base-uncased embed VERB:  30%|███       | 2086/6920 [00:18<00:38, 126.65it/s][A
+bert-base-uncased embed VERB:  30%|███       | 2099/6920 [00:18<00:37, 127.35it/s][A
+bert-base-uncased embed VERB:  31%|███       | 2112/6920 [00:18<00:37, 127.68it/s][A
+bert-base-uncased embed VERB:  31%|███       | 2125/6920 [00:18<00:37, 128.14it/s][A
+bert-base-uncased embed VERB:  31%|███       | 2138/6920 [00:18<00:37, 127.77it/s][A
+bert-base-uncased embed VERB:  31%|███       | 2151/6920 [00:18<00:37, 128.27it/s][A
+bert-base-uncased embed VERB:  31%|███▏      | 2165/6920 [00:18<00:36, 129.03it/s][A
+bert-base-uncased embed VERB:  31%|███▏      | 2178/6920 [00:18<00:36, 129.27it/s][A
+bert-base-uncased embed VERB:  32%|███▏      | 2191/6920 [00:18<00:36, 128.89it/s][A
+bert-base-uncased embed VERB:  32%|███▏      | 2205/6920 [00:19<00:36, 129.42it/s][A
+bert-base-uncased embed VERB:  32%|███▏      | 2218/6920 [00:19<00:36, 129.45it/s][A
+bert-base-uncased embed VERB:  32%|███▏      | 2231/6920 [00:19<00:36, 128.70it/s][A
+bert-base-uncased embed VERB:  32%|███▏      | 2244/6920 [00:19<00:36, 128.37it/s][A
+bert-base-uncased embed VERB:  33%|███▎      | 2257/6920 [00:19<00:36, 127.65it/s][A
+bert-base-uncased embed VERB:  33%|███▎      | 2270/6920 [00:19<00:36, 127.87it/s][A
+bert-base-uncased embed VERB:  33%|███▎      | 2283/6920 [00:19<00:36, 127.39it/s][A
+bert-base-uncased embed VERB:  33%|███▎      | 2296/6920 [00:19<00:36, 127.19it/s][A
+bert-base-uncased embed VERB:  33%|███▎      | 2309/6920 [00:19<00:36, 127.94it/s][A
+bert-base-uncased embed VERB:  34%|███▎      | 2323/6920 [00:20<00:35, 128.72it/s][A
+bert-base-uncased embed VERB:  34%|███▍      | 2336/6920 [00:20<00:36, 127.15it/s][A
+bert-base-uncased embed VERB:  34%|███▍      | 2349/6920 [00:20<00:36, 126.19it/s][A
+bert-base-uncased embed VERB:  34%|███▍      | 2363/6920 [00:20<00:35, 127.58it/s][A
+bert-base-uncased embed VERB:  34%|███▍      | 2376/6920 [00:20<00:35, 127.88it/s][A
+bert-base-uncased embed VERB:  35%|███▍      | 2389/6920 [00:20<00:35, 127.75it/s][A
+bert-base-uncased embed VERB:  35%|███▍      | 2402/6920 [00:20<00:35, 127.61it/s][A
+bert-base-uncased embed VERB:  35%|███▍      | 2415/6920 [00:20<00:35, 127.71it/s][A
+bert-base-uncased embed VERB:  35%|███▌      | 2429/6920 [00:20<00:34, 128.43it/s][A
+bert-base-uncased embed VERB:  35%|███▌      | 2442/6920 [00:20<00:35, 127.70it/s][A
+bert-base-uncased embed VERB:  35%|███▌      | 2455/6920 [00:21<00:35, 127.38it/s][A
+bert-base-uncased embed VERB:  36%|███▌      | 2468/6920 [00:21<00:34, 127.20it/s][A
+bert-base-uncased embed VERB:  36%|███▌      | 2481/6920 [00:21<00:35, 126.40it/s][A
+bert-base-uncased embed VERB:  36%|███▌      | 2494/6920 [00:21<00:35, 125.07it/s][A
+bert-base-uncased embed VERB:  36%|███▌      | 2507/6920 [00:21<00:35, 125.39it/s][A
+bert-base-uncased embed VERB:  36%|███▋      | 2520/6920 [00:21<00:35, 125.32it/s][A
+bert-base-uncased embed VERB:  37%|███▋      | 2533/6920 [00:21<00:34, 125.44it/s][A
+bert-base-uncased embed VERB:  37%|███▋      | 2546/6920 [00:21<00:34, 126.12it/s][A
+bert-base-uncased embed VERB:  37%|███▋      | 2559/6920 [00:21<00:34, 126.52it/s][A
+bert-base-uncased embed VERB:  37%|███▋      | 2572/6920 [00:21<00:34, 126.26it/s][A
+bert-base-uncased embed VERB:  37%|███▋      | 2585/6920 [00:22<00:34, 126.72it/s][A
+bert-base-uncased embed VERB:  38%|███▊      | 2598/6920 [00:22<00:34, 126.48it/s][A
+bert-base-uncased embed VERB:  38%|███▊      | 2611/6920 [00:22<00:34, 125.56it/s][A
+bert-base-uncased embed VERB:  38%|███▊      | 2624/6920 [00:22<00:34, 125.36it/s][A
+bert-base-uncased embed VERB:  38%|███▊      | 2637/6920 [00:22<00:33, 126.05it/s][A
+bert-base-uncased embed VERB:  38%|███▊      | 2650/6920 [00:22<00:33, 126.92it/s][A
+bert-base-uncased embed VERB:  38%|███▊      | 2663/6920 [00:22<00:33, 127.14it/s][A
+bert-base-uncased embed VERB:  39%|███▊      | 2676/6920 [00:22<00:33, 125.55it/s][A
+bert-base-uncased embed VERB:  39%|███▉      | 2689/6920 [00:22<00:33, 125.99it/s][A
+bert-base-uncased embed VERB:  39%|███▉      | 2702/6920 [00:23<00:33, 125.78it/s][A
+bert-base-uncased embed VERB:  39%|███▉      | 2715/6920 [00:23<00:33, 126.04it/s][A
+bert-base-uncased embed VERB:  39%|███▉      | 2728/6920 [00:23<00:33, 126.19it/s][A
+bert-base-uncased embed VERB:  40%|███▉      | 2741/6920 [00:23<00:33, 126.50it/s][A
+bert-base-uncased embed VERB:  40%|███▉      | 2754/6920 [00:23<00:32, 126.81it/s][A
+bert-base-uncased embed VERB:  40%|███▉      | 2767/6920 [00:23<00:32, 127.24it/s][A
+bert-base-uncased embed VERB:  40%|████      | 2780/6920 [00:23<00:32, 126.29it/s][A
+bert-base-uncased embed VERB:  40%|████      | 2793/6920 [00:23<00:32, 126.45it/s][A
+bert-base-uncased embed VERB:  41%|████      | 2806/6920 [00:23<00:32, 127.08it/s][A
+bert-base-uncased embed VERB:  41%|████      | 2819/6920 [00:23<00:32, 127.39it/s][A
+bert-base-uncased embed VERB:  41%|████      | 2832/6920 [00:24<00:34, 118.24it/s][A
+bert-base-uncased embed VERB:  41%|████      | 2845/6920 [00:24<00:33, 120.63it/s][A
+bert-base-uncased embed VERB:  41%|████▏     | 2858/6920 [00:24<00:33, 122.82it/s][A
+bert-base-uncased embed VERB:  41%|████▏     | 2871/6920 [00:24<00:32, 124.39it/s][A
+bert-base-uncased embed VERB:  42%|████▏     | 2884/6920 [00:24<00:32, 125.69it/s][A
+bert-base-uncased embed VERB:  42%|████▏     | 2897/6920 [00:24<00:32, 125.24it/s][A
+bert-base-uncased embed VERB:  42%|████▏     | 2910/6920 [00:24<00:31, 125.40it/s][A
+bert-base-uncased embed VERB:  42%|████▏     | 2923/6920 [00:24<00:31, 126.33it/s][A
+bert-base-uncased embed VERB:  42%|████▏     | 2936/6920 [00:24<00:31, 127.20it/s][A
+bert-base-uncased embed VERB:  43%|████▎     | 2949/6920 [00:24<00:31, 127.84it/s][A
+bert-base-uncased embed VERB:  43%|████▎     | 2962/6920 [00:25<00:31, 127.00it/s][A
+bert-base-uncased embed VERB:  43%|████▎     | 2975/6920 [00:25<00:31, 126.89it/s][A
+bert-base-uncased embed VERB:  43%|████▎     | 2988/6920 [00:25<00:31, 126.28it/s][A
+bert-base-uncased embed VERB:  43%|████▎     | 3001/6920 [00:25<00:31, 124.31it/s][A
+bert-base-uncased embed VERB:  44%|████▎     | 3014/6920 [00:25<00:31, 124.68it/s][A
+bert-base-uncased embed VERB:  44%|████▎     | 3027/6920 [00:25<00:31, 124.63it/s][A
+bert-base-uncased embed VERB:  44%|████▍     | 3040/6920 [00:25<00:31, 124.29it/s][A
+bert-base-uncased embed VERB:  44%|████▍     | 3053/6920 [00:25<00:31, 124.33it/s][A
+bert-base-uncased embed VERB:  44%|████▍     | 3066/6920 [00:25<00:30, 125.22it/s][A
+bert-base-uncased embed VERB:  44%|████▍     | 3079/6920 [00:26<00:30, 125.92it/s][A
+bert-base-uncased embed VERB:  45%|████▍     | 3092/6920 [00:26<00:30, 126.83it/s][A
+bert-base-uncased embed VERB:  45%|████▍     | 3105/6920 [00:26<00:30, 127.08it/s][A
+bert-base-uncased embed VERB:  45%|████▌     | 3118/6920 [00:26<00:29, 126.99it/s][A
+bert-base-uncased embed VERB:  45%|████▌     | 3131/6920 [00:26<00:30, 126.16it/s][A
+bert-base-uncased embed VERB:  45%|████▌     | 3144/6920 [00:26<00:30, 125.34it/s][A
+bert-base-uncased embed VERB:  46%|████▌     | 3157/6920 [00:26<00:29, 126.12it/s][A
+bert-base-uncased embed VERB:  46%|████▌     | 3170/6920 [00:26<00:29, 125.85it/s][A
+bert-base-uncased embed VERB:  46%|████▌     | 3183/6920 [00:26<00:29, 124.63it/s][A
+bert-base-uncased embed VERB:  46%|████▌     | 3196/6920 [00:26<00:29, 124.61it/s][A
+bert-base-uncased embed VERB:  46%|████▋     | 3209/6920 [00:27<00:29, 124.88it/s][A
+bert-base-uncased embed VERB:  47%|████▋     | 3222/6920 [00:27<00:29, 124.82it/s][A
+bert-base-uncased embed VERB:  47%|████▋     | 3235/6920 [00:27<00:29, 124.87it/s][A
+bert-base-uncased embed VERB:  47%|████▋     | 3248/6920 [00:27<00:29, 125.93it/s][A
+bert-base-uncased embed VERB:  47%|████▋     | 3261/6920 [00:27<00:28, 126.21it/s][A
+bert-base-uncased embed VERB:  47%|████▋     | 3274/6920 [00:27<00:28, 126.36it/s][A
+bert-base-uncased embed VERB:  48%|████▊     | 3287/6920 [00:27<00:28, 125.94it/s][A
+bert-base-uncased embed VERB:  48%|████▊     | 3300/6920 [00:27<00:28, 126.28it/s][A
+bert-base-uncased embed VERB:  48%|████▊     | 3313/6920 [00:27<00:28, 126.72it/s][A
+bert-base-uncased embed VERB:  48%|████▊     | 3326/6920 [00:27<00:28, 126.13it/s][A
+bert-base-uncased embed VERB:  48%|████▊     | 3339/6920 [00:28<00:28, 125.61it/s][A
+bert-base-uncased embed VERB:  48%|████▊     | 3352/6920 [00:28<00:28, 126.05it/s][A
+bert-base-uncased embed VERB:  49%|████▊     | 3365/6920 [00:28<00:28, 125.09it/s][A
+bert-base-uncased embed VERB:  49%|████▉     | 3378/6920 [00:28<00:28, 123.77it/s][A
+bert-base-uncased embed VERB:  49%|████▉     | 3391/6920 [00:28<00:28, 123.61it/s][A
+bert-base-uncased embed VERB:  49%|████▉     | 3404/6920 [00:28<00:28, 121.31it/s][A
+bert-base-uncased embed VERB:  49%|████▉     | 3417/6920 [00:28<00:29, 119.06it/s][A
+bert-base-uncased embed VERB:  50%|████▉     | 3429/6920 [00:28<00:29, 118.95it/s][A
+bert-base-uncased embed VERB:  50%|████▉     | 3441/6920 [00:28<00:29, 119.22it/s][A
+bert-base-uncased embed VERB:  50%|████▉     | 3454/6920 [00:29<00:28, 120.63it/s][A
+bert-base-uncased embed VERB:  50%|█████     | 3467/6920 [00:29<00:28, 122.44it/s][A
+bert-base-uncased embed VERB:  50%|█████     | 3480/6920 [00:29<00:27, 123.33it/s][A
+bert-base-uncased embed VERB:  50%|█████     | 3493/6920 [00:29<00:27, 123.02it/s][A
+bert-base-uncased embed VERB:  51%|█████     | 3506/6920 [00:29<00:27, 123.91it/s][A
+bert-base-uncased embed VERB:  51%|█████     | 3519/6920 [00:29<00:27, 123.60it/s][A
+bert-base-uncased embed VERB:  51%|█████     | 3532/6920 [00:29<00:27, 124.43it/s][A
+bert-base-uncased embed VERB:  51%|█████     | 3545/6920 [00:29<00:27, 124.54it/s][A
+bert-base-uncased embed VERB:  51%|█████▏    | 3558/6920 [00:29<00:26, 125.33it/s][A
+bert-base-uncased embed VERB:  52%|█████▏    | 3571/6920 [00:29<00:26, 125.83it/s][A
+bert-base-uncased embed VERB:  52%|█████▏    | 3584/6920 [00:30<00:26, 126.05it/s][A
+bert-base-uncased embed VERB:  52%|█████▏    | 3597/6920 [00:30<00:26, 125.77it/s][A
+bert-base-uncased embed VERB:  52%|█████▏    | 3610/6920 [00:30<00:26, 126.29it/s][A
+bert-base-uncased embed VERB:  52%|█████▏    | 3623/6920 [00:30<00:25, 127.26it/s][A
+bert-base-uncased embed VERB:  53%|█████▎    | 3636/6920 [00:30<00:25, 127.23it/s][A
+bert-base-uncased embed VERB:  53%|█████▎    | 3649/6920 [00:30<00:25, 127.62it/s][A
+bert-base-uncased embed VERB:  53%|█████▎    | 3662/6920 [00:30<00:25, 127.68it/s][A
+bert-base-uncased embed VERB:  53%|█████▎    | 3675/6920 [00:30<00:25, 127.54it/s][A
+bert-base-uncased embed VERB:  53%|█████▎    | 3688/6920 [00:30<00:25, 127.00it/s][A
+bert-base-uncased embed VERB:  53%|█████▎    | 3701/6920 [00:30<00:25, 127.03it/s][A
+bert-base-uncased embed VERB:  54%|█████▎    | 3714/6920 [00:31<00:25, 127.48it/s][A
+bert-base-uncased embed VERB:  54%|█████▍    | 3727/6920 [00:31<00:25, 126.29it/s][A
+bert-base-uncased embed VERB:  54%|█████▍    | 3740/6920 [00:31<00:24, 127.25it/s][A
+bert-base-uncased embed VERB:  54%|█████▍    | 3753/6920 [00:31<00:25, 122.94it/s][A
+bert-base-uncased embed VERB:  54%|█████▍    | 3766/6920 [00:31<00:26, 119.13it/s][A
+bert-base-uncased embed VERB:  55%|█████▍    | 3779/6920 [00:31<00:25, 120.95it/s][A
+bert-base-uncased embed VERB:  55%|█████▍    | 3792/6920 [00:31<00:25, 123.01it/s][A
+bert-base-uncased embed VERB:  55%|█████▍    | 3805/6920 [00:31<00:25, 124.27it/s][A
+bert-base-uncased embed VERB:  55%|█████▌    | 3818/6920 [00:31<00:24, 125.12it/s][A
+bert-base-uncased embed VERB:  55%|█████▌    | 3831/6920 [00:32<00:24, 125.45it/s][A
+bert-base-uncased embed VERB:  56%|█████▌    | 3844/6920 [00:32<00:24, 125.82it/s][A
+bert-base-uncased embed VERB:  56%|█████▌    | 3857/6920 [00:32<00:24, 126.00it/s][A
+bert-base-uncased embed VERB:  56%|█████▌    | 3870/6920 [00:32<00:24, 125.99it/s][A
+bert-base-uncased embed VERB:  56%|█████▌    | 3883/6920 [00:32<00:24, 125.04it/s][A
+bert-base-uncased embed VERB:  56%|█████▋    | 3896/6920 [00:32<00:24, 125.94it/s][A
+bert-base-uncased embed VERB:  57%|█████▋    | 3910/6920 [00:32<00:23, 127.48it/s][A
+bert-base-uncased embed VERB:  57%|█████▋    | 3923/6920 [00:32<00:23, 126.98it/s][A
+bert-base-uncased embed VERB:  57%|█████▋    | 3936/6920 [00:32<00:23, 126.52it/s][A
+bert-base-uncased embed VERB:  57%|█████▋    | 3949/6920 [00:32<00:23, 126.77it/s][A
+bert-base-uncased embed VERB:  57%|█████▋    | 3962/6920 [00:33<00:23, 127.40it/s][A
+bert-base-uncased embed VERB:  57%|█████▋    | 3975/6920 [00:33<00:22, 128.11it/s][A
+bert-base-uncased embed VERB:  58%|█████▊    | 3988/6920 [00:33<00:22, 128.16it/s][A
+bert-base-uncased embed VERB:  58%|█████▊    | 4001/6920 [00:33<00:22, 128.53it/s][A
+bert-base-uncased embed VERB:  58%|█████▊    | 4014/6920 [00:33<00:22, 128.94it/s][A
+bert-base-uncased embed VERB:  58%|█████▊    | 4027/6920 [00:33<00:22, 128.33it/s][A
+bert-base-uncased embed VERB:  58%|█████▊    | 4040/6920 [00:33<00:22, 127.84it/s][A
+bert-base-uncased embed VERB:  59%|█████▊    | 4054/6920 [00:33<00:22, 128.96it/s][A
+bert-base-uncased embed VERB:  59%|█████▉    | 4067/6920 [00:33<00:22, 129.11it/s][A
+bert-base-uncased embed VERB:  59%|█████▉    | 4080/6920 [00:33<00:22, 128.83it/s][A
+bert-base-uncased embed VERB:  59%|█████▉    | 4093/6920 [00:34<00:22, 128.02it/s][A
+bert-base-uncased embed VERB:  59%|█████▉    | 4106/6920 [00:34<00:22, 127.89it/s][A
+bert-base-uncased embed VERB:  60%|█████▉    | 4119/6920 [00:34<00:21, 127.99it/s][A
+bert-base-uncased embed VERB:  60%|█████▉    | 4132/6920 [00:34<00:21, 127.46it/s][A
+bert-base-uncased embed VERB:  60%|█████▉    | 4145/6920 [00:34<00:21, 127.32it/s][A
+bert-base-uncased embed VERB:  60%|██████    | 4158/6920 [00:34<00:21, 127.27it/s][A
+bert-base-uncased embed VERB:  60%|██████    | 4171/6920 [00:34<00:21, 127.73it/s][A
+bert-base-uncased embed VERB:  60%|██████    | 4184/6920 [00:34<00:21, 126.87it/s][A
+bert-base-uncased embed VERB:  61%|██████    | 4197/6920 [00:34<00:21, 126.96it/s][A
+bert-base-uncased embed VERB:  61%|██████    | 4210/6920 [00:35<00:21, 126.28it/s][A
+bert-base-uncased embed VERB:  61%|██████    | 4223/6920 [00:35<00:21, 127.08it/s][A
+bert-base-uncased embed VERB:  61%|██████    | 4236/6920 [00:35<00:21, 126.73it/s][A
+bert-base-uncased embed VERB:  61%|██████▏   | 4249/6920 [00:35<00:21, 126.63it/s][A
+bert-base-uncased embed VERB:  62%|██████▏   | 4262/6920 [00:35<00:21, 125.85it/s][A
+bert-base-uncased embed VERB:  62%|██████▏   | 4275/6920 [00:35<00:20, 126.53it/s][A
+bert-base-uncased embed VERB:  62%|██████▏   | 4288/6920 [00:35<00:20, 126.93it/s][A
+bert-base-uncased embed VERB:  62%|██████▏   | 4301/6920 [00:35<00:20, 126.77it/s][A
+bert-base-uncased embed VERB:  62%|██████▏   | 4314/6920 [00:35<00:20, 127.30it/s][A
+bert-base-uncased embed VERB:  63%|██████▎   | 4327/6920 [00:35<00:20, 127.30it/s][A
+bert-base-uncased embed VERB:  63%|██████▎   | 4340/6920 [00:36<00:20, 127.10it/s][A
+bert-base-uncased embed VERB:  63%|██████▎   | 4353/6920 [00:36<00:20, 127.14it/s][A
+bert-base-uncased embed VERB:  63%|██████▎   | 4366/6920 [00:36<00:20, 126.80it/s][A
+bert-base-uncased embed VERB:  63%|██████▎   | 4379/6920 [00:36<00:20, 126.43it/s][A
+bert-base-uncased embed VERB:  63%|██████▎   | 4392/6920 [00:36<00:19, 127.26it/s][A
+bert-base-uncased embed VERB:  64%|██████▎   | 4405/6920 [00:36<00:19, 127.08it/s][A
+bert-base-uncased embed VERB:  64%|██████▍   | 4418/6920 [00:36<00:19, 126.93it/s][A
+bert-base-uncased embed VERB:  64%|██████▍   | 4431/6920 [00:36<00:19, 126.05it/s][A
+bert-base-uncased embed VERB:  64%|██████▍   | 4444/6920 [00:36<00:19, 126.10it/s][A
+bert-base-uncased embed VERB:  64%|██████▍   | 4457/6920 [00:36<00:19, 126.48it/s][A
+bert-base-uncased embed VERB:  65%|██████▍   | 4470/6920 [00:37<00:19, 127.18it/s][A
+bert-base-uncased embed VERB:  65%|██████▍   | 4483/6920 [00:37<00:19, 126.38it/s][A
+bert-base-uncased embed VERB:  65%|██████▍   | 4496/6920 [00:37<00:19, 126.27it/s][A
+bert-base-uncased embed VERB:  65%|██████▌   | 4509/6920 [00:37<00:19, 126.34it/s][A
+bert-base-uncased embed VERB:  65%|██████▌   | 4522/6920 [00:37<00:19, 120.94it/s][A
+bert-base-uncased embed VERB:  66%|██████▌   | 4535/6920 [00:37<00:20, 118.47it/s][A
+bert-base-uncased embed VERB:  66%|██████▌   | 4548/6920 [00:37<00:19, 121.07it/s][A
+bert-base-uncased embed VERB:  66%|██████▌   | 4561/6920 [00:37<00:19, 122.92it/s][A
+bert-base-uncased embed VERB:  66%|██████▌   | 4574/6920 [00:37<00:18, 123.52it/s][A
+bert-base-uncased embed VERB:  66%|██████▋   | 4587/6920 [00:38<00:18, 124.25it/s][A
+bert-base-uncased embed VERB:  66%|██████▋   | 4600/6920 [00:38<00:18, 125.24it/s][A
+bert-base-uncased embed VERB:  67%|██████▋   | 4613/6920 [00:38<00:18, 124.43it/s][A
+bert-base-uncased embed VERB:  67%|██████▋   | 4626/6920 [00:38<00:18, 125.96it/s][A
+bert-base-uncased embed VERB:  67%|██████▋   | 4639/6920 [00:38<00:17, 126.94it/s][A
+bert-base-uncased embed VERB:  67%|██████▋   | 4652/6920 [00:38<00:17, 127.45it/s][A
+bert-base-uncased embed VERB:  67%|██████▋   | 4665/6920 [00:38<00:17, 128.19it/s][A
+bert-base-uncased embed VERB:  68%|██████▊   | 4678/6920 [00:38<00:17, 128.00it/s][A
+bert-base-uncased embed VERB:  68%|██████▊   | 4691/6920 [00:38<00:17, 127.72it/s][A
+bert-base-uncased embed VERB:  68%|██████▊   | 4704/6920 [00:38<00:17, 127.67it/s][A
+bert-base-uncased embed VERB:  68%|██████▊   | 4717/6920 [00:39<00:17, 127.71it/s][A
+bert-base-uncased embed VERB:  68%|██████▊   | 4730/6920 [00:39<00:17, 127.81it/s][A
+bert-base-uncased embed VERB:  69%|██████▊   | 4743/6920 [00:39<00:17, 127.75it/s][A
+bert-base-uncased embed VERB:  69%|██████▊   | 4756/6920 [00:39<00:16, 128.07it/s][A
+bert-base-uncased embed VERB:  69%|██████▉   | 4769/6920 [00:39<00:16, 128.29it/s][A
+bert-base-uncased embed VERB:  69%|██████▉   | 4783/6920 [00:39<00:16, 129.02it/s][A
+bert-base-uncased embed VERB:  69%|██████▉   | 4796/6920 [00:39<00:16, 128.20it/s][A
+bert-base-uncased embed VERB:  69%|██████▉   | 4809/6920 [00:39<00:16, 127.86it/s][A
+bert-base-uncased embed VERB:  70%|██████▉   | 4822/6920 [00:39<00:16, 127.52it/s][A
+bert-base-uncased embed VERB:  70%|██████▉   | 4835/6920 [00:39<00:16, 127.27it/s][A
+bert-base-uncased embed VERB:  70%|███████   | 4848/6920 [00:40<00:16, 127.81it/s][A
+bert-base-uncased embed VERB:  70%|███████   | 4861/6920 [00:40<00:16, 127.33it/s][A
+bert-base-uncased embed VERB:  70%|███████   | 4874/6920 [00:40<00:16, 126.96it/s][A
+bert-base-uncased embed VERB:  71%|███████   | 4887/6920 [00:40<00:15, 127.30it/s][A
+bert-base-uncased embed VERB:  71%|███████   | 4900/6920 [00:40<00:15, 128.03it/s][A
+bert-base-uncased embed VERB:  71%|███████   | 4913/6920 [00:40<00:15, 128.26it/s][A
+bert-base-uncased embed VERB:  71%|███████   | 4927/6920 [00:40<00:15, 128.67it/s][A
+bert-base-uncased embed VERB:  71%|███████▏  | 4940/6920 [00:40<00:15, 129.03it/s][A
+bert-base-uncased embed VERB:  72%|███████▏  | 4953/6920 [00:40<00:15, 128.10it/s][A
+bert-base-uncased embed VERB:  72%|███████▏  | 4966/6920 [00:40<00:15, 128.31it/s][A
+bert-base-uncased embed VERB:  72%|███████▏  | 4979/6920 [00:41<00:15, 127.88it/s][A
+bert-base-uncased embed VERB:  72%|███████▏  | 4992/6920 [00:41<00:15, 126.54it/s][A
+bert-base-uncased embed VERB:  72%|███████▏  | 5005/6920 [00:41<00:15, 126.49it/s][A
+bert-base-uncased embed VERB:  73%|███████▎  | 5018/6920 [00:41<00:15, 125.07it/s][A
+bert-base-uncased embed VERB:  73%|███████▎  | 5031/6920 [00:41<00:14, 126.00it/s][A
+bert-base-uncased embed VERB:  73%|███████▎  | 5044/6920 [00:41<00:14, 126.98it/s][A
+bert-base-uncased embed VERB:  73%|███████▎  | 5057/6920 [00:41<00:14, 127.63it/s][A
+bert-base-uncased embed VERB:  73%|███████▎  | 5070/6920 [00:41<00:14, 128.26it/s][A
+bert-base-uncased embed VERB:  73%|███████▎  | 5083/6920 [00:41<00:14, 126.17it/s][A
+bert-base-uncased embed VERB:  74%|███████▎  | 5096/6920 [00:42<00:14, 125.89it/s][A
+bert-base-uncased embed VERB:  74%|███████▍  | 5109/6920 [00:42<00:14, 126.74it/s][A
+bert-base-uncased embed VERB:  74%|███████▍  | 5122/6920 [00:42<00:14, 126.23it/s][A
+bert-base-uncased embed VERB:  74%|███████▍  | 5135/6920 [00:42<00:14, 126.12it/s][A
+bert-base-uncased embed VERB:  74%|███████▍  | 5148/6920 [00:42<00:14, 126.57it/s][A
+bert-base-uncased embed VERB:  75%|███████▍  | 5162/6920 [00:42<00:13, 127.68it/s][A
+bert-base-uncased embed VERB:  75%|███████▍  | 5175/6920 [00:42<00:13, 127.61it/s][A
+bert-base-uncased embed VERB:  75%|███████▍  | 5188/6920 [00:42<00:13, 128.09it/s][A
+bert-base-uncased embed VERB:  75%|███████▌  | 5201/6920 [00:42<00:13, 127.41it/s][A
+bert-base-uncased embed VERB:  75%|███████▌  | 5214/6920 [00:42<00:13, 127.79it/s][A
+bert-base-uncased embed VERB:  76%|███████▌  | 5227/6920 [00:43<00:13, 122.41it/s][A
+bert-base-uncased embed VERB:  76%|███████▌  | 5240/6920 [00:43<00:14, 118.71it/s][A
+bert-base-uncased embed VERB:  76%|███████▌  | 5253/6920 [00:43<00:13, 121.38it/s][A
+bert-base-uncased embed VERB:  76%|███████▌  | 5266/6920 [00:43<00:13, 123.49it/s][A
+bert-base-uncased embed VERB:  76%|███████▋  | 5279/6920 [00:43<00:13, 124.75it/s][A
+bert-base-uncased embed VERB:  76%|███████▋  | 5292/6920 [00:43<00:12, 125.84it/s][A
+bert-base-uncased embed VERB:  77%|███████▋  | 5305/6920 [00:43<00:12, 126.46it/s][A
+bert-base-uncased embed VERB:  77%|███████▋  | 5319/6920 [00:43<00:12, 127.87it/s][A
+bert-base-uncased embed VERB:  77%|███████▋  | 5332/6920 [00:43<00:12, 128.39it/s][A
+bert-base-uncased embed VERB:  77%|███████▋  | 5345/6920 [00:43<00:12, 128.53it/s][A
+bert-base-uncased embed VERB:  77%|███████▋  | 5358/6920 [00:44<00:12, 128.44it/s][A
+bert-base-uncased embed VERB:  78%|███████▊  | 5371/6920 [00:44<00:12, 128.46it/s][A
+bert-base-uncased embed VERB:  78%|███████▊  | 5385/6920 [00:44<00:11, 128.89it/s][A
+bert-base-uncased embed VERB:  78%|███████▊  | 5398/6920 [00:44<00:11, 128.96it/s][A
+bert-base-uncased embed VERB:  78%|███████▊  | 5412/6920 [00:44<00:11, 129.55it/s][A
+bert-base-uncased embed VERB:  78%|███████▊  | 5425/6920 [00:44<00:11, 129.02it/s][A
+bert-base-uncased embed VERB:  79%|███████▊  | 5438/6920 [00:44<00:11, 128.96it/s][A
+bert-base-uncased embed VERB:  79%|███████▉  | 5452/6920 [00:44<00:11, 129.43it/s][A
+bert-base-uncased embed VERB:  79%|███████▉  | 5465/6920 [00:44<00:11, 129.51it/s][A
+bert-base-uncased embed VERB:  79%|███████▉  | 5478/6920 [00:45<00:11, 129.36it/s][A
+bert-base-uncased embed VERB:  79%|███████▉  | 5492/6920 [00:45<00:11, 129.36it/s][A
+bert-base-uncased embed VERB:  80%|███████▉  | 5506/6920 [00:45<00:10, 129.72it/s][A
+bert-base-uncased embed VERB:  80%|███████▉  | 5520/6920 [00:45<00:10, 129.84it/s][A
+bert-base-uncased embed VERB:  80%|███████▉  | 5533/6920 [00:45<00:10, 129.60it/s][A
+bert-base-uncased embed VERB:  80%|████████  | 5546/6920 [00:45<00:10, 129.44it/s][A
+bert-base-uncased embed VERB:  80%|████████  | 5559/6920 [00:45<00:10, 129.41it/s][A
+bert-base-uncased embed VERB:  81%|████████  | 5572/6920 [00:45<00:10, 129.54it/s][A
+bert-base-uncased embed VERB:  81%|████████  | 5585/6920 [00:45<00:10, 129.31it/s][A
+bert-base-uncased embed VERB:  81%|████████  | 5598/6920 [00:45<00:10, 128.44it/s][A
+bert-base-uncased embed VERB:  81%|████████  | 5611/6920 [00:46<00:10, 127.78it/s][A
+bert-base-uncased embed VERB:  81%|████████▏ | 5624/6920 [00:46<00:10, 128.39it/s][A
+bert-base-uncased embed VERB:  81%|████████▏ | 5637/6920 [00:46<00:10, 128.27it/s][A
+bert-base-uncased embed VERB:  82%|████████▏ | 5650/6920 [00:46<00:09, 128.34it/s][A
+bert-base-uncased embed VERB:  82%|████████▏ | 5663/6920 [00:46<00:09, 127.69it/s][A
+bert-base-uncased embed VERB:  82%|████████▏ | 5676/6920 [00:46<00:09, 127.32it/s][A
+bert-base-uncased embed VERB:  82%|████████▏ | 5689/6920 [00:46<00:09, 127.82it/s][A
+bert-base-uncased embed VERB:  82%|████████▏ | 5703/6920 [00:46<00:09, 128.68it/s][A
+bert-base-uncased embed VERB:  83%|████████▎ | 5716/6920 [00:46<00:09, 128.72it/s][A
+bert-base-uncased embed VERB:  83%|████████▎ | 5729/6920 [00:46<00:09, 128.55it/s][A
+bert-base-uncased embed VERB:  83%|████████▎ | 5742/6920 [00:47<00:09, 128.62it/s][A
+bert-base-uncased embed VERB:  83%|████████▎ | 5755/6920 [00:47<00:09, 128.96it/s][A
+bert-base-uncased embed VERB:  83%|████████▎ | 5768/6920 [00:47<00:08, 128.22it/s][A
+bert-base-uncased embed VERB:  84%|████████▎ | 5781/6920 [00:47<00:08, 128.42it/s][A
+bert-base-uncased embed VERB:  84%|████████▎ | 5794/6920 [00:47<00:08, 127.87it/s][A
+bert-base-uncased embed VERB:  84%|████████▍ | 5807/6920 [00:47<00:08, 127.35it/s][A
+bert-base-uncased embed VERB:  84%|████████▍ | 5820/6920 [00:47<00:08, 127.61it/s][A
+bert-base-uncased embed VERB:  84%|████████▍ | 5833/6920 [00:47<00:08, 126.83it/s][A
+bert-base-uncased embed VERB:  84%|████████▍ | 5846/6920 [00:47<00:08, 126.91it/s][A
+bert-base-uncased embed VERB:  85%|████████▍ | 5859/6920 [00:47<00:08, 127.33it/s][A
+bert-base-uncased embed VERB:  85%|████████▍ | 5872/6920 [00:48<00:08, 126.85it/s][A
+bert-base-uncased embed VERB:  85%|████████▌ | 5885/6920 [00:48<00:08, 127.22it/s][A
+bert-base-uncased embed VERB:  85%|████████▌ | 5898/6920 [00:48<00:08, 127.60it/s][A
+bert-base-uncased embed VERB:  85%|████████▌ | 5911/6920 [00:48<00:07, 127.38it/s][A
+bert-base-uncased embed VERB:  86%|████████▌ | 5924/6920 [00:48<00:08, 122.04it/s][A
+bert-base-uncased embed VERB:  86%|████████▌ | 5937/6920 [00:48<00:08, 119.84it/s][A
+bert-base-uncased embed VERB:  86%|████████▌ | 5950/6920 [00:48<00:07, 121.79it/s][A
+bert-base-uncased embed VERB:  86%|████████▌ | 5963/6920 [00:48<00:07, 122.81it/s][A
+bert-base-uncased embed VERB:  86%|████████▋ | 5976/6920 [00:48<00:07, 123.74it/s][A
+bert-base-uncased embed VERB:  87%|████████▋ | 5989/6920 [00:49<00:07, 124.67it/s][A
+bert-base-uncased embed VERB:  87%|████████▋ | 6002/6920 [00:49<00:07, 125.11it/s][A
+bert-base-uncased embed VERB:  87%|████████▋ | 6015/6920 [00:49<00:07, 125.81it/s][A
+bert-base-uncased embed VERB:  87%|████████▋ | 6028/6920 [00:49<00:07, 125.51it/s][A
+bert-base-uncased embed VERB:  87%|████████▋ | 6041/6920 [00:49<00:06, 126.45it/s][A
+bert-base-uncased embed VERB:  87%|████████▋ | 6054/6920 [00:49<00:06, 125.78it/s][A
+bert-base-uncased embed VERB:  88%|████████▊ | 6067/6920 [00:49<00:06, 125.64it/s][A
+bert-base-uncased embed VERB:  88%|████████▊ | 6080/6920 [00:49<00:06, 125.74it/s][A
+bert-base-uncased embed VERB:  88%|████████▊ | 6093/6920 [00:49<00:06, 125.64it/s][A
+bert-base-uncased embed VERB:  88%|████████▊ | 6106/6920 [00:49<00:06, 125.20it/s][A
+bert-base-uncased embed VERB:  88%|████████▊ | 6119/6920 [00:50<00:06, 123.77it/s][A
+bert-base-uncased embed VERB:  89%|████████▊ | 6132/6920 [00:50<00:06, 125.10it/s][A
+bert-base-uncased embed VERB:  89%|████████▉ | 6145/6920 [00:50<00:06, 125.04it/s][A
+bert-base-uncased embed VERB:  89%|████████▉ | 6158/6920 [00:50<00:06, 125.94it/s][A
+bert-base-uncased embed VERB:  89%|████████▉ | 6171/6920 [00:50<00:05, 126.32it/s][A
+bert-base-uncased embed VERB:  89%|████████▉ | 6184/6920 [00:50<00:05, 126.86it/s][A
+bert-base-uncased embed VERB:  90%|████████▉ | 6197/6920 [00:50<00:05, 126.30it/s][A
+bert-base-uncased embed VERB:  90%|████████▉ | 6210/6920 [00:50<00:05, 125.97it/s][A
+bert-base-uncased embed VERB:  90%|████████▉ | 6223/6920 [00:50<00:05, 126.81it/s][A
+bert-base-uncased embed VERB:  90%|█████████ | 6236/6920 [00:50<00:05, 126.63it/s][A
+bert-base-uncased embed VERB:  90%|█████████ | 6249/6920 [00:51<00:05, 126.91it/s][A
+bert-base-uncased embed VERB:  90%|█████████ | 6262/6920 [00:51<00:05, 127.32it/s][A
+bert-base-uncased embed VERB:  91%|█████████ | 6275/6920 [00:51<00:05, 127.31it/s][A
+bert-base-uncased embed VERB:  91%|█████████ | 6288/6920 [00:51<00:04, 127.89it/s][A
+bert-base-uncased embed VERB:  91%|█████████ | 6301/6920 [00:51<00:04, 127.34it/s][A
+bert-base-uncased embed VERB:  91%|█████████ | 6314/6920 [00:51<00:04, 127.97it/s][A
+bert-base-uncased embed VERB:  91%|█████████▏| 6327/6920 [00:51<00:04, 128.10it/s][A
+bert-base-uncased embed VERB:  92%|█████████▏| 6340/6920 [00:51<00:04, 126.96it/s][A
+bert-base-uncased embed VERB:  92%|█████████▏| 6353/6920 [00:51<00:04, 126.45it/s][A
+bert-base-uncased embed VERB:  92%|█████████▏| 6366/6920 [00:52<00:04, 125.70it/s][A
+bert-base-uncased embed VERB:  92%|█████████▏| 6379/6920 [00:52<00:04, 125.47it/s][A
+bert-base-uncased embed VERB:  92%|█████████▏| 6392/6920 [00:52<00:04, 126.49it/s][A
+bert-base-uncased embed VERB:  93%|█████████▎| 6405/6920 [00:52<00:04, 126.06it/s][A
+bert-base-uncased embed VERB:  93%|█████████▎| 6418/6920 [00:52<00:03, 126.03it/s][A
+bert-base-uncased embed VERB:  93%|█████████▎| 6431/6920 [00:52<00:03, 124.59it/s][A
+bert-base-uncased embed VERB:  93%|█████████▎| 6444/6920 [00:52<00:03, 125.39it/s][A
+bert-base-uncased embed VERB:  93%|█████████▎| 6457/6920 [00:52<00:03, 125.70it/s][A
+bert-base-uncased embed VERB:  93%|█████████▎| 6470/6920 [00:52<00:03, 125.64it/s][A
+bert-base-uncased embed VERB:  94%|█████████▎| 6483/6920 [00:52<00:03, 126.06it/s][A
+bert-base-uncased embed VERB:  94%|█████████▍| 6497/6920 [00:53<00:03, 127.29it/s][A
+bert-base-uncased embed VERB:  94%|█████████▍| 6510/6920 [00:53<00:03, 127.78it/s][A
+bert-base-uncased embed VERB:  94%|█████████▍| 6523/6920 [00:53<00:03, 127.75it/s][A
+bert-base-uncased embed VERB:  94%|█████████▍| 6536/6920 [00:53<00:02, 128.11it/s][A
+bert-base-uncased embed VERB:  95%|█████████▍| 6549/6920 [00:53<00:02, 127.86it/s][A
+bert-base-uncased embed VERB:  95%|█████████▍| 6563/6920 [00:53<00:02, 128.19it/s][A
+bert-base-uncased embed VERB:  95%|█████████▌| 6576/6920 [00:53<00:02, 126.51it/s][A
+bert-base-uncased embed VERB:  95%|█████████▌| 6589/6920 [00:53<00:02, 126.24it/s][A
+bert-base-uncased embed VERB:  95%|█████████▌| 6602/6920 [00:53<00:02, 124.82it/s][A
+bert-base-uncased embed VERB:  96%|█████████▌| 6615/6920 [00:53<00:02, 125.20it/s][A
+bert-base-uncased embed VERB:  96%|█████████▌| 6628/6920 [00:54<00:02, 125.81it/s][A
+bert-base-uncased embed VERB:  96%|█████████▌| 6641/6920 [00:54<00:02, 124.87it/s][A
+bert-base-uncased embed VERB:  96%|█████████▌| 6654/6920 [00:54<00:02, 124.92it/s][A
+bert-base-uncased embed VERB:  96%|█████████▋| 6667/6920 [00:54<00:02, 124.82it/s][A
+bert-base-uncased embed VERB:  97%|█████████▋| 6680/6920 [00:54<00:01, 125.72it/s][A
+bert-base-uncased embed VERB:  97%|█████████▋| 6693/6920 [00:54<00:01, 126.13it/s][A
+bert-base-uncased embed VERB:  97%|█████████▋| 6706/6920 [00:54<00:01, 126.75it/s][A
+bert-base-uncased embed VERB:  97%|█████████▋| 6719/6920 [00:54<00:01, 126.34it/s][A
+bert-base-uncased embed VERB:  97%|█████████▋| 6732/6920 [00:54<00:01, 126.34it/s][A
+bert-base-uncased embed VERB:  97%|█████████▋| 6745/6920 [00:55<00:01, 126.37it/s][A
+bert-base-uncased embed VERB:  98%|█████████▊| 6758/6920 [00:55<00:01, 124.47it/s][A
+bert-base-uncased embed VERB:  98%|█████████▊| 6771/6920 [00:55<00:01, 124.82it/s][A
+bert-base-uncased embed VERB:  98%|█████████▊| 6784/6920 [00:55<00:01, 126.07it/s][A
+bert-base-uncased embed VERB:  98%|█████████▊| 6797/6920 [00:55<00:00, 126.25it/s][A
+bert-base-uncased embed VERB:  98%|█████████▊| 6810/6920 [00:55<00:00, 125.18it/s][A
+bert-base-uncased embed VERB:  99%|█████████▊| 6823/6920 [00:55<00:00, 125.51it/s][A
+bert-base-uncased embed VERB:  99%|█████████▉| 6836/6920 [00:55<00:00, 126.24it/s][A
+bert-base-uncased embed VERB:  99%|█████████▉| 6849/6920 [00:55<00:00, 126.00it/s][A
+bert-base-uncased embed VERB:  99%|█████████▉| 6862/6920 [00:55<00:00, 126.53it/s][A
+bert-base-uncased embed VERB:  99%|█████████▉| 6875/6920 [00:56<00:00, 124.95it/s][A
+bert-base-uncased embed VERB: 100%|█████████▉| 6888/6920 [00:56<00:00, 124.88it/s][A
+bert-base-uncased embed VERB: 100%|█████████▉| 6901/6920 [00:56<00:00, 124.46it/s][A
+bert-base-uncased embed VERB: 100%|█████████▉| 6914/6920 [00:56<00:00, 125.34it/s][Abert-base-uncased embed VERB: 100%|██████████| 6920/6920 [00:56<00:00, 122.67it/s]
+Embedded POS=VERB: 15,167 tokens, layers=13
+
+VERB metrics:   0%|          | 0/3 [00:00<?, ?it/s][AComputing iso for POS=VERB
+
+
+VERB iso head distances:   0%|          | 0/12 [00:00<?, ?it/s][A[A
+
+VERB iso head distances:   0%|          | 0/12 [00:00<?, ?it/s, hd=-6, n=4532][A[A
+
+
+VERB iso hd=-6:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=-6:   2%|▏         | 1/50 [00:06<05:05,  6.23s/it][A[A[A
+
+
+VERB iso hd=-6:   4%|▍         | 2/50 [00:13<05:36,  7.01s/it][A[A[A
+
+
+VERB iso hd=-6:   6%|▌         | 3/50 [00:21<05:47,  7.39s/it][A[A[A
+
+
+VERB iso hd=-6:   8%|▊         | 4/50 [00:29<05:44,  7.49s/it][A[A[A
+
+
+VERB iso hd=-6:  10%|█         | 5/50 [00:39<06:27,  8.62s/it][A[A[A
+
+
+VERB iso hd=-6:  12%|█▏        | 6/50 [00:48<06:17,  8.57s/it][A[A[A
+
+
+VERB iso hd=-6:  14%|█▍        | 7/50 [00:56<06:05,  8.50s/it][A[A[A
+
+
+VERB iso hd=-6:  16%|█▌        | 8/50 [01:03<05:39,  8.09s/it][A[A[A
+
+
+VERB iso hd=-6:  18%|█▊        | 9/50 [01:11<05:27,  7.98s/it][A[A[A
+
+
+VERB iso hd=-6:  20%|██        | 10/50 [01:20<05:25,  8.13s/it][A[A[A
+
+
+VERB iso hd=-6:  22%|██▏       | 11/50 [01:27<05:11,  7.98s/it][A[A[A
+
+
+VERB iso hd=-6:  24%|██▍       | 12/50 [01:35<05:04,  8.01s/it][A[A[A
+
+
+VERB iso hd=-6:  26%|██▌       | 13/50 [01:42<04:36,  7.46s/it][A[A[A
+
+
+VERB iso hd=-6:  28%|██▊       | 14/50 [01:48<04:13,  7.05s/it][A[A[A
+
+
+VERB iso hd=-6:  30%|███       | 15/50 [01:54<03:59,  6.84s/it][A[A[A
+
+
+VERB iso hd=-6:  32%|███▏      | 16/50 [02:04<04:20,  7.65s/it][A[A[A
+
+
+VERB iso hd=-6:  34%|███▍      | 17/50 [02:13<04:29,  8.15s/it][A[A[A
+
+
+VERB iso hd=-6:  36%|███▌      | 18/50 [02:22<04:30,  8.45s/it][A[A[A
+
+
+VERB iso hd=-6:  38%|███▊      | 19/50 [02:29<04:08,  8.02s/it][A[A[A
+
+
+VERB iso hd=-6:  40%|████      | 20/50 [02:36<03:55,  7.84s/it][A[A[A
+
+
+VERB iso hd=-6:  42%|████▏     | 21/50 [02:43<03:37,  7.48s/it][A[A[A
+
+
+VERB iso hd=-6:  44%|████▍     | 22/50 [02:52<03:45,  8.06s/it][A[A[A
+
+
+VERB iso hd=-6:  46%|████▌     | 23/50 [03:01<03:40,  8.17s/it][A[A[A
+
+
+VERB iso hd=-6:  48%|████▊     | 24/50 [03:09<03:30,  8.10s/it][A[A[A
+
+
+VERB iso hd=-6:  50%|█████     | 25/50 [03:15<03:09,  7.58s/it][A[A[A
+
+
+VERB iso hd=-6:  52%|█████▏    | 26/50 [03:22<02:54,  7.27s/it][A[A[A
+
+
+VERB iso hd=-6:  54%|█████▍    | 27/50 [03:29<02:44,  7.16s/it][A[A[A
+
+
+VERB iso hd=-6:  56%|█████▌    | 28/50 [03:35<02:30,  6.86s/it][A[A[A
+
+
+VERB iso hd=-6:  58%|█████▊    | 29/50 [03:43<02:29,  7.13s/it][A[A[A
+
+
+VERB iso hd=-6:  60%|██████    | 30/50 [03:52<02:35,  7.75s/it][A[A[A
+
+
+VERB iso hd=-6:  62%|██████▏   | 31/50 [04:00<02:30,  7.90s/it][A[A[A
+
+
+VERB iso hd=-6:  64%|██████▍   | 32/50 [04:07<02:19,  7.75s/it][A[A[A
+
+
+VERB iso hd=-6:  66%|██████▌   | 33/50 [04:15<02:08,  7.57s/it][A[A[A
+
+
+VERB iso hd=-6:  68%|██████▊   | 34/50 [04:21<01:55,  7.25s/it][A[A[A
+
+
+VERB iso hd=-6:  70%|███████   | 35/50 [04:28<01:47,  7.20s/it][A[A[A
+
+
+VERB iso hd=-6:  72%|███████▏  | 36/50 [04:36<01:44,  7.43s/it][A[A[A
+
+
+VERB iso hd=-6:  74%|███████▍  | 37/50 [04:43<01:36,  7.39s/it][A[A[A
+
+
+VERB iso hd=-6:  76%|███████▌  | 38/50 [04:52<01:32,  7.67s/it][A[A[A
+
+
+VERB iso hd=-6:  78%|███████▊  | 39/50 [05:00<01:27,  7.95s/it][A[A[A
+
+
+VERB iso hd=-6:  80%|████████  | 40/50 [05:07<01:16,  7.60s/it][A[A[A
+
+
+VERB iso hd=-6:  82%|████████▏ | 41/50 [05:14<01:05,  7.27s/it][A[A[A
+
+
+VERB iso hd=-6:  84%|████████▍ | 42/50 [05:20<00:56,  7.08s/it][A[A[A
+
+
+VERB iso hd=-6:  86%|████████▌ | 43/50 [05:28<00:51,  7.40s/it][A[A[A
+
+
+VERB iso hd=-6:  88%|████████▊ | 44/50 [05:36<00:44,  7.34s/it][A[A[A
+
+
+VERB iso hd=-6:  90%|█████████ | 45/50 [05:43<00:36,  7.25s/it][A[A[A
+
+
+VERB iso hd=-6:  92%|█████████▏| 46/50 [05:49<00:28,  7.05s/it][A[A[A
+
+
+VERB iso hd=-6:  94%|█████████▍| 47/50 [05:55<00:19,  6.66s/it][A[A[A
+
+
+VERB iso hd=-6:  96%|█████████▌| 48/50 [06:01<00:13,  6.58s/it][A[A[A
+
+
+VERB iso hd=-6:  98%|█████████▊| 49/50 [06:09<00:06,  6.77s/it][A[A[A
+
+
+VERB iso hd=-6: 100%|██████████| 50/50 [06:16<00:00,  6.94s/it][A[A[A
+
+
+                                                               [A[A[A
+
+VERB iso head distances:   8%|▊         | 1/12 [06:16<1:09:01, 376.53s/it, hd=-6, n=4532][A[A
+
+VERB iso head distances:   8%|▊         | 1/12 [06:16<1:09:01, 376.53s/it, hd=-5, n=1058][A[A
+
+
+VERB iso hd=-5:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=-5:   2%|▏         | 1/50 [00:02<01:56,  2.39s/it][A[A[A
+
+
+VERB iso hd=-5:   4%|▍         | 2/50 [00:04<02:00,  2.50s/it][A[A[A
+
+
+VERB iso hd=-5:   6%|▌         | 3/50 [00:08<02:17,  2.92s/it][A[A[A
+
+
+VERB iso hd=-5:   8%|▊         | 4/50 [00:12<02:28,  3.24s/it][A[A[A
+
+
+VERB iso hd=-5:  10%|█         | 5/50 [00:15<02:22,  3.18s/it][A[A[A
+
+
+VERB iso hd=-5:  12%|█▏        | 6/50 [00:18<02:27,  3.35s/it][A[A[A
+
+
+VERB iso hd=-5:  14%|█▍        | 7/50 [00:22<02:27,  3.42s/it][A[A[A
+
+
+VERB iso hd=-5:  16%|█▌        | 8/50 [00:26<02:33,  3.65s/it][A[A[A
+
+
+VERB iso hd=-5:  18%|█▊        | 9/50 [00:30<02:34,  3.77s/it][A[A[A
+
+
+VERB iso hd=-5:  20%|██        | 10/50 [00:32<02:13,  3.33s/it][A[A[A
+
+
+VERB iso hd=-5:  22%|██▏       | 11/50 [00:35<01:56,  3.00s/it][A[A[A
+
+
+VERB iso hd=-5:  24%|██▍       | 12/50 [00:37<01:47,  2.83s/it][A[A[A
+
+
+VERB iso hd=-5:  26%|██▌       | 13/50 [00:39<01:37,  2.64s/it][A[A[A
+
+
+VERB iso hd=-5:  28%|██▊       | 14/50 [00:42<01:30,  2.52s/it][A[A[A
+
+
+VERB iso hd=-5:  30%|███       | 15/50 [00:44<01:30,  2.58s/it][A[A[A
+
+
+VERB iso hd=-5:  32%|███▏      | 16/50 [00:47<01:28,  2.59s/it][A[A[A
+
+
+VERB iso hd=-5:  34%|███▍      | 17/50 [00:49<01:21,  2.47s/it][A[A[A
+
+
+VERB iso hd=-5:  36%|███▌      | 18/50 [00:52<01:19,  2.48s/it][A[A[A
+
+
+VERB iso hd=-5:  38%|███▊      | 19/50 [00:54<01:15,  2.42s/it][A[A[A
+
+
+VERB iso hd=-5:  40%|████      | 20/50 [00:56<01:12,  2.43s/it][A[A[A
+
+
+VERB iso hd=-5:  42%|████▏     | 21/50 [00:59<01:12,  2.49s/it][A[A[A
+
+
+VERB iso hd=-5:  44%|████▍     | 22/50 [01:02<01:16,  2.75s/it][A[A[A
+
+
+VERB iso hd=-5:  46%|████▌     | 23/50 [01:06<01:22,  3.04s/it][A[A[A
+
+
+VERB iso hd=-5:  48%|████▊     | 24/50 [01:10<01:26,  3.32s/it][A[A[A
+
+
+VERB iso hd=-5:  50%|█████     | 25/50 [01:13<01:17,  3.10s/it][A[A[A
+
+
+VERB iso hd=-5:  52%|█████▏    | 26/50 [01:16<01:18,  3.26s/it][A[A[A
+
+
+VERB iso hd=-5:  54%|█████▍    | 27/50 [01:20<01:19,  3.45s/it][A[A[A
+
+
+VERB iso hd=-5:  56%|█████▌    | 28/50 [01:23<01:13,  3.35s/it][A[A[A
+
+
+VERB iso hd=-5:  58%|█████▊    | 29/50 [01:26<01:05,  3.13s/it][A[A[A
+
+
+VERB iso hd=-5:  60%|██████    | 30/50 [01:29<01:03,  3.15s/it][A[A[A
+
+
+VERB iso hd=-5:  62%|██████▏   | 31/50 [01:32<00:59,  3.12s/it][A[A[A
+
+
+VERB iso hd=-5:  64%|██████▍   | 32/50 [01:36<00:57,  3.22s/it][A[A[A
+
+
+VERB iso hd=-5:  66%|██████▌   | 33/50 [01:38<00:50,  2.96s/it][A[A[A
+
+
+VERB iso hd=-5:  68%|██████▊   | 34/50 [01:40<00:44,  2.75s/it][A[A[A
+
+
+VERB iso hd=-5:  70%|███████   | 35/50 [01:42<00:39,  2.61s/it][A[A[A
+
+
+VERB iso hd=-5:  72%|███████▏  | 36/50 [01:46<00:39,  2.79s/it][A[A[A
+
+
+VERB iso hd=-5:  74%|███████▍  | 37/50 [01:49<00:39,  3.02s/it][A[A[A
+
+
+VERB iso hd=-5:  76%|███████▌  | 38/50 [01:52<00:34,  2.90s/it][A[A[A
+
+
+VERB iso hd=-5:  78%|███████▊  | 39/50 [01:55<00:33,  3.04s/it][A[A[A
+
+
+VERB iso hd=-5:  80%|████████  | 40/50 [01:58<00:30,  3.00s/it][A[A[A
+
+
+VERB iso hd=-5:  82%|████████▏ | 41/50 [02:01<00:26,  2.95s/it][A[A[A
+
+
+VERB iso hd=-5:  84%|████████▍ | 42/50 [02:04<00:23,  2.99s/it][A[A[A
+
+
+VERB iso hd=-5:  86%|████████▌ | 43/50 [02:08<00:23,  3.31s/it][A[A[A
+
+
+VERB iso hd=-5:  88%|████████▊ | 44/50 [02:12<00:21,  3.56s/it][A[A[A
+
+
+VERB iso hd=-5:  90%|█████████ | 45/50 [02:15<00:16,  3.36s/it][A[A[A
+
+
+VERB iso hd=-5:  92%|█████████▏| 46/50 [02:19<00:13,  3.36s/it][A[A[A
+
+
+VERB iso hd=-5:  94%|█████████▍| 47/50 [02:21<00:09,  3.15s/it][A[A[A
+
+
+VERB iso hd=-5:  96%|█████████▌| 48/50 [02:23<00:05,  2.86s/it][A[A[A
+
+
+VERB iso hd=-5:  98%|█████████▊| 49/50 [02:26<00:02,  2.69s/it][A[A[A
+
+
+VERB iso hd=-5: 100%|██████████| 50/50 [02:28<00:00,  2.55s/it][A[A[A
+
+
+                                                               [A[A[A
+
+VERB iso head distances:  17%|█▋        | 2/12 [08:44<40:23, 242.31s/it, hd=-5, n=1058]  [A[A
+
+VERB iso head distances:  17%|█▋        | 2/12 [08:44<40:23, 242.31s/it, hd=-4, n=1488][A[A
+
+
+VERB iso hd=-4:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=-4:   2%|▏         | 1/50 [00:03<02:35,  3.17s/it][A[A[A
+
+
+VERB iso hd=-4:   4%|▍         | 2/50 [00:07<03:10,  3.97s/it][A[A[A
+
+
+VERB iso hd=-4:   6%|▌         | 3/50 [00:11<03:12,  4.09s/it][A[A[A
+
+
+VERB iso hd=-4:   8%|▊         | 4/50 [00:16<03:18,  4.32s/it][A[A[A
+
+
+VERB iso hd=-4:  10%|█         | 5/50 [00:21<03:17,  4.38s/it][A[A[A
+
+
+VERB iso hd=-4:  12%|█▏        | 6/50 [00:27<03:36,  4.92s/it][A[A[A
+
+
+VERB iso hd=-4:  14%|█▍        | 7/50 [00:31<03:26,  4.81s/it][A[A[A
+
+
+VERB iso hd=-4:  16%|█▌        | 8/50 [00:35<03:10,  4.55s/it][A[A[A
+
+
+VERB iso hd=-4:  18%|█▊        | 9/50 [00:39<02:51,  4.18s/it][A[A[A
+
+
+VERB iso hd=-4:  20%|██        | 10/50 [00:42<02:36,  3.92s/it][A[A[A
+
+
+VERB iso hd=-4:  22%|██▏       | 11/50 [00:45<02:25,  3.73s/it][A[A[A
+
+
+VERB iso hd=-4:  24%|██▍       | 12/50 [00:48<02:16,  3.59s/it][A[A[A
+
+
+VERB iso hd=-4:  26%|██▌       | 13/50 [00:52<02:12,  3.58s/it][A[A[A
+
+
+VERB iso hd=-4:  28%|██▊       | 14/50 [00:55<02:06,  3.51s/it][A[A[A
+
+
+VERB iso hd=-4:  30%|███       | 15/50 [01:00<02:14,  3.84s/it][A[A[A
+
+
+VERB iso hd=-4:  32%|███▏      | 16/50 [01:04<02:11,  3.88s/it][A[A[A
+
+
+VERB iso hd=-4:  34%|███▍      | 17/50 [01:10<02:25,  4.41s/it][A[A[A
+
+
+VERB iso hd=-4:  36%|███▌      | 18/50 [01:14<02:21,  4.43s/it][A[A[A
+
+
+VERB iso hd=-4:  38%|███▊      | 19/50 [01:18<02:17,  4.43s/it][A[A[A
+
+
+VERB iso hd=-4:  40%|████      | 20/50 [01:24<02:19,  4.66s/it][A[A[A
+
+
+VERB iso hd=-4:  42%|████▏     | 21/50 [01:28<02:09,  4.47s/it][A[A[A
+
+
+VERB iso hd=-4:  44%|████▍     | 22/50 [01:31<01:55,  4.11s/it][A[A[A
+
+
+VERB iso hd=-4:  46%|████▌     | 23/50 [01:34<01:44,  3.88s/it][A[A[A
+
+
+VERB iso hd=-4:  48%|████▊     | 24/50 [01:38<01:36,  3.70s/it][A[A[A
+
+
+VERB iso hd=-4:  50%|█████     | 25/50 [01:41<01:29,  3.57s/it][A[A[A
+
+
+VERB iso hd=-4:  52%|█████▏    | 26/50 [01:44<01:23,  3.49s/it][A[A[A
+
+
+VERB iso hd=-4:  54%|█████▍    | 27/50 [01:47<01:17,  3.38s/it][A[A[A
+
+
+VERB iso hd=-4:  56%|█████▌    | 28/50 [01:51<01:17,  3.51s/it][A[A[A
+
+
+VERB iso hd=-4:  58%|█████▊    | 29/50 [01:56<01:20,  3.81s/it][A[A[A
+
+
+VERB iso hd=-4:  60%|██████    | 30/50 [02:00<01:19,  3.96s/it][A[A[A
+
+
+VERB iso hd=-4:  62%|██████▏   | 31/50 [02:04<01:14,  3.94s/it][A[A[A
+
+
+VERB iso hd=-4:  64%|██████▍   | 32/50 [02:08<01:11,  3.95s/it][A[A[A
+
+
+VERB iso hd=-4:  66%|██████▌   | 33/50 [02:13<01:11,  4.21s/it][A[A[A
+
+
+VERB iso hd=-4:  68%|██████▊   | 34/50 [02:16<01:05,  4.10s/it][A[A[A
+
+
+VERB iso hd=-4:  70%|███████   | 35/50 [02:20<00:57,  3.83s/it][A[A[A
+
+
+VERB iso hd=-4:  72%|███████▏  | 36/50 [02:23<00:51,  3.69s/it][A[A[A
+
+
+VERB iso hd=-4:  74%|███████▍  | 37/50 [02:27<00:48,  3.71s/it][A[A[A
+
+
+VERB iso hd=-4:  76%|███████▌  | 38/50 [02:30<00:43,  3.67s/it][A[A[A
+
+
+VERB iso hd=-4:  78%|███████▊  | 39/50 [02:34<00:39,  3.60s/it][A[A[A
+
+
+VERB iso hd=-4:  80%|████████  | 40/50 [02:37<00:35,  3.58s/it][A[A[A
+
+
+VERB iso hd=-4:  82%|████████▏ | 41/50 [02:43<00:37,  4.22s/it][A[A[A
+
+
+VERB iso hd=-4:  84%|████████▍ | 42/50 [02:47<00:32,  4.11s/it][A[A[A
+
+
+VERB iso hd=-4:  86%|████████▌ | 43/50 [02:51<00:29,  4.21s/it][A[A[A
+
+
+VERB iso hd=-4:  88%|████████▊ | 44/50 [02:56<00:26,  4.46s/it][A[A[A
+
+
+VERB iso hd=-4:  90%|█████████ | 45/50 [03:01<00:21,  4.38s/it][A[A[A
+
+
+VERB iso hd=-4:  92%|█████████▏| 46/50 [03:04<00:16,  4.14s/it][A[A[A
+
+
+VERB iso hd=-4:  94%|█████████▍| 47/50 [03:08<00:12,  4.03s/it][A[A[A
+
+
+VERB iso hd=-4:  96%|█████████▌| 48/50 [03:12<00:08,  4.16s/it][A[A[A
+
+
+VERB iso hd=-4:  98%|█████████▊| 49/50 [03:16<00:03,  3.90s/it][A[A[A
+
+
+VERB iso hd=-4: 100%|██████████| 50/50 [03:19<00:00,  3.87s/it][A[A[A
+
+
+                                                               [A[A[A
+
+VERB iso head distances:  25%|██▌       | 3/12 [12:04<33:26, 222.97s/it, hd=-4, n=1488][A[A
+
+VERB iso head distances:  25%|██▌       | 3/12 [12:04<33:26, 222.97s/it, hd=-3, n=1839][A[A
+
+
+VERB iso hd=-3:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=-3:   2%|▏         | 1/50 [00:04<03:18,  4.05s/it][A[A[A
+
+
+VERB iso hd=-3:   4%|▍         | 2/50 [00:08<03:33,  4.44s/it][A[A[A
+
+
+VERB iso hd=-3:   6%|▌         | 3/50 [00:13<03:35,  4.58s/it][A[A[A
+
+
+VERB iso hd=-3:   8%|▊         | 4/50 [00:17<03:20,  4.37s/it][A[A[A
+
+
+VERB iso hd=-3:  10%|█         | 5/50 [00:24<03:50,  5.13s/it][A[A[A
+
+
+VERB iso hd=-3:  12%|█▏        | 6/50 [00:28<03:39,  4.98s/it][A[A[A
+
+
+VERB iso hd=-3:  14%|█▍        | 7/50 [00:33<03:35,  5.01s/it][A[A[A
+
+
+VERB iso hd=-3:  16%|█▌        | 8/50 [00:39<03:42,  5.29s/it][A[A[A
+
+
+VERB iso hd=-3:  18%|█▊        | 9/50 [00:45<03:41,  5.41s/it][A[A[A
+
+
+VERB iso hd=-3:  20%|██        | 10/50 [00:50<03:32,  5.31s/it][A[A[A
+
+
+VERB iso hd=-3:  22%|██▏       | 11/50 [00:55<03:29,  5.37s/it][A[A[A
+
+
+VERB iso hd=-3:  24%|██▍       | 12/50 [00:59<03:04,  4.86s/it][A[A[A
+
+
+VERB iso hd=-3:  26%|██▌       | 13/50 [01:03<02:51,  4.63s/it][A[A[A
+
+
+VERB iso hd=-3:  28%|██▊       | 14/50 [01:07<02:41,  4.48s/it][A[A[A
+
+
+VERB iso hd=-3:  30%|███       | 15/50 [01:11<02:26,  4.18s/it][A[A[A
+
+
+VERB iso hd=-3:  32%|███▏      | 16/50 [01:16<02:36,  4.60s/it][A[A[A
+
+
+VERB iso hd=-3:  34%|███▍      | 17/50 [01:22<02:43,  4.96s/it][A[A[A
+
+
+VERB iso hd=-3:  36%|███▌      | 18/50 [01:27<02:41,  5.04s/it][A[A[A
+
+
+VERB iso hd=-3:  38%|███▊      | 19/50 [01:32<02:28,  4.80s/it][A[A[A
+
+
+VERB iso hd=-3:  40%|████      | 20/50 [01:37<02:25,  4.84s/it][A[A[A
+
+
+VERB iso hd=-3:  42%|████▏     | 21/50 [01:42<02:26,  5.05s/it][A[A[A
+
+
+VERB iso hd=-3:  44%|████▍     | 22/50 [01:46<02:11,  4.69s/it][A[A[A
+
+
+VERB iso hd=-3:  46%|████▌     | 23/50 [01:51<02:07,  4.74s/it][A[A[A
+
+
+VERB iso hd=-3:  48%|████▊     | 24/50 [01:56<02:04,  4.80s/it][A[A[A
+
+
+VERB iso hd=-3:  50%|█████     | 25/50 [02:00<01:53,  4.54s/it][A[A[A
+
+
+VERB iso hd=-3:  52%|█████▏    | 26/50 [02:04<01:47,  4.49s/it][A[A[A
+
+
+VERB iso hd=-3:  54%|█████▍    | 27/50 [02:08<01:37,  4.25s/it][A[A[A
+
+
+VERB iso hd=-3:  56%|█████▌    | 28/50 [02:12<01:30,  4.10s/it][A[A[A
+
+
+VERB iso hd=-3:  58%|█████▊    | 29/50 [02:15<01:23,  3.99s/it][A[A[A
+
+
+VERB iso hd=-3:  60%|██████    | 30/50 [02:19<01:17,  3.89s/it][A[A[A
+
+
+VERB iso hd=-3:  62%|██████▏   | 31/50 [02:23<01:12,  3.82s/it][A[A[A
+
+
+VERB iso hd=-3:  64%|██████▍   | 32/50 [02:26<01:08,  3.78s/it][A[A[A
+
+
+VERB iso hd=-3:  66%|██████▌   | 33/50 [02:30<01:02,  3.68s/it][A[A[A
+
+
+VERB iso hd=-3:  68%|██████▊   | 34/50 [02:33<00:58,  3.65s/it][A[A[A
+
+
+VERB iso hd=-3:  70%|███████   | 35/50 [02:37<00:56,  3.74s/it][A[A[A
+
+
+VERB iso hd=-3:  72%|███████▏  | 36/50 [02:42<00:55,  3.95s/it][A[A[A
+
+
+VERB iso hd=-3:  74%|███████▍  | 37/50 [02:46<00:51,  3.97s/it][A[A[A
+
+
+VERB iso hd=-3:  76%|███████▌  | 38/50 [02:49<00:46,  3.91s/it][A[A[A
+
+
+VERB iso hd=-3:  78%|███████▊  | 39/50 [02:53<00:41,  3.79s/it][A[A[A
+
+
+VERB iso hd=-3:  80%|████████  | 40/50 [02:57<00:37,  3.78s/it][A[A[A
+
+
+VERB iso hd=-3:  82%|████████▏ | 41/50 [03:01<00:35,  3.95s/it][A[A[A
+
+
+VERB iso hd=-3:  84%|████████▍ | 42/50 [03:06<00:33,  4.17s/it][A[A[A
+
+
+VERB iso hd=-3:  86%|████████▌ | 43/50 [03:10<00:29,  4.18s/it][A[A[A
+
+
+VERB iso hd=-3:  88%|████████▊ | 44/50 [03:16<00:27,  4.64s/it][A[A[A
+
+
+VERB iso hd=-3:  90%|█████████ | 45/50 [03:20<00:22,  4.44s/it][A[A[A
+
+
+VERB iso hd=-3:  92%|█████████▏| 46/50 [03:24<00:18,  4.56s/it][A[A[A
+
+
+VERB iso hd=-3:  94%|█████████▍| 47/50 [03:28<00:13,  4.38s/it][A[A[A
+
+
+VERB iso hd=-3:  96%|█████████▌| 48/50 [03:33<00:08,  4.35s/it][A[A[A
+
+
+VERB iso hd=-3:  98%|█████████▊| 49/50 [03:37<00:04,  4.25s/it][A[A[A
+
+
+VERB iso hd=-3: 100%|██████████| 50/50 [03:41<00:00,  4.33s/it][A[A[A
+
+
+                                                               [A[A[A
+
+VERB iso head distances:  33%|███▎      | 4/12 [15:46<29:40, 222.50s/it, hd=-3, n=1839][A[A
+
+VERB iso head distances:  33%|███▎      | 4/12 [15:46<29:40, 222.50s/it, hd=-2, n=3726][A[A
+
+
+VERB iso hd=-2:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=-2:   2%|▏         | 1/50 [00:06<05:35,  6.86s/it][A[A[A
+
+
+VERB iso hd=-2:   4%|▍         | 2/50 [00:12<04:53,  6.12s/it][A[A[A
+
+
+VERB iso hd=-2:   6%|▌         | 3/50 [00:17<04:34,  5.84s/it][A[A[A
+
+
+VERB iso hd=-2:   8%|▊         | 4/50 [00:23<04:15,  5.54s/it][A[A[A
+
+
+VERB iso hd=-2:  10%|█         | 5/50 [00:28<04:06,  5.49s/it][A[A[A
+
+
+VERB iso hd=-2:  12%|█▏        | 6/50 [00:33<03:55,  5.34s/it][A[A[A
+
+
+VERB iso hd=-2:  14%|█▍        | 7/50 [00:40<04:16,  5.96s/it][A[A[A
+
+
+VERB iso hd=-2:  16%|█▌        | 8/50 [00:46<04:14,  6.05s/it][A[A[A
+
+
+VERB iso hd=-2:  18%|█▊        | 9/50 [00:52<04:04,  5.97s/it][A[A[A
+
+
+VERB iso hd=-2:  20%|██        | 10/50 [00:58<03:50,  5.76s/it][A[A[A
+
+
+VERB iso hd=-2:  22%|██▏       | 11/50 [01:05<03:55,  6.05s/it][A[A[A
+
+
+VERB iso hd=-2:  24%|██▍       | 12/50 [01:10<03:43,  5.88s/it][A[A[A
+
+
+VERB iso hd=-2:  26%|██▌       | 13/50 [01:16<03:41,  5.98s/it][A[A[A
+
+
+VERB iso hd=-2:  28%|██▊       | 14/50 [01:22<03:34,  5.95s/it][A[A[A
+
+
+VERB iso hd=-2:  30%|███       | 15/50 [01:27<03:20,  5.74s/it][A[A[A
+
+
+VERB iso hd=-2:  32%|███▏      | 16/50 [01:34<03:24,  6.03s/it][A[A[A
+
+
+VERB iso hd=-2:  34%|███▍      | 17/50 [01:39<03:11,  5.79s/it][A[A[A
+
+
+VERB iso hd=-2:  36%|███▌      | 18/50 [01:44<02:58,  5.57s/it][A[A[A
+
+
+VERB iso hd=-2:  38%|███▊      | 19/50 [01:49<02:50,  5.51s/it][A[A[A
+
+
+VERB iso hd=-2:  40%|████      | 20/50 [01:56<02:57,  5.93s/it][A[A[A
+
+
+VERB iso hd=-2:  42%|████▏     | 21/50 [02:02<02:52,  5.96s/it][A[A[A
+
+
+VERB iso hd=-2:  44%|████▍     | 22/50 [02:09<02:48,  6.01s/it][A[A[A
+
+
+VERB iso hd=-2:  46%|████▌     | 23/50 [02:15<02:43,  6.05s/it][A[A[A
+
+
+VERB iso hd=-2:  48%|████▊     | 24/50 [02:21<02:40,  6.16s/it][A[A[A
+
+
+VERB iso hd=-2:  50%|█████     | 25/50 [02:28<02:37,  6.32s/it][A[A[A
+
+
+VERB iso hd=-2:  52%|█████▏    | 26/50 [02:34<02:27,  6.16s/it][A[A[A
+
+
+VERB iso hd=-2:  54%|█████▍    | 27/50 [02:40<02:21,  6.13s/it][A[A[A
+
+
+VERB iso hd=-2:  56%|█████▌    | 28/50 [02:47<02:19,  6.36s/it][A[A[A
+
+
+VERB iso hd=-2:  58%|█████▊    | 29/50 [02:53<02:12,  6.33s/it][A[A[A
+
+
+VERB iso hd=-2:  60%|██████    | 30/50 [02:59<02:05,  6.26s/it][A[A[A
+
+
+VERB iso hd=-2:  62%|██████▏   | 31/50 [03:06<02:01,  6.38s/it][A[A[A
+
+
+VERB iso hd=-2:  64%|██████▍   | 32/50 [03:11<01:49,  6.09s/it][A[A[A
+
+
+VERB iso hd=-2:  66%|██████▌   | 33/50 [03:17<01:44,  6.14s/it][A[A[A
+
+
+VERB iso hd=-2:  68%|██████▊   | 34/50 [03:23<01:36,  6.05s/it][A[A[A
+
+
+VERB iso hd=-2:  70%|███████   | 35/50 [03:29<01:32,  6.16s/it][A[A[A
+
+
+VERB iso hd=-2:  72%|███████▏  | 36/50 [03:37<01:31,  6.53s/it][A[A[A
+
+
+VERB iso hd=-2:  74%|███████▍  | 37/50 [03:43<01:23,  6.39s/it][A[A[A
+
+
+VERB iso hd=-2:  76%|███████▌  | 38/50 [03:50<01:17,  6.48s/it][A[A[A
+
+
+VERB iso hd=-2:  78%|███████▊  | 39/50 [03:56<01:11,  6.55s/it][A[A[A
+
+
+VERB iso hd=-2:  80%|████████  | 40/50 [04:02<01:04,  6.41s/it][A[A[A
+
+
+VERB iso hd=-2:  82%|████████▏ | 41/50 [04:08<00:56,  6.22s/it][A[A[A
+
+
+VERB iso hd=-2:  84%|████████▍ | 42/50 [04:14<00:48,  6.05s/it][A[A[A
+
+
+VERB iso hd=-2:  86%|████████▌ | 43/50 [04:19<00:40,  5.80s/it][A[A[A
+
+
+VERB iso hd=-2:  88%|████████▊ | 44/50 [04:25<00:35,  5.88s/it][A[A[A
+
+
+VERB iso hd=-2:  90%|█████████ | 45/50 [04:32<00:30,  6.05s/it][A[A[A
+
+
+VERB iso hd=-2:  92%|█████████▏| 46/50 [04:38<00:24,  6.05s/it][A[A[A
+
+
+VERB iso hd=-2:  94%|█████████▍| 47/50 [04:43<00:17,  5.95s/it][A[A[A
+
+
+VERB iso hd=-2:  96%|█████████▌| 48/50 [04:49<00:11,  5.90s/it][A[A[A
+
+
+VERB iso hd=-2:  98%|█████████▊| 49/50 [04:55<00:05,  5.99s/it][A[A[A
+
+
+VERB iso hd=-2: 100%|██████████| 50/50 [05:01<00:00,  5.76s/it][A[A[A
+
+
+                                                               [A[A[A
+
+VERB iso head distances:  42%|████▏     | 5/12 [20:47<29:15, 250.82s/it, hd=-2, n=3726][A[A
+
+VERB iso head distances:  42%|████▏     | 5/12 [20:47<29:15, 250.82s/it, hd=-1, n=765] [A[A
+
+
+VERB iso hd=-1:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=-1:   2%|▏         | 1/50 [00:01<01:23,  1.71s/it][A[A[A
+
+
+VERB iso hd=-1:   4%|▍         | 2/50 [00:03<01:26,  1.79s/it][A[A[A
+
+
+VERB iso hd=-1:   6%|▌         | 3/50 [00:05<01:35,  2.04s/it][A[A[A
+
+
+VERB iso hd=-1:   8%|▊         | 4/50 [00:07<01:31,  1.99s/it][A[A[A
+
+
+VERB iso hd=-1:  10%|█         | 5/50 [00:09<01:30,  2.02s/it][A[A[A
+
+
+VERB iso hd=-1:  12%|█▏        | 6/50 [00:12<01:42,  2.33s/it][A[A[A
+
+
+VERB iso hd=-1:  14%|█▍        | 7/50 [00:14<01:32,  2.14s/it][A[A[A
+
+
+VERB iso hd=-1:  16%|█▌        | 8/50 [00:16<01:24,  2.02s/it][A[A[A
+
+
+VERB iso hd=-1:  18%|█▊        | 9/50 [00:18<01:18,  1.93s/it][A[A[A
+
+
+VERB iso hd=-1:  20%|██        | 10/50 [00:20<01:27,  2.20s/it][A[A[A
+
+
+VERB iso hd=-1:  22%|██▏       | 11/50 [00:22<01:23,  2.14s/it][A[A[A
+
+
+VERB iso hd=-1:  24%|██▍       | 12/50 [00:25<01:23,  2.20s/it][A[A[A
+
+
+VERB iso hd=-1:  26%|██▌       | 13/50 [00:27<01:27,  2.37s/it][A[A[A
+
+
+VERB iso hd=-1:  28%|██▊       | 14/50 [00:30<01:27,  2.43s/it][A[A[A
+
+
+VERB iso hd=-1:  30%|███       | 15/50 [00:32<01:23,  2.39s/it][A[A[A
+
+
+VERB iso hd=-1:  32%|███▏      | 16/50 [00:34<01:15,  2.21s/it][A[A[A
+
+
+VERB iso hd=-1:  34%|███▍      | 17/50 [00:36<01:13,  2.21s/it][A[A[A
+
+
+VERB iso hd=-1:  36%|███▌      | 18/50 [00:38<01:07,  2.12s/it][A[A[A
+
+
+VERB iso hd=-1:  38%|███▊      | 19/50 [00:40<01:02,  2.00s/it][A[A[A
+
+
+VERB iso hd=-1:  40%|████      | 20/50 [00:42<01:00,  2.01s/it][A[A[A
+
+
+VERB iso hd=-1:  42%|████▏     | 21/50 [00:44<00:55,  1.91s/it][A[A[A
+
+
+VERB iso hd=-1:  44%|████▍     | 22/50 [00:45<00:51,  1.84s/it][A[A[A
+
+
+VERB iso hd=-1:  46%|████▌     | 23/50 [00:47<00:48,  1.78s/it][A[A[A
+
+
+VERB iso hd=-1:  48%|████▊     | 24/50 [00:49<00:45,  1.75s/it][A[A[A
+
+
+VERB iso hd=-1:  50%|█████     | 25/50 [00:51<00:44,  1.78s/it][A[A[A
+
+
+VERB iso hd=-1:  52%|█████▏    | 26/50 [00:53<00:49,  2.06s/it][A[A[A
+
+
+VERB iso hd=-1:  54%|█████▍    | 27/50 [00:56<00:51,  2.22s/it][A[A[A
+
+
+VERB iso hd=-1:  56%|█████▌    | 28/50 [00:58<00:47,  2.15s/it][A[A[A
+
+
+VERB iso hd=-1:  58%|█████▊    | 29/50 [01:01<00:51,  2.43s/it][A[A[A
+
+
+VERB iso hd=-1:  60%|██████    | 30/50 [01:04<00:50,  2.53s/it][A[A[A
+
+
+VERB iso hd=-1:  62%|██████▏   | 31/50 [01:05<00:42,  2.26s/it][A[A[A
+
+
+VERB iso hd=-1:  64%|██████▍   | 32/50 [01:07<00:37,  2.11s/it][A[A[A
+
+
+VERB iso hd=-1:  66%|██████▌   | 33/50 [01:09<00:33,  2.00s/it][A[A[A
+
+
+VERB iso hd=-1:  68%|██████▊   | 34/50 [01:11<00:30,  1.93s/it][A[A[A
+
+
+VERB iso hd=-1:  70%|███████   | 35/50 [01:12<00:28,  1.88s/it][A[A[A
+
+
+VERB iso hd=-1:  72%|███████▏  | 36/50 [01:14<00:25,  1.83s/it][A[A[A
+
+
+VERB iso hd=-1:  74%|███████▍  | 37/50 [01:16<00:24,  1.86s/it][A[A[A
+
+
+VERB iso hd=-1:  76%|███████▌  | 38/50 [01:18<00:22,  1.85s/it][A[A[A
+
+
+VERB iso hd=-1:  78%|███████▊  | 39/50 [01:20<00:20,  1.83s/it][A[A[A
+
+
+VERB iso hd=-1:  80%|████████  | 40/50 [01:21<00:18,  1.81s/it][A[A[A
+
+
+VERB iso hd=-1:  82%|████████▏ | 41/50 [01:23<00:16,  1.79s/it][A[A[A
+
+
+VERB iso hd=-1:  84%|████████▍ | 42/50 [01:25<00:15,  1.95s/it][A[A[A
+
+
+VERB iso hd=-1:  86%|████████▌ | 43/50 [01:27<00:13,  1.96s/it][A[A[A
+
+
+VERB iso hd=-1:  88%|████████▊ | 44/50 [01:30<00:13,  2.26s/it][A[A[A
+
+
+VERB iso hd=-1:  90%|█████████ | 45/50 [01:33<00:12,  2.40s/it][A[A[A
+
+
+VERB iso hd=-1:  92%|█████████▏| 46/50 [01:35<00:08,  2.20s/it][A[A[A
+
+
+VERB iso hd=-1:  94%|█████████▍| 47/50 [01:37<00:06,  2.11s/it][A[A[A
+
+
+VERB iso hd=-1:  96%|█████████▌| 48/50 [01:38<00:03,  1.99s/it][A[A[A
+
+
+VERB iso hd=-1:  98%|█████████▊| 49/50 [01:40<00:01,  1.90s/it][A[A[A
+
+
+VERB iso hd=-1: 100%|██████████| 50/50 [01:42<00:00,  1.95s/it][A[A[A
+
+
+                                                               [A[A[A
+
+VERB iso head distances:  50%|█████     | 6/12 [22:30<20:02, 200.47s/it, hd=-1, n=765][A[A
+
+VERB iso head distances:  50%|█████     | 6/12 [22:30<20:02, 200.47s/it, hd=1, n=505] [A[A
+
+
+VERB iso hd=1:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=1:   2%|▏         | 1/50 [00:01<01:20,  1.64s/it][A[A[A
+
+
+VERB iso hd=1:   4%|▍         | 2/50 [00:03<01:23,  1.74s/it][A[A[A
+
+
+VERB iso hd=1:   6%|▌         | 3/50 [00:05<01:21,  1.73s/it][A[A[A
+
+
+VERB iso hd=1:   8%|▊         | 4/50 [00:06<01:05,  1.42s/it][A[A[A
+
+
+VERB iso hd=1:  10%|█         | 5/50 [00:07<00:56,  1.25s/it][A[A[A
+
+
+VERB iso hd=1:  12%|█▏        | 6/50 [00:08<00:50,  1.15s/it][A[A[A
+
+
+VERB iso hd=1:  14%|█▍        | 7/50 [00:08<00:46,  1.09s/it][A[A[A
+
+
+VERB iso hd=1:  16%|█▌        | 8/50 [00:09<00:44,  1.05s/it][A[A[A
+
+
+VERB iso hd=1:  18%|█▊        | 9/50 [00:10<00:41,  1.02s/it][A[A[A
+
+
+VERB iso hd=1:  20%|██        | 10/50 [00:12<00:42,  1.07s/it][A[A[A
+
+
+VERB iso hd=1:  22%|██▏       | 11/50 [00:13<00:41,  1.06s/it][A[A[A
+
+
+VERB iso hd=1:  24%|██▍       | 12/50 [00:14<00:40,  1.08s/it][A[A[A
+
+
+VERB iso hd=1:  26%|██▌       | 13/50 [00:15<00:38,  1.04s/it][A[A[A
+
+
+VERB iso hd=1:  28%|██▊       | 14/50 [00:16<00:37,  1.05s/it][A[A[A
+
+
+VERB iso hd=1:  30%|███       | 15/50 [00:17<00:36,  1.04s/it][A[A[A
+
+
+VERB iso hd=1:  32%|███▏      | 16/50 [00:18<00:34,  1.01s/it][A[A[A
+
+
+VERB iso hd=1:  34%|███▍      | 17/50 [00:19<00:32,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  36%|███▌      | 18/50 [00:20<00:31,  1.00it/s][A[A[A
+
+
+VERB iso hd=1:  38%|███▊      | 19/50 [00:21<00:30,  1.02it/s][A[A[A
+
+
+VERB iso hd=1:  40%|████      | 20/50 [00:22<00:29,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  42%|████▏     | 21/50 [00:23<00:28,  1.02it/s][A[A[A
+
+
+VERB iso hd=1:  44%|████▍     | 22/50 [00:24<00:27,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  46%|████▌     | 23/50 [00:25<00:32,  1.20s/it][A[A[A
+
+
+VERB iso hd=1:  48%|████▊     | 24/50 [00:27<00:35,  1.36s/it][A[A[A
+
+
+VERB iso hd=1:  50%|█████     | 25/50 [00:28<00:34,  1.37s/it][A[A[A
+
+
+VERB iso hd=1:  52%|█████▏    | 26/50 [00:29<00:30,  1.26s/it][A[A[A
+
+
+VERB iso hd=1:  54%|█████▍    | 27/50 [00:31<00:30,  1.31s/it][A[A[A
+
+
+VERB iso hd=1:  56%|█████▌    | 28/50 [00:32<00:31,  1.41s/it][A[A[A
+
+
+VERB iso hd=1:  58%|█████▊    | 29/50 [00:34<00:27,  1.29s/it][A[A[A
+
+
+VERB iso hd=1:  60%|██████    | 30/50 [00:34<00:23,  1.19s/it][A[A[A
+
+
+VERB iso hd=1:  62%|██████▏   | 31/50 [00:35<00:21,  1.14s/it][A[A[A
+
+
+VERB iso hd=1:  64%|██████▍   | 32/50 [00:36<00:19,  1.09s/it][A[A[A
+
+
+VERB iso hd=1:  66%|██████▌   | 33/50 [00:38<00:18,  1.08s/it][A[A[A
+
+
+VERB iso hd=1:  68%|██████▊   | 34/50 [00:38<00:16,  1.04s/it][A[A[A
+
+
+VERB iso hd=1:  70%|███████   | 35/50 [00:39<00:15,  1.03s/it][A[A[A
+
+
+VERB iso hd=1:  72%|███████▏  | 36/50 [00:40<00:14,  1.02s/it][A[A[A
+
+
+VERB iso hd=1:  74%|███████▍  | 37/50 [00:41<00:13,  1.00s/it][A[A[A
+
+
+VERB iso hd=1:  76%|███████▌  | 38/50 [00:42<00:11,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  78%|███████▊  | 39/50 [00:43<00:11,  1.00s/it][A[A[A
+
+
+VERB iso hd=1:  80%|████████  | 40/50 [00:44<00:09,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  82%|████████▏ | 41/50 [00:45<00:08,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  84%|████████▍ | 42/50 [00:46<00:07,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  86%|████████▌ | 43/50 [00:47<00:06,  1.00it/s][A[A[A
+
+
+VERB iso hd=1:  88%|████████▊ | 44/50 [00:49<00:06,  1.08s/it][A[A[A
+
+
+VERB iso hd=1:  90%|█████████ | 45/50 [00:50<00:05,  1.05s/it][A[A[A
+
+
+VERB iso hd=1:  92%|█████████▏| 46/50 [00:51<00:04,  1.02s/it][A[A[A
+
+
+VERB iso hd=1:  94%|█████████▍| 47/50 [00:52<00:03,  1.00s/it][A[A[A
+
+
+VERB iso hd=1:  96%|█████████▌| 48/50 [00:52<00:01,  1.01it/s][A[A[A
+
+
+VERB iso hd=1:  98%|█████████▊| 49/50 [00:53<00:00,  1.02it/s][A[A[A
+
+
+VERB iso hd=1: 100%|██████████| 50/50 [00:54<00:00,  1.03it/s][A[A[A
+
+
+                                                              [A[A[A
+
+VERB iso head distances:  58%|█████▊    | 7/12 [23:25<12:44, 152.88s/it, hd=1, n=505][A[A
+
+VERB iso head distances:  58%|█████▊    | 7/12 [23:25<12:44, 152.88s/it, hd=2, n=213][A[A
+
+
+VERB iso hd=2:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=2:   2%|▏         | 1/50 [00:00<00:16,  2.96it/s][A[A[A
+
+
+VERB iso hd=2:   4%|▍         | 2/50 [00:00<00:16,  2.86it/s][A[A[A
+
+
+VERB iso hd=2:   6%|▌         | 3/50 [00:01<00:16,  2.91it/s][A[A[A
+
+
+VERB iso hd=2:   8%|▊         | 4/50 [00:01<00:15,  2.93it/s][A[A[A
+
+
+VERB iso hd=2:  10%|█         | 5/50 [00:01<00:15,  2.98it/s][A[A[A
+
+
+VERB iso hd=2:  12%|█▏        | 6/50 [00:02<00:14,  2.99it/s][A[A[A
+
+
+VERB iso hd=2:  14%|█▍        | 7/50 [00:02<00:14,  3.02it/s][A[A[A
+
+
+VERB iso hd=2:  16%|█▌        | 8/50 [00:02<00:14,  2.94it/s][A[A[A
+
+
+VERB iso hd=2:  18%|█▊        | 9/50 [00:03<00:14,  2.92it/s][A[A[A
+
+
+VERB iso hd=2:  20%|██        | 10/50 [00:03<00:13,  2.92it/s][A[A[A
+
+
+VERB iso hd=2:  22%|██▏       | 11/50 [00:03<00:13,  2.97it/s][A[A[A
+
+
+VERB iso hd=2:  24%|██▍       | 12/50 [00:04<00:12,  2.96it/s][A[A[A
+
+
+VERB iso hd=2:  26%|██▌       | 13/50 [00:04<00:12,  3.00it/s][A[A[A
+
+
+VERB iso hd=2:  28%|██▊       | 14/50 [00:04<00:12,  2.88it/s][A[A[A
+
+
+VERB iso hd=2:  30%|███       | 15/50 [00:05<00:12,  2.80it/s][A[A[A
+
+
+VERB iso hd=2:  32%|███▏      | 16/50 [00:05<00:12,  2.79it/s][A[A[A
+
+
+VERB iso hd=2:  34%|███▍      | 17/50 [00:05<00:11,  2.87it/s][A[A[A
+
+
+VERB iso hd=2:  36%|███▌      | 18/50 [00:06<00:11,  2.91it/s][A[A[A
+
+
+VERB iso hd=2:  38%|███▊      | 19/50 [00:06<00:10,  2.93it/s][A[A[A
+
+
+VERB iso hd=2:  40%|████      | 20/50 [00:06<00:10,  2.92it/s][A[A[A
+
+
+VERB iso hd=2:  42%|████▏     | 21/50 [00:07<00:09,  2.91it/s][A[A[A
+
+
+VERB iso hd=2:  44%|████▍     | 22/50 [00:07<00:09,  2.94it/s][A[A[A
+
+
+VERB iso hd=2:  46%|████▌     | 23/50 [00:07<00:09,  2.96it/s][A[A[A
+
+
+VERB iso hd=2:  48%|████▊     | 24/50 [00:08<00:08,  2.98it/s][A[A[A
+
+
+VERB iso hd=2:  50%|█████     | 25/50 [00:08<00:08,  2.98it/s][A[A[A
+
+
+VERB iso hd=2:  52%|█████▏    | 26/50 [00:08<00:08,  2.99it/s][A[A[A
+
+
+VERB iso hd=2:  54%|█████▍    | 27/50 [00:09<00:07,  2.99it/s][A[A[A
+
+
+VERB iso hd=2:  56%|█████▌    | 28/50 [00:09<00:07,  3.00it/s][A[A[A
+
+
+VERB iso hd=2:  58%|█████▊    | 29/50 [00:09<00:06,  3.02it/s][A[A[A
+
+
+VERB iso hd=2:  60%|██████    | 30/50 [00:10<00:06,  3.04it/s][A[A[A
+
+
+VERB iso hd=2:  62%|██████▏   | 31/50 [00:10<00:06,  3.04it/s][A[A[A
+
+
+VERB iso hd=2:  64%|██████▍   | 32/50 [00:10<00:05,  3.05it/s][A[A[A
+
+
+VERB iso hd=2:  66%|██████▌   | 33/50 [00:11<00:05,  3.07it/s][A[A[A
+
+
+VERB iso hd=2:  68%|██████▊   | 34/50 [00:11<00:05,  3.04it/s][A[A[A
+
+
+VERB iso hd=2:  70%|███████   | 35/50 [00:11<00:04,  3.04it/s][A[A[A
+
+
+VERB iso hd=2:  72%|███████▏  | 36/50 [00:12<00:04,  2.92it/s][A[A[A
+
+
+VERB iso hd=2:  74%|███████▍  | 37/50 [00:12<00:04,  2.98it/s][A[A[A
+
+
+VERB iso hd=2:  76%|███████▌  | 38/50 [00:12<00:04,  2.98it/s][A[A[A
+
+
+VERB iso hd=2:  78%|███████▊  | 39/50 [00:13<00:03,  2.98it/s][A[A[A
+
+
+VERB iso hd=2:  80%|████████  | 40/50 [00:13<00:03,  3.02it/s][A[A[A
+
+
+VERB iso hd=2:  82%|████████▏ | 41/50 [00:13<00:02,  3.05it/s][A[A[A
+
+
+VERB iso hd=2:  84%|████████▍ | 42/50 [00:14<00:02,  3.05it/s][A[A[A
+
+
+VERB iso hd=2:  86%|████████▌ | 43/50 [00:14<00:02,  3.07it/s][A[A[A
+
+
+VERB iso hd=2:  88%|████████▊ | 44/50 [00:14<00:01,  3.08it/s][A[A[A
+
+
+VERB iso hd=2:  90%|█████████ | 45/50 [00:15<00:01,  3.07it/s][A[A[A
+
+
+VERB iso hd=2:  92%|█████████▏| 46/50 [00:15<00:01,  3.08it/s][A[A[A
+
+
+VERB iso hd=2:  94%|█████████▍| 47/50 [00:15<00:00,  3.10it/s][A[A[A
+
+
+VERB iso hd=2:  96%|█████████▌| 48/50 [00:16<00:00,  3.10it/s][A[A[A
+
+
+VERB iso hd=2:  98%|█████████▊| 49/50 [00:16<00:00,  3.10it/s][A[A[A
+
+
+VERB iso hd=2: 100%|██████████| 50/50 [00:16<00:00,  3.02it/s][A[A[A
+
+
+                                                              [A[A[A
+
+VERB iso head distances:  67%|██████▋   | 8/12 [23:42<07:18, 109.54s/it, hd=2, n=213][A[A
+
+VERB iso head distances:  67%|██████▋   | 8/12 [23:42<07:18, 109.54s/it, hd=3, n=131][A[A
+
+
+VERB iso hd=3:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=3:   2%|▏         | 1/50 [00:00<00:08,  5.66it/s][A[A[A
+
+
+VERB iso hd=3:   4%|▍         | 2/50 [00:00<00:08,  5.60it/s][A[A[A
+
+
+VERB iso hd=3:   6%|▌         | 3/50 [00:00<00:08,  5.59it/s][A[A[A
+
+
+VERB iso hd=3:   8%|▊         | 4/50 [00:00<00:08,  5.61it/s][A[A[A
+
+
+VERB iso hd=3:  10%|█         | 5/50 [00:00<00:07,  5.64it/s][A[A[A
+
+
+VERB iso hd=3:  12%|█▏        | 6/50 [00:01<00:07,  5.68it/s][A[A[A
+
+
+VERB iso hd=3:  14%|█▍        | 7/50 [00:01<00:07,  5.71it/s][A[A[A
+
+
+VERB iso hd=3:  16%|█▌        | 8/50 [00:01<00:07,  5.70it/s][A[A[A
+
+
+VERB iso hd=3:  18%|█▊        | 9/50 [00:01<00:07,  5.69it/s][A[A[A
+
+
+VERB iso hd=3:  20%|██        | 10/50 [00:01<00:07,  5.57it/s][A[A[A
+
+
+VERB iso hd=3:  22%|██▏       | 11/50 [00:01<00:07,  5.57it/s][A[A[A
+
+
+VERB iso hd=3:  24%|██▍       | 12/50 [00:02<00:08,  4.71it/s][A[A[A
+
+
+VERB iso hd=3:  26%|██▌       | 13/50 [00:02<00:08,  4.25it/s][A[A[A
+
+
+VERB iso hd=3:  28%|██▊       | 14/50 [00:02<00:08,  4.50it/s][A[A[A
+
+
+VERB iso hd=3:  30%|███       | 15/50 [00:03<00:09,  3.81it/s][A[A[A
+
+
+VERB iso hd=3:  32%|███▏      | 16/50 [00:03<00:10,  3.14it/s][A[A[A
+
+
+VERB iso hd=3:  34%|███▍      | 17/50 [00:03<00:10,  3.08it/s][A[A[A
+
+
+VERB iso hd=3:  36%|███▌      | 18/50 [00:04<00:09,  3.35it/s][A[A[A
+
+
+VERB iso hd=3:  38%|███▊      | 19/50 [00:04<00:08,  3.82it/s][A[A[A
+
+
+VERB iso hd=3:  40%|████      | 20/50 [00:05<00:18,  1.66it/s][A[A[A
+
+
+VERB iso hd=3:  42%|████▏     | 21/50 [00:06<00:16,  1.80it/s][A[A[A
+
+
+VERB iso hd=3:  44%|████▍     | 22/50 [00:06<00:13,  2.10it/s][A[A[A
+
+
+VERB iso hd=3:  46%|████▌     | 23/50 [00:06<00:11,  2.26it/s][A[A[A
+
+
+VERB iso hd=3:  48%|████▊     | 24/50 [00:07<00:11,  2.34it/s][A[A[A
+
+
+VERB iso hd=3:  50%|█████     | 25/50 [00:07<00:09,  2.54it/s][A[A[A
+
+
+VERB iso hd=3:  52%|█████▏    | 26/50 [00:07<00:08,  2.70it/s][A[A[A
+
+
+VERB iso hd=3:  54%|█████▍    | 27/50 [00:08<00:08,  2.71it/s][A[A[A
+
+
+VERB iso hd=3:  56%|█████▌    | 28/50 [00:08<00:08,  2.62it/s][A[A[A
+
+
+VERB iso hd=3:  58%|█████▊    | 29/50 [00:08<00:07,  2.71it/s][A[A[A
+
+
+VERB iso hd=3:  60%|██████    | 30/50 [00:09<00:07,  2.74it/s][A[A[A
+
+
+VERB iso hd=3:  62%|██████▏   | 31/50 [00:09<00:05,  3.18it/s][A[A[A
+
+
+VERB iso hd=3:  64%|██████▍   | 32/50 [00:09<00:05,  3.38it/s][A[A[A
+
+
+VERB iso hd=3:  66%|██████▌   | 33/50 [00:10<00:05,  3.21it/s][A[A[A
+
+
+VERB iso hd=3:  68%|██████▊   | 34/50 [00:10<00:05,  2.84it/s][A[A[A
+
+
+VERB iso hd=3:  70%|███████   | 35/50 [00:10<00:05,  2.68it/s][A[A[A
+
+
+VERB iso hd=3:  72%|███████▏  | 36/50 [00:11<00:05,  2.53it/s][A[A[A
+
+
+VERB iso hd=3:  74%|███████▍  | 37/50 [00:12<00:05,  2.42it/s][A[A[A
+
+
+VERB iso hd=3:  76%|███████▌  | 38/50 [00:12<00:05,  2.12it/s][A[A[A
+
+
+VERB iso hd=3:  78%|███████▊  | 39/50 [00:12<00:04,  2.60it/s][A[A[A
+
+
+VERB iso hd=3:  80%|████████  | 40/50 [00:12<00:03,  3.05it/s][A[A[A
+
+
+VERB iso hd=3:  82%|████████▏ | 41/50 [00:13<00:02,  3.48it/s][A[A[A
+
+
+VERB iso hd=3:  84%|████████▍ | 42/50 [00:13<00:02,  3.83it/s][A[A[A
+
+
+VERB iso hd=3:  86%|████████▌ | 43/50 [00:13<00:01,  4.15it/s][A[A[A
+
+
+VERB iso hd=3:  88%|████████▊ | 44/50 [00:13<00:01,  4.26it/s][A[A[A
+
+
+VERB iso hd=3:  90%|█████████ | 45/50 [00:13<00:01,  4.49it/s][A[A[A
+
+
+VERB iso hd=3:  92%|█████████▏| 46/50 [00:14<00:01,  3.80it/s][A[A[A
+
+
+VERB iso hd=3:  94%|█████████▍| 47/50 [00:14<00:00,  3.42it/s][A[A[A
+
+
+VERB iso hd=3:  96%|█████████▌| 48/50 [00:14<00:00,  3.29it/s][A[A[A
+
+
+VERB iso hd=3:  98%|█████████▊| 49/50 [00:15<00:00,  3.49it/s][A[A[A
+
+
+VERB iso hd=3: 100%|██████████| 50/50 [00:15<00:00,  3.61it/s][A[A[A
+
+
+                                                              [A[A[A
+
+VERB iso head distances:  75%|███████▌  | 9/12 [23:57<04:00, 80.11s/it, hd=3, n=131] [A[A
+
+VERB iso head distances:  75%|███████▌  | 9/12 [23:57<04:00, 80.11s/it, hd=4, n=116][A[A
+
+
+VERB iso hd=4:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=4:   2%|▏         | 1/50 [00:00<00:09,  5.28it/s][A[A[A
+
+
+VERB iso hd=4:   4%|▍         | 2/50 [00:00<00:09,  5.15it/s][A[A[A
+
+
+VERB iso hd=4:   6%|▌         | 3/50 [00:00<00:11,  4.27it/s][A[A[A
+
+
+VERB iso hd=4:   8%|▊         | 4/50 [00:01<00:13,  3.47it/s][A[A[A
+
+
+VERB iso hd=4:  10%|█         | 5/50 [00:01<00:13,  3.23it/s][A[A[A
+
+
+VERB iso hd=4:  12%|█▏        | 6/50 [00:01<00:13,  3.32it/s][A[A[A
+
+
+VERB iso hd=4:  14%|█▍        | 7/50 [00:02<00:16,  2.65it/s][A[A[A
+
+
+VERB iso hd=4:  16%|█▌        | 8/50 [00:02<00:15,  2.69it/s][A[A[A
+
+
+VERB iso hd=4:  18%|█▊        | 9/50 [00:02<00:15,  2.73it/s][A[A[A
+
+
+VERB iso hd=4:  20%|██        | 10/50 [00:03<00:15,  2.53it/s][A[A[A
+
+
+VERB iso hd=4:  22%|██▏       | 11/50 [00:03<00:16,  2.42it/s][A[A[A
+
+
+VERB iso hd=4:  24%|██▍       | 12/50 [00:04<00:15,  2.50it/s][A[A[A
+
+
+VERB iso hd=4:  26%|██▌       | 13/50 [00:04<00:14,  2.63it/s][A[A[A
+
+
+VERB iso hd=4:  28%|██▊       | 14/50 [00:04<00:12,  2.99it/s][A[A[A
+
+
+VERB iso hd=4:  30%|███       | 15/50 [00:05<00:11,  3.13it/s][A[A[A
+
+
+VERB iso hd=4:  32%|███▏      | 16/50 [00:05<00:10,  3.28it/s][A[A[A
+
+
+VERB iso hd=4:  34%|███▍      | 17/50 [00:05<00:10,  3.12it/s][A[A[A
+
+
+VERB iso hd=4:  36%|███▌      | 18/50 [00:06<00:11,  2.91it/s][A[A[A
+
+
+VERB iso hd=4:  38%|███▊      | 19/50 [00:06<00:11,  2.60it/s][A[A[A
+
+
+VERB iso hd=4:  40%|████      | 20/50 [00:07<00:14,  2.10it/s][A[A[A
+
+
+VERB iso hd=4:  42%|████▏     | 21/50 [00:07<00:12,  2.30it/s][A[A[A
+
+
+VERB iso hd=4:  44%|████▍     | 22/50 [00:07<00:10,  2.61it/s][A[A[A
+
+
+VERB iso hd=4:  46%|████▌     | 23/50 [00:08<00:08,  3.10it/s][A[A[A
+
+
+VERB iso hd=4:  48%|████▊     | 24/50 [00:08<00:07,  3.46it/s][A[A[A
+
+
+VERB iso hd=4:  50%|█████     | 25/50 [00:08<00:06,  3.83it/s][A[A[A
+
+
+VERB iso hd=4:  52%|█████▏    | 26/50 [00:08<00:06,  3.84it/s][A[A[A
+
+
+VERB iso hd=4:  54%|█████▍    | 27/50 [00:09<00:07,  3.04it/s][A[A[A
+
+
+VERB iso hd=4:  56%|█████▌    | 28/50 [00:09<00:07,  3.01it/s][A[A[A
+
+
+VERB iso hd=4:  58%|█████▊    | 29/50 [00:09<00:07,  2.88it/s][A[A[A
+
+
+VERB iso hd=4:  60%|██████    | 30/50 [00:10<00:07,  2.54it/s][A[A[A
+
+
+VERB iso hd=4:  62%|██████▏   | 31/50 [00:10<00:06,  2.75it/s][A[A[A
+
+
+VERB iso hd=4:  64%|██████▍   | 32/50 [00:11<00:07,  2.47it/s][A[A[A
+
+
+VERB iso hd=4:  66%|██████▌   | 33/50 [00:11<00:06,  2.62it/s][A[A[A
+
+
+VERB iso hd=4:  68%|██████▊   | 34/50 [00:11<00:05,  3.07it/s][A[A[A
+
+
+VERB iso hd=4:  70%|███████   | 35/50 [00:11<00:04,  3.49it/s][A[A[A
+
+
+VERB iso hd=4:  72%|███████▏  | 36/50 [00:12<00:03,  3.87it/s][A[A[A
+
+
+VERB iso hd=4:  74%|███████▍  | 37/50 [00:12<00:03,  3.94it/s][A[A[A
+
+
+VERB iso hd=4:  76%|███████▌  | 38/50 [00:12<00:03,  3.23it/s][A[A[A
+
+
+VERB iso hd=4:  78%|███████▊  | 39/50 [00:12<00:03,  3.60it/s][A[A[A
+
+
+VERB iso hd=4:  80%|████████  | 40/50 [00:13<00:02,  4.01it/s][A[A[A
+
+
+VERB iso hd=4:  82%|████████▏ | 41/50 [00:13<00:02,  4.05it/s][A[A[A
+
+
+VERB iso hd=4:  84%|████████▍ | 42/50 [00:13<00:01,  4.02it/s][A[A[A
+
+
+VERB iso hd=4:  86%|████████▌ | 43/50 [00:13<00:01,  3.99it/s][A[A[A
+
+
+VERB iso hd=4:  88%|████████▊ | 44/50 [00:14<00:01,  3.39it/s][A[A[A
+
+
+VERB iso hd=4:  90%|█████████ | 45/50 [00:14<00:01,  2.72it/s][A[A[A
+
+
+VERB iso hd=4:  92%|█████████▏| 46/50 [00:15<00:01,  2.44it/s][A[A[A
+
+
+VERB iso hd=4:  94%|█████████▍| 47/50 [00:15<00:01,  2.68it/s][A[A[A
+
+
+VERB iso hd=4:  96%|█████████▌| 48/50 [00:16<00:00,  2.50it/s][A[A[A
+
+
+VERB iso hd=4:  98%|█████████▊| 49/50 [00:16<00:00,  2.86it/s][A[A[A
+
+
+VERB iso hd=4: 100%|██████████| 50/50 [00:16<00:00,  3.34it/s][A[A[A
+
+
+                                                              [A[A[A
+
+VERB iso head distances:  83%|████████▎ | 10/12 [24:13<02:00, 60.48s/it, hd=4, n=116][A[A
+
+VERB iso head distances:  83%|████████▎ | 10/12 [24:13<02:00, 60.48s/it, hd=5, n=107][A[A
+
+
+VERB iso hd=5:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=5:   2%|▏         | 1/50 [00:00<00:08,  6.02it/s][A[A[A
+
+
+VERB iso hd=5:   4%|▍         | 2/50 [00:00<00:07,  6.01it/s][A[A[A
+
+
+VERB iso hd=5:   6%|▌         | 3/50 [00:00<00:08,  5.61it/s][A[A[A
+
+
+VERB iso hd=5:   8%|▊         | 4/50 [00:00<00:08,  5.28it/s][A[A[A
+
+
+VERB iso hd=5:  10%|█         | 5/50 [00:00<00:09,  4.89it/s][A[A[A
+
+
+VERB iso hd=5:  12%|█▏        | 6/50 [00:01<00:09,  4.65it/s][A[A[A
+
+
+VERB iso hd=5:  14%|█▍        | 7/50 [00:01<00:10,  4.09it/s][A[A[A
+
+
+VERB iso hd=5:  16%|█▌        | 8/50 [00:01<00:09,  4.24it/s][A[A[A
+
+
+VERB iso hd=5:  18%|█▊        | 9/50 [00:02<00:11,  3.57it/s][A[A[A
+
+
+VERB iso hd=5:  20%|██        | 10/50 [00:02<00:13,  3.07it/s][A[A[A
+
+
+VERB iso hd=5:  22%|██▏       | 11/50 [00:02<00:12,  3.06it/s][A[A[A
+
+
+VERB iso hd=5:  24%|██▍       | 12/50 [00:03<00:11,  3.19it/s][A[A[A
+
+
+VERB iso hd=5:  26%|██▌       | 13/50 [00:03<00:10,  3.43it/s][A[A[A
+
+
+VERB iso hd=5:  28%|██▊       | 14/50 [00:03<00:09,  3.63it/s][A[A[A
+
+
+VERB iso hd=5:  30%|███       | 15/50 [00:03<00:08,  4.19it/s][A[A[A
+
+
+VERB iso hd=5:  32%|███▏      | 16/50 [00:03<00:07,  4.67it/s][A[A[A
+
+
+VERB iso hd=5:  34%|███▍      | 17/50 [00:04<00:06,  5.10it/s][A[A[A
+
+
+VERB iso hd=5:  36%|███▌      | 18/50 [00:04<00:05,  5.46it/s][A[A[A
+
+
+VERB iso hd=5:  38%|███▊      | 19/50 [00:04<00:05,  5.67it/s][A[A[A
+
+
+VERB iso hd=5:  40%|████      | 20/50 [00:04<00:05,  5.88it/s][A[A[A
+
+
+VERB iso hd=5:  42%|████▏     | 21/50 [00:04<00:04,  6.03it/s][A[A[A
+
+
+VERB iso hd=5:  44%|████▍     | 22/50 [00:04<00:04,  6.16it/s][A[A[A
+
+
+VERB iso hd=5:  46%|████▌     | 23/50 [00:05<00:04,  6.22it/s][A[A[A
+
+
+VERB iso hd=5:  48%|████▊     | 24/50 [00:05<00:04,  6.24it/s][A[A[A
+
+
+VERB iso hd=5:  50%|█████     | 25/50 [00:05<00:03,  6.32it/s][A[A[A
+
+
+VERB iso hd=5:  52%|█████▏    | 26/50 [00:05<00:03,  6.39it/s][A[A[A
+
+
+VERB iso hd=5:  54%|█████▍    | 27/50 [00:05<00:03,  6.48it/s][A[A[A
+
+
+VERB iso hd=5:  56%|█████▌    | 28/50 [00:05<00:03,  6.49it/s][A[A[A
+
+
+VERB iso hd=5:  58%|█████▊    | 29/50 [00:05<00:03,  6.51it/s][A[A[A
+
+
+VERB iso hd=5:  60%|██████    | 30/50 [00:06<00:03,  6.52it/s][A[A[A
+
+
+VERB iso hd=5:  62%|██████▏   | 31/50 [00:06<00:02,  6.51it/s][A[A[A
+
+
+VERB iso hd=5:  64%|██████▍   | 32/50 [00:06<00:02,  6.51it/s][A[A[A
+
+
+VERB iso hd=5:  66%|██████▌   | 33/50 [00:06<00:02,  6.77it/s][A[A[A
+
+
+VERB iso hd=5:  68%|██████▊   | 34/50 [00:06<00:03,  5.21it/s][A[A[A
+
+
+VERB iso hd=5:  70%|███████   | 35/50 [00:06<00:02,  5.53it/s][A[A[A
+
+
+VERB iso hd=5:  72%|███████▏  | 36/50 [00:07<00:02,  5.73it/s][A[A[A
+
+
+VERB iso hd=5:  74%|███████▍  | 37/50 [00:07<00:02,  5.93it/s][A[A[A
+
+
+VERB iso hd=5:  76%|███████▌  | 38/50 [00:07<00:01,  6.10it/s][A[A[A
+
+
+VERB iso hd=5:  78%|███████▊  | 39/50 [00:07<00:01,  6.23it/s][A[A[A
+
+
+VERB iso hd=5:  80%|████████  | 40/50 [00:07<00:01,  6.28it/s][A[A[A
+
+
+VERB iso hd=5:  82%|████████▏ | 41/50 [00:07<00:01,  6.34it/s][A[A[A
+
+
+VERB iso hd=5:  84%|████████▍ | 42/50 [00:08<00:01,  6.38it/s][A[A[A
+
+
+VERB iso hd=5:  86%|████████▌ | 43/50 [00:08<00:01,  6.42it/s][A[A[A
+
+
+VERB iso hd=5:  88%|████████▊ | 44/50 [00:08<00:00,  6.42it/s][A[A[A
+
+
+VERB iso hd=5:  90%|█████████ | 45/50 [00:08<00:00,  6.44it/s][A[A[A
+
+
+VERB iso hd=5:  92%|█████████▏| 46/50 [00:08<00:00,  6.40it/s][A[A[A
+
+
+VERB iso hd=5:  94%|█████████▍| 47/50 [00:08<00:00,  6.43it/s][A[A[A
+
+
+VERB iso hd=5:  96%|█████████▌| 48/50 [00:09<00:00,  6.41it/s][A[A[A
+
+
+VERB iso hd=5:  98%|█████████▊| 49/50 [00:09<00:00,  6.41it/s][A[A[A
+
+
+VERB iso hd=5: 100%|██████████| 50/50 [00:09<00:00,  6.37it/s][A[A[A
+
+
+                                                              [A[A[A
+
+VERB iso head distances:  92%|█████████▏| 11/12 [24:23<00:44, 44.85s/it, hd=5, n=107][A[A
+
+VERB iso head distances:  92%|█████████▏| 11/12 [24:23<00:44, 44.85s/it, hd=6, n=687][A[A
+
+
+VERB iso hd=6:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB iso hd=6:   2%|▏         | 1/50 [00:01<01:26,  1.76s/it][A[A[A
+
+
+VERB iso hd=6:   4%|▍         | 2/50 [00:03<01:16,  1.59s/it][A[A[A
+
+
+VERB iso hd=6:   6%|▌         | 3/50 [00:04<01:14,  1.58s/it][A[A[A
+
+
+VERB iso hd=6:   8%|▊         | 4/50 [00:06<01:16,  1.67s/it][A[A[A
+
+
+VERB iso hd=6:  10%|█         | 5/50 [00:08<01:20,  1.79s/it][A[A[A
+
+
+VERB iso hd=6:  12%|█▏        | 6/50 [00:10<01:15,  1.71s/it][A[A[A
+
+
+VERB iso hd=6:  14%|█▍        | 7/50 [00:11<01:11,  1.66s/it][A[A[A
+
+
+VERB iso hd=6:  16%|█▌        | 8/50 [00:13<01:12,  1.73s/it][A[A[A
+
+
+VERB iso hd=6:  18%|█▊        | 9/50 [00:15<01:08,  1.66s/it][A[A[A
+
+
+VERB iso hd=6:  20%|██        | 10/50 [00:17<01:16,  1.91s/it][A[A[A
+
+
+VERB iso hd=6:  22%|██▏       | 11/50 [00:19<01:12,  1.86s/it][A[A[A
+
+
+VERB iso hd=6:  24%|██▍       | 12/50 [00:21<01:16,  2.02s/it][A[A[A
+
+
+VERB iso hd=6:  26%|██▌       | 13/50 [00:24<01:21,  2.20s/it][A[A[A
+
+
+VERB iso hd=6:  28%|██▊       | 14/50 [00:26<01:22,  2.29s/it][A[A[A
+
+
+VERB iso hd=6:  30%|███       | 15/50 [00:28<01:16,  2.17s/it][A[A[A
+
+
+VERB iso hd=6:  32%|███▏      | 16/50 [00:31<01:20,  2.38s/it][A[A[A
+
+
+VERB iso hd=6:  34%|███▍      | 17/50 [00:33<01:18,  2.38s/it][A[A[A
+
+
+VERB iso hd=6:  36%|███▌      | 18/50 [00:36<01:13,  2.28s/it][A[A[A
+
+
+VERB iso hd=6:  38%|███▊      | 19/50 [00:38<01:13,  2.38s/it][A[A[A
+
+
+VERB iso hd=6:  40%|████      | 20/50 [00:41<01:12,  2.42s/it][A[A[A
+
+
+VERB iso hd=6:  42%|████▏     | 21/50 [00:43<01:08,  2.35s/it][A[A[A
+
+
+VERB iso hd=6:  44%|████▍     | 22/50 [00:45<01:06,  2.38s/it][A[A[A
+
+
+VERB iso hd=6:  46%|████▌     | 23/50 [00:48<01:05,  2.44s/it][A[A[A
+
+
+VERB iso hd=6:  48%|████▊     | 24/50 [00:50<01:00,  2.31s/it][A[A[A
+
+
+VERB iso hd=6:  50%|█████     | 25/50 [00:52<00:55,  2.21s/it][A[A[A
+
+
+VERB iso hd=6:  52%|█████▏    | 26/50 [00:53<00:48,  2.02s/it][A[A[A
+
+
+VERB iso hd=6:  54%|█████▍    | 27/50 [00:55<00:42,  1.86s/it][A[A[A
+
+
+VERB iso hd=6:  56%|█████▌    | 28/50 [00:57<00:40,  1.83s/it][A[A[A
+
+
+VERB iso hd=6:  58%|█████▊    | 29/50 [00:59<00:39,  1.89s/it][A[A[A
+
+
+VERB iso hd=6:  60%|██████    | 30/50 [01:01<00:39,  1.98s/it][A[A[A
+
+
+VERB iso hd=6:  62%|██████▏   | 31/50 [01:03<00:40,  2.12s/it][A[A[A
+
+
+VERB iso hd=6:  64%|██████▍   | 32/50 [01:05<00:35,  1.98s/it][A[A[A
+
+
+VERB iso hd=6:  66%|██████▌   | 33/50 [01:07<00:34,  2.04s/it][A[A[A
+
+
+VERB iso hd=6:  68%|██████▊   | 34/50 [01:09<00:32,  2.06s/it][A[A[A
+
+
+VERB iso hd=6:  70%|███████   | 35/50 [01:13<00:36,  2.41s/it][A[A[A
+
+
+VERB iso hd=6:  72%|███████▏  | 36/50 [01:15<00:32,  2.31s/it][A[A[A
+
+
+VERB iso hd=6:  74%|███████▍  | 37/50 [01:17<00:29,  2.28s/it][A[A[A
+
+
+VERB iso hd=6:  76%|███████▌  | 38/50 [01:19<00:26,  2.19s/it][A[A[A
+
+
+VERB iso hd=6:  78%|███████▊  | 39/50 [01:21<00:23,  2.15s/it][A[A[A
+
+
+VERB iso hd=6:  80%|████████  | 40/50 [01:23<00:22,  2.22s/it][A[A[A
+
+
+VERB iso hd=6:  82%|████████▏ | 41/50 [01:26<00:21,  2.41s/it][A[A[A
+
+
+VERB iso hd=6:  84%|████████▍ | 42/50 [01:28<00:19,  2.38s/it][A[A[A
+
+
+VERB iso hd=6:  86%|████████▌ | 43/50 [01:30<00:15,  2.19s/it][A[A[A
+
+
+VERB iso hd=6:  88%|████████▊ | 44/50 [01:33<00:14,  2.37s/it][A[A[A
+
+
+VERB iso hd=6:  90%|█████████ | 45/50 [01:36<00:12,  2.54s/it][A[A[A
+
+
+VERB iso hd=6:  92%|█████████▏| 46/50 [01:39<00:10,  2.54s/it][A[A[A
+
+
+VERB iso hd=6:  94%|█████████▍| 47/50 [01:40<00:07,  2.36s/it][A[A[A
+
+
+VERB iso hd=6:  96%|█████████▌| 48/50 [01:42<00:04,  2.10s/it][A[A[A
+
+
+VERB iso hd=6:  98%|█████████▊| 49/50 [01:44<00:02,  2.07s/it][A[A[A
+
+
+VERB iso hd=6: 100%|██████████| 50/50 [01:46<00:00,  2.09s/it][A[A[A
+
+
+                                                              [A[A[A
+
+VERB iso head distances: 100%|██████████| 12/12 [26:09<00:00, 63.59s/it, hd=6, n=687][A[A
+
+                                                                                     [A[A
+VERB metrics:  33%|███▎      | 1/3 [26:49<53:39, 1609.73s/it][ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_iso_bert-base-uncased_first.csv
+Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/verb/iso_VERB.pdf
+Computing lpca99 for POS=VERB
+
+
+VERB lpca99 head distances:   0%|          | 0/12 [00:00<?, ?it/s][A[A
+
+VERB lpca99 head distances:   0%|          | 0/12 [00:00<?, ?it/s, hd=-6, n=4532][A[A
+
+
+VERB lpca99 hd=-6:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=-6:   2%|▏         | 1/50 [00:05<04:45,  5.82s/it][A[A[A
+
+
+VERB lpca99 hd=-6:   4%|▍         | 2/50 [00:15<06:27,  8.08s/it][A[A[A
+
+
+VERB lpca99 hd=-6:   6%|▌         | 3/50 [00:24<06:30,  8.31s/it][A[A[A
+
+
+VERB lpca99 hd=-6:   8%|▊         | 4/50 [00:32<06:32,  8.53s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  10%|█         | 5/50 [00:39<05:48,  7.74s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  12%|█▏        | 6/50 [00:45<05:16,  7.19s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  14%|█▍        | 7/50 [00:51<04:50,  6.75s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  16%|█▌        | 8/50 [00:58<04:55,  7.02s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  18%|█▊        | 9/50 [01:06<05:00,  7.34s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  20%|██        | 10/50 [01:14<04:57,  7.45s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  22%|██▏       | 11/50 [01:23<05:06,  7.86s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  24%|██▍       | 12/50 [01:29<04:38,  7.34s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  26%|██▌       | 13/50 [01:35<04:21,  7.06s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  28%|██▊       | 14/50 [01:42<04:09,  6.94s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  30%|███       | 15/50 [01:49<04:02,  6.92s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  32%|███▏      | 16/50 [01:57<04:09,  7.33s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  34%|███▍      | 17/50 [02:05<04:04,  7.40s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  36%|███▌      | 18/50 [02:13<04:06,  7.70s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  38%|███▊      | 19/50 [02:20<03:49,  7.40s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  40%|████      | 20/50 [02:26<03:33,  7.12s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  42%|████▏     | 21/50 [02:33<03:18,  6.85s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  44%|████▍     | 22/50 [02:39<03:11,  6.83s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  46%|████▌     | 23/50 [02:47<03:12,  7.14s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  48%|████▊     | 24/50 [02:55<03:13,  7.45s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  50%|█████     | 25/50 [03:03<03:10,  7.60s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  52%|█████▏    | 26/50 [03:10<02:53,  7.25s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  54%|█████▍    | 27/50 [03:16<02:39,  6.94s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  56%|█████▌    | 28/50 [03:23<02:29,  6.81s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  58%|█████▊    | 29/50 [03:31<02:30,  7.18s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  60%|██████    | 30/50 [03:38<02:24,  7.20s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  62%|██████▏   | 31/50 [03:47<02:25,  7.65s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  64%|██████▍   | 32/50 [03:54<02:18,  7.68s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  66%|██████▌   | 33/50 [04:01<02:05,  7.40s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  68%|██████▊   | 34/50 [04:09<01:59,  7.48s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  70%|███████   | 35/50 [04:17<01:56,  7.78s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  72%|███████▏  | 36/50 [04:25<01:48,  7.76s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  74%|███████▍  | 37/50 [04:32<01:39,  7.68s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  76%|███████▌  | 38/50 [04:38<01:26,  7.21s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  78%|███████▊  | 39/50 [04:45<01:17,  7.07s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  80%|████████  | 40/50 [04:52<01:09,  6.94s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  82%|████████▏ | 41/50 [05:00<01:04,  7.17s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  84%|████████▍ | 42/50 [05:08<01:00,  7.50s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  86%|████████▌ | 43/50 [05:16<00:53,  7.62s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  88%|████████▊ | 44/50 [05:24<00:46,  7.74s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  90%|█████████ | 45/50 [05:30<00:36,  7.33s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  92%|█████████▏| 46/50 [05:37<00:28,  7.14s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  94%|█████████▍| 47/50 [05:43<00:20,  6.98s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  96%|█████████▌| 48/50 [05:51<00:14,  7.24s/it][A[A[A
+
+
+VERB lpca99 hd=-6:  98%|█████████▊| 49/50 [05:59<00:07,  7.24s/it][A[A[A
+
+
+VERB lpca99 hd=-6: 100%|██████████| 50/50 [06:07<00:00,  7.65s/it][A[A[A
+
+
+                                                                  [A[A[A
+
+VERB lpca99 head distances:   8%|▊         | 1/12 [06:07<1:07:25, 367.81s/it, hd=-6, n=4532][A[A
+
+VERB lpca99 head distances:   8%|▊         | 1/12 [06:07<1:07:25, 367.81s/it, hd=-5, n=1058][A[A
+
+
+VERB lpca99 hd=-5:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=-5:   2%|▏         | 1/50 [00:03<02:41,  3.30s/it][A[A[A
+
+
+VERB lpca99 hd=-5:   4%|▍         | 2/50 [00:06<02:43,  3.41s/it][A[A[A
+
+
+VERB lpca99 hd=-5:   6%|▌         | 3/50 [00:09<02:16,  2.90s/it][A[A[A
+
+
+VERB lpca99 hd=-5:   8%|▊         | 4/50 [00:11<02:04,  2.70s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  10%|█         | 5/50 [00:13<01:58,  2.63s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  12%|█▏        | 6/50 [00:16<01:55,  2.63s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  14%|█▍        | 7/50 [00:18<01:49,  2.54s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  16%|█▌        | 8/50 [00:21<01:43,  2.45s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  18%|█▊        | 9/50 [00:23<01:40,  2.45s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  20%|██        | 10/50 [00:26<01:48,  2.70s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  22%|██▏       | 11/50 [00:31<02:01,  3.13s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  24%|██▍       | 12/50 [00:35<02:09,  3.40s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  26%|██▌       | 13/50 [00:37<01:54,  3.09s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  28%|██▊       | 14/50 [00:40<01:51,  3.10s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  30%|███       | 15/50 [00:43<01:46,  3.04s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  32%|███▏      | 16/50 [00:46<01:42,  3.02s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  34%|███▍      | 17/50 [00:49<01:40,  3.04s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  36%|███▌      | 18/50 [00:52<01:40,  3.15s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  38%|███▊      | 19/50 [00:55<01:31,  2.94s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  40%|████      | 20/50 [00:57<01:21,  2.72s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  42%|████▏     | 21/50 [00:59<01:15,  2.59s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  44%|████▍     | 22/50 [01:02<01:12,  2.58s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  46%|████▌     | 23/50 [01:05<01:10,  2.59s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  48%|████▊     | 24/50 [01:07<01:04,  2.50s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  50%|█████     | 25/50 [01:09<01:01,  2.47s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  52%|█████▏    | 26/50 [01:11<00:57,  2.40s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  54%|█████▍    | 27/50 [01:14<00:58,  2.56s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  56%|█████▌    | 28/50 [01:17<00:54,  2.48s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  58%|█████▊    | 29/50 [01:20<00:59,  2.85s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  60%|██████    | 30/50 [01:23<00:54,  2.74s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  62%|██████▏   | 31/50 [01:27<00:57,  3.03s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  64%|██████▍   | 32/50 [01:29<00:51,  2.85s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  66%|██████▌   | 33/50 [01:32<00:47,  2.80s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  68%|██████▊   | 34/50 [01:35<00:48,  3.02s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  70%|███████   | 35/50 [01:38<00:42,  2.84s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  72%|███████▏  | 36/50 [01:40<00:39,  2.79s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  74%|███████▍  | 37/50 [01:43<00:36,  2.84s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  76%|███████▌  | 38/50 [01:46<00:32,  2.73s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  78%|███████▊  | 39/50 [01:48<00:29,  2.68s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  80%|████████  | 40/50 [01:51<00:25,  2.55s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  82%|████████▏ | 41/50 [01:53<00:22,  2.46s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  84%|████████▍ | 42/50 [01:55<00:19,  2.38s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  86%|████████▌ | 43/50 [01:58<00:18,  2.59s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  88%|████████▊ | 44/50 [02:01<00:15,  2.63s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  90%|█████████ | 45/50 [02:03<00:12,  2.50s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  92%|█████████▏| 46/50 [02:05<00:09,  2.50s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  94%|█████████▍| 47/50 [02:08<00:07,  2.48s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  96%|█████████▌| 48/50 [02:11<00:05,  2.60s/it][A[A[A
+
+
+VERB lpca99 hd=-5:  98%|█████████▊| 49/50 [02:14<00:02,  2.73s/it][A[A[A
+
+
+VERB lpca99 hd=-5: 100%|██████████| 50/50 [02:18<00:00,  3.22s/it][A[A[A
+
+
+                                                                  [A[A[A
+
+VERB lpca99 head distances:  17%|█▋        | 2/12 [08:26<38:50, 233.05s/it, hd=-5, n=1058]  [A[A
+
+VERB lpca99 head distances:  17%|█▋        | 2/12 [08:26<38:50, 233.05s/it, hd=-4, n=1488][A[A
+
+
+VERB lpca99 hd=-4:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=-4:   2%|▏         | 1/50 [00:05<04:33,  5.59s/it][A[A[A
+
+
+VERB lpca99 hd=-4:   4%|▍         | 2/50 [00:09<03:49,  4.78s/it][A[A[A
+
+
+VERB lpca99 hd=-4:   6%|▌         | 3/50 [00:14<03:32,  4.53s/it][A[A[A
+
+
+VERB lpca99 hd=-4:   8%|▊         | 4/50 [00:18<03:24,  4.46s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  10%|█         | 5/50 [00:21<03:00,  4.02s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  12%|█▏        | 6/50 [00:24<02:45,  3.77s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  14%|█▍        | 7/50 [00:28<02:36,  3.65s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  16%|█▌        | 8/50 [00:31<02:27,  3.51s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  18%|█▊        | 9/50 [00:34<02:19,  3.41s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  20%|██        | 10/50 [00:38<02:18,  3.47s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  22%|██▏       | 11/50 [00:44<02:46,  4.26s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  24%|██▍       | 12/50 [00:52<03:26,  5.43s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  26%|██▌       | 13/50 [00:58<03:23,  5.50s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  28%|██▊       | 14/50 [01:03<03:12,  5.35s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  30%|███       | 15/50 [01:08<03:04,  5.28s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  32%|███▏      | 16/50 [01:11<02:43,  4.81s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  34%|███▍      | 17/50 [01:15<02:28,  4.49s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  36%|███▌      | 18/50 [01:19<02:17,  4.29s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  38%|███▊      | 19/50 [01:24<02:22,  4.60s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  40%|████      | 20/50 [01:29<02:19,  4.64s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  42%|████▏     | 21/50 [01:34<02:20,  4.86s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  44%|████▍     | 22/50 [01:40<02:19,  4.99s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  46%|████▌     | 23/50 [01:44<02:10,  4.84s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  48%|████▊     | 24/50 [01:49<02:06,  4.85s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  50%|█████     | 25/50 [01:53<01:52,  4.48s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  52%|█████▏    | 26/50 [01:57<01:47,  4.46s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  54%|█████▍    | 27/50 [02:01<01:36,  4.19s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  56%|█████▌    | 28/50 [02:04<01:27,  3.98s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  58%|█████▊    | 29/50 [02:09<01:29,  4.27s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  60%|██████    | 30/50 [02:13<01:25,  4.26s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  62%|██████▏   | 31/50 [02:17<01:19,  4.21s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  64%|██████▍   | 32/50 [02:22<01:19,  4.40s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  66%|██████▌   | 33/50 [02:28<01:11,  4.21s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  68%|██████▊   | 34/50 [02:32<01:14,  4.66s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  70%|███████   | 35/50 [02:35<01:02,  4.20s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  72%|███████▏  | 36/50 [02:39<00:56,  4.06s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  74%|███████▍  | 37/50 [02:42<00:48,  3.75s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  76%|███████▌  | 38/50 [02:45<00:44,  3.71s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  78%|███████▊  | 39/50 [02:49<00:39,  3.59s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  80%|████████  | 40/50 [02:52<00:34,  3.45s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  82%|████████▏ | 41/50 [02:56<00:32,  3.65s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  84%|████████▍ | 42/50 [02:59<00:28,  3.60s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  86%|████████▌ | 43/50 [03:04<00:27,  3.89s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  88%|████████▊ | 44/50 [03:08<00:22,  3.81s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  90%|█████████ | 45/50 [03:12<00:19,  3.92s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  92%|█████████▏| 46/50 [03:15<00:15,  3.87s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  94%|█████████▍| 47/50 [03:19<00:11,  3.82s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  96%|█████████▌| 48/50 [03:23<00:07,  3.72s/it][A[A[A
+
+
+VERB lpca99 hd=-4:  98%|█████████▊| 49/50 [03:26<00:03,  3.58s/it][A[A[A
+
+
+VERB lpca99 hd=-4: 100%|██████████| 50/50 [03:29<00:00,  3.48s/it][A[A[A
+
+
+                                                                  [A[A[A
+
+VERB lpca99 head distances:  25%|██▌       | 3/12 [11:56<33:21, 222.37s/it, hd=-4, n=1488][A[A
+
+VERB lpca99 head distances:  25%|██▌       | 3/12 [11:56<33:21, 222.37s/it, hd=-3, n=1839][A[A
+
+
+VERB lpca99 hd=-3:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=-3:   2%|▏         | 1/50 [00:03<03:12,  3.92s/it][A[A[A
+
+
+VERB lpca99 hd=-3:   4%|▍         | 2/50 [00:07<02:59,  3.74s/it][A[A[A
+
+
+VERB lpca99 hd=-3:   6%|▌         | 3/50 [00:12<03:20,  4.28s/it][A[A[A
+
+
+VERB lpca99 hd=-3:   8%|▊         | 4/50 [00:17<03:22,  4.41s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  10%|█         | 5/50 [00:20<03:04,  4.10s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  12%|█▏        | 6/50 [00:24<02:55,  3.98s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  14%|█▍        | 7/50 [00:28<02:51,  3.98s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  16%|█▌        | 8/50 [00:32<02:47,  3.98s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  18%|█▊        | 9/50 [00:37<02:44,  4.00s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  20%|██        | 10/50 [00:41<02:58,  4.46s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  22%|██▏       | 11/50 [00:46<02:54,  4.46s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  24%|██▍       | 12/50 [00:50<02:42,  4.28s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  26%|██▌       | 13/50 [00:54<02:38,  4.27s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  28%|██▊       | 14/50 [00:59<02:38,  4.40s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  30%|███       | 15/50 [01:04<02:44,  4.70s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  32%|███▏      | 16/50 [01:10<02:52,  5.07s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  34%|███▍      | 17/50 [01:16<02:52,  5.21s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  36%|███▌      | 18/50 [01:20<02:39,  5.00s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  38%|███▊      | 19/50 [01:25<02:30,  4.86s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  40%|████      | 20/50 [01:29<02:20,  4.69s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  42%|████▏     | 21/50 [01:33<02:09,  4.45s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  44%|████▍     | 22/50 [01:37<02:01,  4.34s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  46%|████▌     | 23/50 [01:42<02:04,  4.60s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  48%|████▊     | 24/50 [01:46<01:58,  4.55s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  50%|█████     | 25/50 [01:51<01:50,  4.41s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  52%|█████▏    | 26/50 [01:56<01:41,  4.24s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  54%|█████▍    | 27/50 [01:59<01:41,  4.40s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  56%|█████▌    | 28/50 [02:03<01:29,  4.08s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  58%|█████▊    | 29/50 [02:08<01:31,  4.38s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  60%|██████    | 30/50 [02:13<01:32,  4.65s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  62%|██████▏   | 31/50 [02:17<01:25,  4.51s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  64%|██████▍   | 32/50 [02:21<01:18,  4.37s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  66%|██████▌   | 33/50 [02:26<01:15,  4.45s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  68%|██████▊   | 34/50 [02:30<01:11,  4.44s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  70%|███████   | 35/50 [02:36<01:09,  4.61s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  72%|███████▏  | 36/50 [02:40<01:03,  4.53s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  74%|███████▍  | 37/50 [02:44<00:59,  4.54s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  76%|███████▌  | 38/50 [02:48<00:52,  4.36s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  78%|███████▊  | 39/50 [02:54<00:53,  4.87s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  80%|████████  | 40/50 [03:00<00:50,  5.08s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  82%|████████▏ | 41/50 [03:04<00:43,  4.86s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  84%|████████▍ | 42/50 [03:10<00:42,  5.35s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  86%|████████▌ | 43/50 [03:16<00:38,  5.54s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  88%|████████▊ | 44/50 [03:21<00:31,  5.31s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  90%|█████████ | 45/50 [03:26<00:25,  5.09s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  92%|█████████▏| 46/50 [03:30<00:19,  4.93s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  94%|█████████▍| 47/50 [03:34<00:13,  4.59s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  96%|█████████▌| 48/50 [03:39<00:09,  4.63s/it][A[A[A
+
+
+VERB lpca99 hd=-3:  98%|█████████▊| 49/50 [03:44<00:04,  4.91s/it][A[A[A
+
+
+VERB lpca99 hd=-3: 100%|██████████| 50/50 [03:48<00:00,  4.48s/it][A[A[A
+
+
+                                                                  [A[A[A
+
+VERB lpca99 head distances:  33%|███▎      | 4/12 [15:44<29:58, 224.76s/it, hd=-3, n=1839][A[A
+
+VERB lpca99 head distances:  33%|███▎      | 4/12 [15:44<29:58, 224.76s/it, hd=-2, n=3726][A[A
+
+
+VERB lpca99 hd=-2:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=-2:   2%|▏         | 1/50 [00:06<05:10,  6.34s/it][A[A[A
+
+
+VERB lpca99 hd=-2:   4%|▍         | 2/50 [00:11<04:22,  5.46s/it][A[A[A
+
+
+VERB lpca99 hd=-2:   6%|▌         | 3/50 [00:17<04:27,  5.69s/it][A[A[A
+
+
+VERB lpca99 hd=-2:   8%|▊         | 4/50 [00:23<04:42,  6.15s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  10%|█         | 5/50 [00:29<04:23,  5.85s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  12%|█▏        | 6/50 [00:35<04:18,  5.88s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  14%|█▍        | 7/50 [00:41<04:19,  6.02s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  16%|█▌        | 8/50 [00:47<04:12,  6.01s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  18%|█▊        | 9/50 [00:53<04:09,  6.09s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  20%|██        | 10/50 [00:59<03:55,  5.90s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  22%|██▏       | 11/50 [01:05<03:40,  5.66s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  24%|██▍       | 12/50 [01:11<03:46,  5.95s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  26%|██▌       | 13/50 [01:17<03:46,  6.11s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  28%|██▊       | 14/50 [01:23<03:37,  6.04s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  30%|███       | 15/50 [01:28<03:22,  5.80s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  32%|███▏      | 16/50 [01:34<03:22,  5.94s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  34%|███▍      | 17/50 [01:41<03:20,  6.07s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  36%|███▌      | 18/50 [01:46<03:09,  5.91s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  38%|███▊      | 19/50 [01:52<03:00,  5.83s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  40%|████      | 20/50 [01:58<02:59,  5.99s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  42%|████▏     | 21/50 [02:04<02:54,  6.02s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  44%|████▍     | 22/50 [02:11<02:50,  6.10s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  46%|████▌     | 23/50 [02:17<02:42,  6.03s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  48%|████▊     | 24/50 [02:23<02:36,  6.01s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  50%|█████     | 25/50 [02:29<02:31,  6.05s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  52%|█████▏    | 26/50 [02:36<02:31,  6.30s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  54%|█████▍    | 27/50 [02:42<02:27,  6.41s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  56%|█████▌    | 28/50 [02:49<02:20,  6.40s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  58%|█████▊    | 29/50 [02:55<02:11,  6.27s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  60%|██████    | 30/50 [03:01<02:05,  6.30s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  62%|██████▏   | 31/50 [03:08<02:02,  6.43s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  64%|██████▍   | 32/50 [03:15<01:58,  6.59s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  66%|██████▌   | 33/50 [03:20<01:48,  6.36s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  68%|██████▊   | 34/50 [03:26<01:40,  6.25s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  70%|███████   | 35/50 [03:32<01:31,  6.13s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  72%|███████▏  | 36/50 [03:38<01:25,  6.12s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  74%|███████▍  | 37/50 [03:45<01:22,  6.35s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  76%|███████▌  | 38/50 [03:51<01:14,  6.22s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  78%|███████▊  | 39/50 [03:56<01:05,  5.94s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  80%|████████  | 40/50 [04:02<00:59,  5.96s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  82%|████████▏ | 41/50 [04:08<00:53,  5.90s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  84%|████████▍ | 42/50 [04:14<00:48,  6.01s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  86%|████████▌ | 43/50 [04:21<00:42,  6.03s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  88%|████████▊ | 44/50 [04:26<00:34,  5.76s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  90%|█████████ | 45/50 [04:31<00:27,  5.53s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  92%|█████████▏| 46/50 [04:37<00:23,  5.77s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  94%|█████████▍| 47/50 [04:42<00:16,  5.65s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  96%|█████████▌| 48/50 [04:48<00:11,  5.63s/it][A[A[A
+
+
+VERB lpca99 hd=-2:  98%|█████████▊| 49/50 [04:54<00:05,  5.64s/it][A[A[A
+
+
+VERB lpca99 hd=-2: 100%|██████████| 50/50 [05:00<00:00,  5.82s/it][A[A[A
+
+
+                                                                  [A[A[A
+
+VERB lpca99 head distances:  42%|████▏     | 5/12 [20:45<29:24, 252.05s/it, hd=-2, n=3726][A[A
+
+VERB lpca99 head distances:  42%|████▏     | 5/12 [20:45<29:24, 252.05s/it, hd=-1, n=765] [A[A
+
+
+VERB lpca99 hd=-1:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=-1:   2%|▏         | 1/50 [00:02<02:20,  2.86s/it][A[A[A
+
+
+VERB lpca99 hd=-1:   4%|▍         | 2/50 [00:05<02:13,  2.78s/it][A[A[A
+
+
+VERB lpca99 hd=-1:   6%|▌         | 3/50 [00:07<01:51,  2.38s/it][A[A[A
+
+
+VERB lpca99 hd=-1:   8%|▊         | 4/50 [00:09<01:43,  2.25s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  10%|█         | 5/50 [00:11<01:32,  2.06s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  12%|█▏        | 6/50 [00:13<01:35,  2.18s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  14%|█▍        | 7/50 [00:15<01:35,  2.22s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  16%|█▌        | 8/50 [00:17<01:29,  2.14s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  18%|█▊        | 9/50 [00:20<01:27,  2.13s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  20%|██        | 10/50 [00:22<01:26,  2.17s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  22%|██▏       | 11/50 [00:24<01:19,  2.05s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  24%|██▍       | 12/50 [00:25<01:15,  1.99s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  26%|██▌       | 13/50 [00:27<01:13,  1.98s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  28%|██▊       | 14/50 [00:29<01:10,  1.96s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  30%|███       | 15/50 [00:31<01:06,  1.90s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  32%|███▏      | 16/50 [00:33<01:01,  1.82s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  34%|███▍      | 17/50 [00:34<00:57,  1.75s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  36%|███▌      | 18/50 [00:36<00:56,  1.77s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  38%|███▊      | 19/50 [00:38<00:55,  1.80s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  40%|████      | 20/50 [00:40<00:53,  1.77s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  42%|████▏     | 21/50 [00:42<00:52,  1.81s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  44%|████▍     | 22/50 [00:44<00:52,  1.87s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  46%|████▌     | 23/50 [00:45<00:48,  1.81s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  48%|████▊     | 24/50 [00:47<00:46,  1.78s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  50%|█████     | 25/50 [00:49<00:44,  1.77s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  52%|█████▏    | 26/50 [00:51<00:49,  2.06s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  54%|█████▍    | 27/50 [00:54<00:47,  2.07s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  56%|█████▌    | 28/50 [00:55<00:42,  1.94s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  58%|█████▊    | 29/50 [00:57<00:40,  1.95s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  60%|██████    | 30/50 [00:59<00:37,  1.86s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  62%|██████▏   | 31/50 [01:01<00:39,  2.07s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  64%|██████▍   | 32/50 [01:03<00:37,  2.07s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  66%|██████▌   | 33/50 [01:05<00:34,  2.00s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  68%|██████▊   | 34/50 [01:07<00:31,  1.96s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  70%|███████   | 35/50 [01:09<00:28,  1.88s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  72%|███████▏  | 36/50 [01:11<00:26,  1.93s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  74%|███████▍  | 37/50 [01:13<00:24,  1.92s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  76%|███████▌  | 38/50 [01:14<00:21,  1.83s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  78%|███████▊  | 39/50 [01:17<00:22,  2.01s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  80%|████████  | 40/50 [01:19<00:20,  2.10s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  82%|████████▏ | 41/50 [01:21<00:17,  1.97s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  84%|████████▍ | 42/50 [01:23<00:15,  1.95s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  86%|████████▌ | 43/50 [01:25<00:13,  1.93s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  88%|████████▊ | 44/50 [01:26<00:11,  1.88s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  90%|█████████ | 45/50 [01:29<00:10,  2.01s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  92%|█████████▏| 46/50 [01:31<00:07,  1.99s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  94%|█████████▍| 47/50 [01:32<00:05,  1.88s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  96%|█████████▌| 48/50 [01:34<00:03,  1.82s/it][A[A[A
+
+
+VERB lpca99 hd=-1:  98%|█████████▊| 49/50 [01:36<00:01,  1.83s/it][A[A[A
+
+
+VERB lpca99 hd=-1: 100%|██████████| 50/50 [01:38<00:00,  1.83s/it][A[A[A
+
+
+                                                                  [A[A[A
+
+VERB lpca99 head distances:  50%|█████     | 6/12 [22:23<19:58, 199.70s/it, hd=-1, n=765][A[A
+
+VERB lpca99 head distances:  50%|█████     | 6/12 [22:23<19:58, 199.70s/it, hd=1, n=505] [A[A
+
+
+VERB lpca99 hd=1:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=1:   2%|▏         | 1/50 [00:01<00:50,  1.04s/it][A[A[A
+
+
+VERB lpca99 hd=1:   4%|▍         | 2/50 [00:02<00:50,  1.06s/it][A[A[A
+
+
+VERB lpca99 hd=1:   6%|▌         | 3/50 [00:03<00:46,  1.01it/s][A[A[A
+
+
+VERB lpca99 hd=1:   8%|▊         | 4/50 [00:04<00:45,  1.01it/s][A[A[A
+
+
+VERB lpca99 hd=1:  10%|█         | 5/50 [00:05<00:44,  1.00it/s][A[A[A
+
+
+VERB lpca99 hd=1:  12%|█▏        | 6/50 [00:05<00:43,  1.02it/s][A[A[A
+
+
+VERB lpca99 hd=1:  14%|█▍        | 7/50 [00:06<00:41,  1.04it/s][A[A[A
+
+
+VERB lpca99 hd=1:  16%|█▌        | 8/50 [00:07<00:40,  1.03it/s][A[A[A
+
+
+VERB lpca99 hd=1:  18%|█▊        | 9/50 [00:08<00:40,  1.02it/s][A[A[A
+
+
+VERB lpca99 hd=1:  20%|██        | 10/50 [00:09<00:40,  1.00s/it][A[A[A
+
+
+VERB lpca99 hd=1:  22%|██▏       | 11/50 [00:11<00:40,  1.04s/it][A[A[A
+
+
+VERB lpca99 hd=1:  24%|██▍       | 12/50 [00:12<00:38,  1.02s/it][A[A[A
+
+
+VERB lpca99 hd=1:  26%|██▌       | 13/50 [00:13<00:38,  1.05s/it][A[A[A
+
+
+VERB lpca99 hd=1:  28%|██▊       | 14/50 [00:14<00:36,  1.02s/it][A[A[A
+
+
+VERB lpca99 hd=1:  30%|███       | 15/50 [00:15<00:35,  1.01s/it][A[A[A
+
+
+VERB lpca99 hd=1:  32%|███▏      | 16/50 [00:15<00:33,  1.03it/s][A[A[A
+
+
+VERB lpca99 hd=1:  34%|███▍      | 17/50 [00:17<00:32,  1.00it/s][A[A[A
+
+
+VERB lpca99 hd=1:  36%|███▌      | 18/50 [00:17<00:31,  1.02it/s][A[A[A
+
+
+VERB lpca99 hd=1:  38%|███▊      | 19/50 [00:18<00:30,  1.01it/s][A[A[A
+
+
+VERB lpca99 hd=1:  40%|████      | 20/50 [00:20<00:29,  1.00it/s][A[A[A
+
+
+VERB lpca99 hd=1:  42%|████▏     | 21/50 [00:20<00:28,  1.02it/s][A[A[A
+
+
+VERB lpca99 hd=1:  44%|████▍     | 22/50 [00:21<00:27,  1.03it/s][A[A[A
+
+
+VERB lpca99 hd=1:  46%|████▌     | 23/50 [00:22<00:25,  1.04it/s][A[A[A
+
+
+VERB lpca99 hd=1:  48%|████▊     | 24/50 [00:23<00:24,  1.05it/s][A[A[A
+
+
+VERB lpca99 hd=1:  50%|█████     | 25/50 [00:24<00:23,  1.05it/s][A[A[A
+
+
+VERB lpca99 hd=1:  52%|█████▏    | 26/50 [00:25<00:22,  1.05it/s][A[A[A
+
+
+VERB lpca99 hd=1:  54%|█████▍    | 27/50 [00:26<00:21,  1.05it/s][A[A[A
+
+
+VERB lpca99 hd=1:  56%|█████▌    | 28/50 [00:27<00:22,  1.02s/it][A[A[A
+
+
+VERB lpca99 hd=1:  58%|█████▊    | 29/50 [00:28<00:21,  1.01s/it][A[A[A
+
+
+VERB lpca99 hd=1:  60%|██████    | 30/50 [00:29<00:19,  1.01it/s][A[A[A
+
+
+VERB lpca99 hd=1:  62%|██████▏   | 31/50 [00:31<00:21,  1.16s/it][A[A[A
+
+
+VERB lpca99 hd=1:  64%|██████▍   | 32/50 [00:32<00:23,  1.29s/it][A[A[A
+
+
+VERB lpca99 hd=1:  66%|██████▌   | 33/50 [00:34<00:24,  1.41s/it][A[A[A
+
+
+VERB lpca99 hd=1:  68%|██████▊   | 34/50 [00:35<00:21,  1.37s/it][A[A[A
+
+
+VERB lpca99 hd=1:  70%|███████   | 35/50 [00:36<00:18,  1.23s/it][A[A[A
+
+
+VERB lpca99 hd=1:  72%|███████▏  | 36/50 [00:37<00:15,  1.13s/it][A[A[A
+
+
+VERB lpca99 hd=1:  74%|███████▍  | 37/50 [00:38<00:13,  1.07s/it][A[A[A
+
+
+VERB lpca99 hd=1:  76%|███████▌  | 38/50 [00:39<00:12,  1.04s/it][A[A[A
+
+
+VERB lpca99 hd=1:  78%|███████▊  | 39/50 [00:40<00:11,  1.02s/it][A[A[A
+
+
+VERB lpca99 hd=1:  80%|████████  | 40/50 [00:41<00:10,  1.04s/it][A[A[A
+
+
+VERB lpca99 hd=1:  82%|████████▏ | 41/50 [00:43<00:10,  1.19s/it][A[A[A
+
+
+VERB lpca99 hd=1:  84%|████████▍ | 42/50 [00:44<00:10,  1.35s/it][A[A[A
+
+
+VERB lpca99 hd=1:  86%|████████▌ | 43/50 [00:45<00:08,  1.25s/it][A[A[A
+
+
+VERB lpca99 hd=1:  88%|████████▊ | 44/50 [00:46<00:06,  1.16s/it][A[A[A
+
+
+VERB lpca99 hd=1:  90%|█████████ | 45/50 [00:47<00:05,  1.10s/it][A[A[A
+
+
+VERB lpca99 hd=1:  92%|█████████▏| 46/50 [00:48<00:04,  1.04s/it][A[A[A
+
+
+VERB lpca99 hd=1:  94%|█████████▍| 47/50 [00:49<00:03,  1.00s/it][A[A[A
+
+
+VERB lpca99 hd=1:  96%|█████████▌| 48/50 [00:50<00:02,  1.00s/it][A[A[A
+
+
+VERB lpca99 hd=1:  98%|█████████▊| 49/50 [00:51<00:00,  1.02it/s][A[A[A
+
+
+VERB lpca99 hd=1: 100%|██████████| 50/50 [00:52<00:00,  1.04it/s][A[A[A
+
+
+                                                                 [A[A[A
+
+VERB lpca99 head distances:  58%|█████▊    | 7/12 [23:15<12:37, 151.57s/it, hd=1, n=505][A[A
+
+VERB lpca99 head distances:  58%|█████▊    | 7/12 [23:15<12:37, 151.57s/it, hd=2, n=213][A[A
+
+
+VERB lpca99 hd=2:   0%|          | 0/50 [00:00<?, ?it/s][A[A[A
+
+
+VERB lpca99 hd=2:   2%|▏         | 1/50 [00:00<00:23,  2.09it/s][A[A[A
+
+
+VERB lpca99 hd=2:   4%|▍         | 2/50 [00:00<00:19,  2.52it/s][A[A[A
+
+
+VERB lpca99 hd=2:   6%|▌         | 3/50 [00:01<00:17,  2.69it/s][A[A[A
+
+
+VERB lpca99 hd=2:   8%|▊         | 4/50 [00:01<00:16,  2.78it/s][A[A[A
+
+
+VERB lpca99 hd=2:  10%|█         | 5/50 [00:01<00:16,  2.75it/s][A[A[A
+
+
+VERB lpca99 hd=2:  12%|█▏        | 6/50 [00:02<00:15,  2.85it/s][A[A[A
+
+
+VERB lpca99 hd=2:  14%|█▍        | 7/50 [00:02<00:14,  2.92it/s][A[A[A
+
+
+VERB lpca99 hd=2:  16%|█▌        | 8/50 [00:02<00:14,  2.90it/s][A[A[A
+
+
+VERB lpca99 hd=2:  18%|█▊        | 9/50 [00:03<00:13,  2.93it/s][A[A[A
+
+
+VERB lpca99 hd=2:  20%|██        | 10/50 [00:03<00:13,  2.89it/s][A[A[A
+
+
+VERB lpca99 hd=2:  22%|██▏       | 11/50 [00:03<00:13,  2.96it/s][A[A[A
+
+
+VERB lpca99 hd=2:  24%|██▍       | 12/50 [00:04<00:12,  3.00it/s][A[A[A
+
+
+VERB lpca99 hd=2:  26%|██▌       | 13/50 [00:04<00:13,  2.81it/s][A[A[A
+
+
+VERB lpca99 hd=2:  28%|██▊       | 14/50 [00:05<00:13,  2.70it/s][A[A[A
+
+
+VERB lpca99 hd=2:  30%|███       | 15/50 [00:05<00:12,  2.77it/s][A[A[A                                                                                      
