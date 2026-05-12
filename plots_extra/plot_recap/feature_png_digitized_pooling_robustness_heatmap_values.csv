@@ -1,7 +1,7 @@
 comparison,metric,rho,p_value,stars,n_points,n_feature_plots,features_used
-BERT: MEAN vs FIRST,IsoScore,0.88299900584023,2.620293628331637e-145,***,438,3,"head_dist, pos, relation_type"
-BERT: MEAN vs FIRST,LID,0.672846678632423,4.672574262342708e-44,***,324,3,"head_dist, pos, relation_type"
-BERT: MEAN vs FIRST,NLID,0.7330453148536814,1.230930597669344e-72,***,424,3,"head_dist, pos, relation_type"
-GPT-2: MEAN vs LAST,IsoScore,0.7258026638444041,2.9252039421700038e-46,***,275,2,"head_dist, pos"
-GPT-2: MEAN vs LAST,LID,0.5603651328885906,7.1544647140443e-26,***,296,2,"head_dist, pos"
-GPT-2: MEAN vs LAST,NLID,0.5051430782970281,8.384156488983663e-22,***,315,2,"head_dist, pos"
+BERT: MEAN vs FIRST,IsoScore,0.9287117294044427,2.674617037210552e-197,***,455,4,"arity, index, length, relation_type"
+BERT: MEAN vs FIRST,LID,0.9962196147954274,0.0,***,455,4,"arity, index, length, relation_type"
+BERT: MEAN vs FIRST,NLID,0.8966027132684135,2.3376889536242146e-162,***,455,4,"arity, index, length, relation_type"
+GPT-2: MEAN vs LAST,IsoScore,0.7162759795418769,8.562904866579544e-73,***,455,4,"arity, index, length, relation_type"
+GPT-2: MEAN vs LAST,LID,0.7767759408080224,5.1804287874253055e-93,***,455,4,"arity, index, length, relation_type"
+GPT-2: MEAN vs LAST,NLID,0.8782101769542995,3.3398000134116796e-147,***,455,4,"arity, index, length, relation_type"

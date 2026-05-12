@@ -1,0 +1,20 @@
+feature=length model=gpt2 metrics=['iso', 'lpca99', 'gride', 'corrint', 'fishers', 'mom', 'rand', 'spect', 'tle', 'twonn']
+device=cuda word_rep_mode=mean
+caps: max_per_class=30000 fast_bs=20 heavy_bs=8 fast_sample_cap=30000 heavy_sample_cap=3000
+token rows before cap: 194,916
+token rows after cap: 185,811
+class counts: {'1': 29626, '10': 7492, '2': 29918, '3': 30000, '4': 30000, '5': 18892, '6': 14274, '7': 12188, '8': 7895, '9': 5526}
+Traceback (most recent call last):
+  File "/home/ldomenichelli/linguistic_profiling_of_transformer/scripts/recompute_mean_feature_plots.py", line 712, in <module>
+    main()
+  File "/home/ldomenichelli/linguistic_profiling_of_transformer/scripts/recompute_mean_feature_plots.py", line 661, in main
+    reps, filled, resolved_model = embed_subset(df_sent, df_tok, args, device)
+  File "/home/ldomenichelli/linguistic_profiling_of_transformer/scripts/recompute_mean_feature_plots.py", line 321, in embed_subset
+    tokenizer, model, resolved_id = load_tokenizer_and_model(args.model, args.allow_download, device)
+  File "/home/ldomenichelli/linguistic_profiling_of_transformer/scripts/recompute_mean_feature_plots.py", line 280, in load_tokenizer_and_model
+    raise RuntimeError("Could not load model/tokenizer:\n" + "\n".join(errors))
+RuntimeError: Could not load model/tokenizer:
+gpt2: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+openai-community/gpt2: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Check your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.

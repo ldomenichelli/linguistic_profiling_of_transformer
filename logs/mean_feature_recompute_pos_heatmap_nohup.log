@@ -1,0 +1,14 @@
+nohup: input ignorato
+run_id=20260510_pos_heatmap
+log_root=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260510_pos_heatmap
+features=pos
+models=bert gpt2
+metrics=iso lpca99 gride
+out_root=/home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/features
+skip_done=0
+mem_limit_gb=24
+caps: max_per_class=30000 fast_bootstrap=20 heavy_bootstrap=8 fast_sample_cap=30000 heavy_sample_cap=3000
+[2026-05-10T11:28:11+02:00] start feature=pos model=bert log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260510_pos_heatmap/pos_bert.log
+scripts/run_mean_feature_plots_queue.sh: riga 59: 719053 Ucciso                  python3 scripts/recompute_mean_feature_plots.py --feature "$feature" --model "$model" --word-rep-mode mean --batch-size "$BATCH_SIZE" --out-root "$OUT_ROOT" --max-per-class "$MAX_PER_CLASS" --fast-bootstrap "$FAST_BOOTSTRAP" --heavy-bootstrap "$HEAVY_BOOTSTRAP" --fast-sample-cap "$FAST_SAMPLE_CAP" --heavy-sample-cap "$HEAVY_SAMPLE_CAP" --metrics "${METRIC_ARGS[@]}" "${DOWNLOAD_ARGS[@]}" > "$job_log" 2>&1
+[2026-05-10T12:23:13+02:00] end feature=pos model=bert status=137
+job failed feature=pos model=bert status=137

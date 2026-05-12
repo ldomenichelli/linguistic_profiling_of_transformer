@@ -1,0 +1,7 @@
+class,raw_token_frequency,raw_type_frequency,kept_type_frequency,kept_token_frequency,control
+amod,9312,1960,1960,1960,fixed_type
+conj,7557,3810,1960,1960,fixed_type
+nsubj,15648,2562,1960,1960,fixed_type
+obj,9685,2978,1960,1960,fixed_type
+obl,8743,3228,1960,1960,fixed_type
+root,10046,3032,1960,1960,fixed_type

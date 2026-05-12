@@ -1,0 +1,11 @@
+sample,variable,n_levels,total_variation_distance
+raw,relation_type,34,0.870255318322146
+raw,token_length_bin,13,0.024101451538654083
+raw,sentence_position_bin,28,0.2516906291704274
+raw,frequency_bin,6,0.0345191270794737
+raw,abs_head_dist_bin,3,0.3339448977594507
+matched,relation_type,12,0.0
+matched,token_length_bin,7,0.0
+matched,sentence_position_bin,12,0.0
+matched,frequency_bin,6,0.0
+matched,abs_head_dist_bin,3,0.0

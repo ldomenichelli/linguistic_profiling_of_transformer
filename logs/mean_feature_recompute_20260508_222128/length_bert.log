@@ -1,0 +1,11 @@
+feature=length model=bert metrics=['iso']
+device=cpu word_rep_mode=mean
+caps: max_per_class=3 fast_bs=1 heavy_bs=8 fast_sample_cap=3 heavy_sample_cap=3000
+token rows before cap: 194,916
+token rows after cap: 30
+class counts: {'1': 3, '10': 3, '2': 3, '3': 3, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9': 3}
+bert-base-uncased mean embeddings:   0%|          | 0/30 [00:00<?, ?it/s]bert-base-uncased mean embeddings:   3%|▎         | 1/30 [00:00<00:21,  1.32it/s]bert-base-uncased mean embeddings:  10%|█         | 3/30 [00:00<00:06,  4.00it/s]bert-base-uncased mean embeddings:  17%|█▋        | 5/30 [00:01<00:03,  6.43it/s]bert-base-uncased mean embeddings:  27%|██▋       | 8/30 [00:01<00:02, 10.27it/s]bert-base-uncased mean embeddings:  37%|███▋      | 11/30 [00:01<00:01, 13.24it/s]bert-base-uncased mean embeddings:  47%|████▋     | 14/30 [00:01<00:01, 15.38it/s]bert-base-uncased mean embeddings:  53%|█████▎    | 16/30 [00:01<00:00, 15.94it/s]bert-base-uncased mean embeddings:  63%|██████▎   | 19/30 [00:01<00:00, 17.99it/s]bert-base-uncased mean embeddings:  73%|███████▎  | 22/30 [00:01<00:00, 18.35it/s]bert-base-uncased mean embeddings:  83%|████████▎ | 25/30 [00:01<00:00, 20.02it/s]bert-base-uncased mean embeddings:  93%|█████████▎| 28/30 [00:02<00:00, 21.58it/s]bert-base-uncased mean embeddings: 100%|██████████| 30/30 [00:02<00:00, 13.82it/s]
+computing iso (fast)
+saved /tmp/mean_feature_queue_smoke/length/mean/bert/iso_bert_length.png
+saved /tmp/mean_feature_queue_smoke/length/mean/bert/tables/iso_bert_length.csv
+done

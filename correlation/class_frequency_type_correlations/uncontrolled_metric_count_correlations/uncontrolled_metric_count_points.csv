@@ -1,0 +1,367 @@
+model,word_rep_mode,feature,metric_family,metric,class,mean_score,n_tokens,n_types,family_label,metric_label,model_label,row_label
+bert-base-uncased,first,arity,isotropy,iso,0,0.0290549229830502,129064,7581,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,arity,isotropy,iso,1,0.0582889200976261,20239,6441,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,arity,isotropy,iso,2,0.0528995609627319,18037,5846,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,arity,isotropy,iso,3,0.0438812071314224,13546,4621,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,arity,isotropy,iso,4,0.0447228473539535,14030,4534,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,-1,0.0285302121192216,13038,2647,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,-2,0.0494152015218367,15690,5483,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,-3,0.0515345317813065,10487,4117,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,-4,0.0396534863572853,6684,3050,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,-5,0.0280487846869688,4545,2268,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,-6,0.0097928590571077,19585,4572,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,1,0.0334598619777422,57036,5218,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,2,0.0330696661884967,28588,2747,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,3,0.0324506511768469,13592,1840,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,4,0.0297516650305343,6439,1171,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,5,0.0253952897082154,3249,795,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,isotropy,iso,6,0.0257732057227537,5937,1779,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,1,0.0179336035910706,10067,1600,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,10,0.0289197423710272,108145,12235,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,2,0.0316561557925664,9647,2309,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,3,0.039310724259569,9800,2483,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,4,0.0396409228157538,9932,2701,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,5,0.0388080423267987,9948,2876,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,6,0.0371117686422971,9972,2891,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,7,0.035767675592349,9559,2820,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,8,0.0343704838305711,9142,2709,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,index,isotropy,iso,9,0.0334765740598623,8704,2699,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,1,0.0088653786179537,29626,74,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,10,0.045861193910241,7492,2782,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,2,0.0249723130837082,29918,334,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,3,0.022869100794196,36097,911,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,4,0.0395162899333696,33008,1660,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,5,0.0444731921530686,18892,2012,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,6,0.0506203913917907,14274,2373,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,7,0.0523304658440442,12188,2426,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,8,0.0507954224370992,7895,2044,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,length,isotropy,iso,9,0.0459885448217391,5526,1557,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,ADJ,0.0359124684563049,12648,2156,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,ADP,0.0258444919465825,17557,116,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,ADV,0.0281366744580176,9913,716,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,AUX,0.0158976965154019,11526,90,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,CCONJ,0.0109187179746535,6627,21,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,DET,0.014045596624223,16123,36,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,NOUN,0.056103288840789,33607,6903,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,NUM,0.0169457888517241,3675,728,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,PRON,0.0132150744231274,18255,138,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,PROPN,0.0342302120362336,11203,3808,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,PUNCT,0.0074446177145895,22123,94,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,SCONJ,0.0110376597238847,3815,62,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,pos,isotropy,iso,VERB,0.039556655459679,22095,3538,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,advmod,0.0266350063566977,10307,704,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,amod,0.0348481849695627,9312,1960,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,case,0.0250202162334551,16577,128,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,conj,0.0430365858169701,7557,3810,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,det,0.0133060401377196,15562,31,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,nsubj,0.0148484903172804,15648,2562,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,obj,0.0336209330707788,9685,2978,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,obl,0.0506163485921345,8743,3228,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,punct,0.0074446177145895,22123,94,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,relation_type,isotropy,iso,root,0.0385287402627559,10046,3032,IsoScore,IsoScore,BERT,BERT IsoScore
+bert-base-uncased,first,head_dist,linear_id,lpca99,-1,657.8269277719351,13038,2647,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,-2,684.265380859375,15690,5483,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,-3,681.9153817983774,10487,4117,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,-4,676.0115356445312,6684,3050,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,-5,663.3153921274038,4545,2268,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,-6,662.9076913686899,19585,4572,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,1,667.1769221379207,57036,5218,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,2,648.4807621882512,28588,2747,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,3,645.3615440955529,13592,1840,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,4,634.0230759840745,6439,1171,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,5,595.2076955942007,3249,795,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,head_dist,linear_id,lpca99,6,654.6846172626202,5937,1779,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,1,609.2730853740985,10067,1600,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,10,687.3230778620793,108145,12235,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,2,653.9884549654447,9647,2309,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,3,663.4884596604568,9800,2483,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,4,670.2423142653245,9932,2701,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,5,674.7923020582932,9948,2876,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,6,675.2076838566707,9972,2891,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,7,675.0230759840745,9559,2820,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,8,674.1961576021635,9142,2709,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,index,linear_id,lpca99,9,674.7692307692307,8704,2699,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,1,516.2307662963867,29626,74,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,10,662.3846153846154,7492,2782,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,2,567.1576931293195,29918,334,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,3,602.515383206881,36097,911,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,4,647.2461547851562,33008,1660,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,5,663.9307673527644,18892,2012,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,6,669.8730797400841,14274,2373,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,7,671.3538489708534,12188,2426,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,8,663.7230741060697,7895,2044,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,length,linear_id,lpca99,9,648.5884681114784,5526,1557,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,ADJ,654.1076988807091,12648,2156,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,ADP,551.3961475078876,17557,116,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,ADV,594.2076838566707,9913,716,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,AUX,510.969240628756,11526,90,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,CCONJ,489.480758373554,6627,21,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,DET,522.1692287738507,16123,36,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,NOUN,679.5346257136418,33607,6903,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,NUM,512.7884709284856,3675,728,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,PRON,513.6577016390287,18255,138,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,PROPN,658.2730712890625,11203,3808,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,PUNCT,481.4422985957219,22123,94,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,SCONJ,468.2115322993352,3815,62,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,pos,linear_id,lpca99,VERB,656.9923095703125,22095,3538,LID,LID (lPCA99),BERT,BERT LID (lPCA99)
+bert-base-uncased,first,arity,linear_id,pca99,0,684.5507624699519,129064,7581,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,arity,linear_id,pca99,1,698.6061589167668,20239,6441,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,arity,linear_id,pca99,2,697.2046133188101,18037,5846,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,arity,linear_id,pca99,3,691.433847280649,13546,4621,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,arity,linear_id,pca99,4,689.240004319411,14030,4534,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,ADJ,520.2307692307693,12648,2156,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,ADP,442.2307692307692,17557,116,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,ADV,459.46153846153845,9913,716,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,AUX,403.7692307692308,11526,90,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,CCONJ,385.2307692307692,6627,21,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,DET,416.46153846153845,16123,36,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,NOUN,558.4615384615385,33607,6903,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,NUM,409.3076923076923,3675,728,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,PRON,400.1538461538461,18255,138,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,PROPN,524.3076923076923,11203,3808,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,PUNCT,345.38461538461536,22123,94,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,SCONJ,374.7692307692308,3815,62,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,pos,linear_id,pca99,VERB,521.9230769230769,22095,3538,LID,LID (PCA99),BERT,BERT LID (PCA99)
+bert-base-uncased,first,arity,nonlinear_id,gride,0,14.489163802220272,129064,7581,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,arity,nonlinear_id,gride,1,20.601501905001125,20239,6441,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,arity,nonlinear_id,gride,2,21.42255739065317,18037,5846,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,arity,nonlinear_id,gride,3,20.304914694566,13546,4621,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,arity,nonlinear_id,gride,4,19.523098578819862,14030,4534,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,-1,13.015917961414043,13038,2647,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,-2,19.268936817462627,15690,5483,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,-3,26.694382154024563,10487,4117,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,-4,24.710720795851486,6684,3050,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,-5,21.635914215674767,4545,2268,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,-6,15.903240566070265,19585,4572,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,1,14.250441331129808,57036,5218,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,2,12.998395516322208,28588,2747,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,3,13.0393034861638,13592,1840,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,4,12.111737434680643,6439,1171,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,5,13.228244341336763,3249,795,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,head_dist,nonlinear_id,gride,6,14.138348029210018,5937,1779,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,1,8.919609175278591,10067,1600,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,10,19.911371304438664,108145,12235,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,2,11.790759953168722,9647,2309,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,3,13.591963522709332,9800,2483,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,4,15.774446652485777,9932,2701,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,5,17.89973543240474,9948,2876,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,6,16.736796324069683,9972,2891,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,7,16.20547868655278,9559,2820,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,8,16.894122495101048,9142,2709,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,index,nonlinear_id,gride,9,17.581556283510647,8704,2699,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,1,9.78492353627315,29626,74,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,10,15.029775326068584,7492,2782,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,2,11.595659017562866,29918,334,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,3,12.26424926519394,36097,911,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,4,11.734677901634804,33008,1660,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,5,12.968834473536564,18892,2012,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,6,14.410442242255575,14274,2373,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,7,16.991222381591797,12188,2426,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,8,15.05738199674166,7895,2044,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,length,nonlinear_id,gride,9,11.647312457744892,5526,1557,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,ADJ,14.180836090674768,12648,2156,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,ADP,13.510639605613855,17557,116,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,ADV,9.15189420259916,9913,716,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,AUX,11.19640468634092,11526,90,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,CCONJ,12.446986725697151,6627,21,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,DET,14.534451051400255,16123,36,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,NOUN,23.28900102468637,33607,6903,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,NUM,8.935606663043682,3675,728,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,PRON,10.80570274591446,18255,138,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,PROPN,13.86997626377986,11203,3808,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,PUNCT,9.44005749317316,22123,94,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,SCONJ,8.60675283578726,3815,62,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,pos,nonlinear_id,gride,VERB,14.853595146766075,22095,3538,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,advmod,9.297637462615969,10307,704,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,amod,13.094586225656364,9312,1960,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,case,13.446795248068296,16577,128,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,conj,20.521298775306114,7557,3810,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,det,14.63199315392054,15562,31,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,nsubj,13.582782415243296,15648,2562,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,obj,15.42296915787917,9685,2978,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,obl,15.503034151517427,8743,3228,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,punct,9.440062976800478,22123,94,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+bert-base-uncased,first,relation_type,nonlinear_id,gride,root,13.07311256115253,10046,3032,NLID,NLID (GRIDE),BERT,BERT NLID (GRIDE)
+gpt2,last,arity,isotropy,iso,0,0.0015930477708864,129064,7581,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,arity,isotropy,iso,1,0.0019538659118831,20239,6441,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,arity,isotropy,iso,2,0.002208425475356,18037,5846,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,arity,isotropy,iso,3,0.0025464153060545,13546,4621,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,arity,isotropy,iso,4,0.0028022466442332,14030,4534,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,-1,0.0150482334339847,13038,2647,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,-2,0.0245338923817213,15690,5483,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,-3,0.0237703845621301,10487,4117,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,-4,0.0206010750978468,6684,3050,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,-5,0.0156769969751341,4545,2268,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,-6,0.0067626259898623,19585,4572,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,1,0.0226376715581863,57036,5218,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,2,0.0225232197329974,28588,2747,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,3,0.0220609363168477,13592,1840,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,4,0.0169912467782313,6439,1171,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,5,0.0148596014343918,3249,795,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,head_dist,isotropy,iso,6,0.0150568652629421,5937,1779,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,1,0.0014317188716421,10067,1600,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,10,0.0185296190365288,108145,12235,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,2,0.0198253361561979,9647,2309,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,3,0.0239417153195692,9800,2483,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,4,0.0243986187717662,9932,2701,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,5,0.0225135759951976,9948,2876,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,6,0.022320317194009,9972,2891,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,7,0.0219024548916002,9559,2820,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,8,0.0216538462823686,9142,2709,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,isotropy,iso,9,0.0211108981882436,8704,2699,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,1,0.0015148813836276,29626,74,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,10,0.0026019852912912,7492,2782,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,2,0.0015072541024821,29918,334,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,3,0.0015782341629696,36097,911,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,4,0.0017155558945467,33008,1660,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,5,0.001865906220001,18892,2012,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,6,0.0020475201219176,14274,2373,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,7,0.00219903814678,12188,2426,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,8,0.0024320135663191,7895,2044,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,length,isotropy,iso,9,0.0022973684468664,5526,1557,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,ADJ,0.0022703999689278,12648,2156,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,ADP,0.0016212702478066,17557,116,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,ADV,0.0015412415646445,9913,716,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,AUX,0.0017297050396266,11526,90,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,CCONJ,0.001482725698644,6627,21,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,DET,0.0014214427926792,16123,36,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,NOUN,0.0026617650247106,33607,6903,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,NUM,0.0014882488265776,3675,728,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,PRON,0.0013920463926086,18255,138,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,PROPN,0.0018725902594338,11203,3808,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,PUNCT,0.0018073618143366,22123,94,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,SCONJ,0.0014260897878556,3815,62,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,pos,isotropy,iso,VERB,0.002085992350028,22095,3538,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,advmod,0.0196287038807684,10307,704,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,amod,0.0219383727615842,9312,1960,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,case,0.0177343201536971,16577,128,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,conj,0.0225604311383973,7557,3810,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,det,0.0089091545579811,15562,31,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,nsubj,0.011660407261493,15648,2562,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,obj,0.0219768487866251,9685,2978,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,obl,0.0238944997813982,8743,3228,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,punct,0.0073214071050572,22123,94,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,relation_type,isotropy,iso,root,0.0228218207888018,10046,3032,IsoScore,IsoScore,GPT-2,GPT-2 IsoScore
+gpt2,last,index,linear_id,lpca99,1,55.750001393831695,10067,1600,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,10,625.5230783315806,108145,12235,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,2,541.4576944204478,9647,2309,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,3,582.4269115741437,9800,2483,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,4,599.0807682917668,9932,2701,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,5,609.3769249549279,9948,2876,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,6,611.7846198448768,9972,2891,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,7,613.1923135610728,9559,2820,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,8,613.4384530874399,9142,2709,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,index,linear_id,lpca99,9,613.7653972919171,8704,2699,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,1,15.965384951004616,29626,74,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,10,259.0923086313101,7492,2782,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,2,36.115384358626144,29918,334,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,3,65.71153756288382,36097,911,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,4,109.58076919042148,33008,1660,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,5,141.69615549307602,18892,2012,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,6,172.6769244028972,14274,2373,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,7,193.2961526283851,12188,2426,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,8,229.3961542569674,7895,2044,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,length,linear_id,lpca99,9,184.73846237476056,5526,1557,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,ADJ,120.6923076923077,12648,2156,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,ADP,37.84615384615385,17557,116,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,ADV,36.61538461538461,9913,716,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,AUX,36.38461538461539,11526,90,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,CCONJ,27.384615384615383,6627,21,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,DET,12.692307692307692,16123,36,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,NOUN,222.6153846153846,33607,6903,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,NUM,26.923076923076923,3675,728,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,PRON,8.538461538461538,18255,138,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,PROPN,72.84615384615384,11203,3808,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,PUNCT,37.46153846153846,22123,94,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,SCONJ,11.615384615384617,3815,62,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,pos,linear_id,lpca99,VERB,89.23076923076923,22095,3538,LID,LID (lPCA99),GPT-2,GPT-2 LID (lPCA99)
+gpt2,last,arity,linear_id,pca99,0,107.07230699979344,129064,7581,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,arity,linear_id,pca99,1,180.00461359207446,20239,6441,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,arity,linear_id,pca99,2,223.5323068178617,18037,5846,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,arity,linear_id,pca99,3,306.6030795757587,13546,4621,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,arity,linear_id,pca99,4,345.74461364746094,14030,4534,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,-1,606.209230863131,13038,2647,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,-2,628.0215336726262,15690,5483,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,-3,622.79076561561,10487,4117,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,-4,612.0215289776141,6684,3050,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,-5,593.5230795053335,4545,2268,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,-6,611.693848830003,19585,4572,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,1,635.6599989670974,57036,5218,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,2,617.2276916503906,28588,2747,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,3,601.5015493539663,13592,1840,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,4,571.3907693716196,6439,1171,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,5,518.550767164964,3249,795,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,head_dist,linear_id,pca99,6,579.8723103449895,5937,1779,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,ADJ,169.53846153846155,12648,2156,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,ADP,49.84615384615385,17557,116,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,ADV,43.84615384615385,9913,716,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,AUX,39.46153846153846,11526,90,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,CCONJ,25.07692307692308,6627,21,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,DET,15.153846153846152,16123,36,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,NOUN,256.84615384615387,33607,6903,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,NUM,27.846153846153847,3675,728,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,PRON,9.153846153846152,18255,138,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,PROPN,107.6153846153846,11203,3808,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,PUNCT,44.84615384615385,22123,94,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,SCONJ,12.307692307692308,3815,62,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,pos,linear_id,pca99,VERB,141.3846153846154,22095,3538,LID,LID (PCA99),GPT-2,GPT-2 LID (PCA99)
+gpt2,last,arity,nonlinear_id,gride,0,11.49769243827233,129064,7581,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,arity,nonlinear_id,gride,1,17.147437682518593,20239,6441,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,arity,nonlinear_id,gride,2,17.601706284743088,18037,5846,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,arity,nonlinear_id,gride,3,15.212317613454966,13546,4621,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,arity,nonlinear_id,gride,4,13.93483756138728,14030,4534,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,-1,10.898328634408804,13038,2647,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,-2,15.39837176983173,15690,5483,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,-3,17.54917731651893,10487,4117,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,-4,16.6164183983436,6684,3050,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,-5,15.257264577425444,4545,2268,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,-6,13.351167793457323,19585,4572,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,1,12.402866785342876,57036,5218,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,2,10.703361511230469,28588,2747,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,3,10.139174296305727,13592,1840,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,4,9.671280677501972,6439,1171,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,5,10.42413564828726,3249,795,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,head_dist,nonlinear_id,gride,6,11.923084955949047,5937,1779,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,1,0.1826789533325399,10067,1600,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,10,15.1404031423422,108145,12235,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,2,5.69278331903311,9647,2309,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,3,8.72497772711974,9800,2483,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,4,10.891845354667076,9932,2701,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,5,13.818808445563684,9948,2876,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,6,13.18891716003418,9972,2891,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,7,13.151401428075935,9559,2820,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,8,13.688178135798529,9142,2709,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,index,nonlinear_id,gride,9,14.469922212453987,8704,2699,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,1,8.188980120878954,29626,74,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,10,13.072018549992489,7492,2782,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,2,8.568464645972618,29918,334,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,3,9.141559853003574,36097,911,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,4,8.751979644481953,33008,1660,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,5,10.079491101778473,18892,2012,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,6,12.026260082538313,14274,2373,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,7,13.418256612924427,12188,2426,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,8,12.418084438030537,7895,2044,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,length,nonlinear_id,gride,9,9.6043916115394,5526,1557,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,ADJ,19.390375284048226,12648,2156,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,ADP,10.854310054045458,17557,116,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,ADV,2.9610528762523947,9913,716,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,AUX,8.041928603098942,11526,90,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,CCONJ,8.019220920709463,6627,21,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,DET,2.1943967158977804,16123,36,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,NOUN,23.749618420234093,33607,6903,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,NUM,2.490735860971304,3675,728,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,PRON,2.748098804400517,18255,138,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,PROPN,17.530976625589226,11203,3808,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,PUNCT,10.09267073411208,22123,94,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,SCONJ,1.626346762363727,3815,62,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,pos,nonlinear_id,gride,VERB,19.67083545831533,22095,3538,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,advmod,7.34313596211947,10307,704,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,amod,10.348717469435472,9312,1960,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,case,11.758136226580692,16577,128,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,conj,16.35199847588172,7557,3810,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,det,10.25058095730268,15562,31,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,nsubj,9.78301283946404,15648,2562,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,obj,13.735684431516209,9685,2978,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,obl,14.479350530184233,8743,3228,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,punct,10.05821948326551,22123,94,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)
+gpt2,last,relation_type,nonlinear_id,gride,root,8.980819665468657,10046,3032,NLID,NLID (GRIDE),GPT-2,GPT-2 NLID (GRIDE)

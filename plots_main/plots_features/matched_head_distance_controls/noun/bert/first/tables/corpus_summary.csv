@@ -1,0 +1,5 @@
+sample,direction,n_tokens,n_types,mean_token_frequency,mean_token_length,mean_sentence_position,mean_abs_head_dist,top_relations
+raw,After Head,22298,5553,43.092698896762045,6.29195443537537,16.458920082518613,3.457484976231052,"obj, obl, nmod, conj, appos"
+raw,Before Head,9699,3318,40.30477368800907,6.14032374471595,12.128157542014641,2.3298278173007527,"compound, nsubj, obl, nsubj:pass, obl:unmarked"
+matched,After Head,979,574,60.59856996935649,5.720122574055158,10.65270684371808,3.2512768130745657,"nsubj, obl, obl:unmarked, obj, nmod"
+matched,Before Head,979,568,62.53932584269663,5.741573033707865,10.25638406537283,3.159346271705822,"nsubj, obl, obl:unmarked, obj, nmod"

@@ -1,0 +1,12 @@
+skip existing iso: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/iso_length_TYPES_balanced.png
+skip existing lpca: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/lpca_length_TYPES_balanced.png
+skip existing lpca99: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/lpca99_length_TYPES_balanced.png
+skip existing gride: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/gride_length_TYPES_balanced.png
+skip existing corrint: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/corrint_length_TYPES_balanced.png
+skip existing fishers: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/fishers_length_TYPES_balanced.png
+skip existing mom: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/mom_length_TYPES_balanced.png
+skip existing rand: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/rand_length_TYPES_balanced.png
+skip existing spect: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/spect_length_TYPES_balanced.png
+skip existing tle: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/tle_length_TYPES_balanced.png
+skip existing twonn: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/length/first_last/gpt2/twonn_length_TYPES_balanced.png
+all requested metrics already exist for control=fixed_type feature=length model=gpt2

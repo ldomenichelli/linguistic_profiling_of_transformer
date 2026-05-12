@@ -1,0 +1,12 @@
+skip existing iso: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/iso_head_dist_TYPES_balanced.png
+skip existing lpca: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/lpca_head_dist_TYPES_balanced.png
+skip existing lpca99: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/lpca99_head_dist_TYPES_balanced.png
+skip existing gride: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/gride_head_dist_TYPES_balanced.png
+skip existing corrint: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/corrint_head_dist_TYPES_balanced.png
+skip existing fishers: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/fishers_head_dist_TYPES_balanced.png
+skip existing mom: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/mom_head_dist_TYPES_balanced.png
+skip existing rand: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/rand_head_dist_TYPES_balanced.png
+skip existing spect: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/spect_head_dist_TYPES_balanced.png
+skip existing tle: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/tle_head_dist_TYPES_balanced.png
+skip existing twonn: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/gpt2/twonn_head_dist_TYPES_balanced.png
+all requested metrics already exist for control=fixed_type feature=head_dist model=gpt2

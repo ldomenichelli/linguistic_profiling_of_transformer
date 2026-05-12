@@ -1,0 +1,58 @@
+run_id=fixed_controls_all_20260510_141729
+log_root=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729
+controls=fixed_freq fixed_type
+features=pos length index arity head_dist relation_type
+models=bert gpt2
+metrics=iso lpca lpca99 gride corrint fishers mom rand spect tle twonn
+min_class_count=1000 min_type_count=1000
+skip_existing=1 no_title=0 mem_limit_gb=24
+[2026-05-10T14:17:29+02:00] start control=fixed_freq feature=pos model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_pos_bert.log
+[2026-05-10T16:09:52+02:00] end control=fixed_freq feature=pos model=bert status=0
+[2026-05-10T16:09:52+02:00] start control=fixed_freq feature=pos model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_pos_gpt2.log
+[2026-05-10T17:58:34+02:00] end control=fixed_freq feature=pos model=gpt2 status=0
+[2026-05-10T17:58:34+02:00] start control=fixed_freq feature=length model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_length_bert.log
+[2026-05-10T18:04:14+02:00] end control=fixed_freq feature=length model=bert status=0
+[2026-05-10T18:04:14+02:00] start control=fixed_freq feature=length model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_length_gpt2.log
+[2026-05-10T18:10:04+02:00] end control=fixed_freq feature=length model=gpt2 status=0
+[2026-05-10T18:10:04+02:00] start control=fixed_freq feature=index model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_index_bert.log
+[2026-05-10T18:15:44+02:00] end control=fixed_freq feature=index model=bert status=0
+[2026-05-10T18:15:44+02:00] start control=fixed_freq feature=index model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_index_gpt2.log
+[2026-05-10T18:21:45+02:00] end control=fixed_freq feature=index model=gpt2 status=0
+[2026-05-10T18:21:45+02:00] start control=fixed_freq feature=arity model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_arity_bert.log
+[2026-05-10T18:25:15+02:00] end control=fixed_freq feature=arity model=bert status=0
+[2026-05-10T18:25:15+02:00] start control=fixed_freq feature=arity model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_arity_gpt2.log
+[2026-05-10T18:28:55+02:00] end control=fixed_freq feature=arity model=gpt2 status=0
+[2026-05-10T18:28:55+02:00] start control=fixed_freq feature=head_dist model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_head_dist_bert.log
+[2026-05-10T18:35:25+02:00] end control=fixed_freq feature=head_dist model=bert status=0
+[2026-05-10T18:35:25+02:00] start control=fixed_freq feature=head_dist model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_head_dist_gpt2.log
+[2026-05-10T18:42:05+02:00] end control=fixed_freq feature=head_dist model=gpt2 status=0
+[2026-05-10T18:42:05+02:00] start control=fixed_freq feature=relation_type model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_relation_type_bert.log
+[2026-05-10T18:47:45+02:00] end control=fixed_freq feature=relation_type model=bert status=0
+[2026-05-10T18:47:45+02:00] start control=fixed_freq feature=relation_type model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_freq_relation_type_gpt2.log
+[2026-05-10T20:27:58+02:00] end control=fixed_freq feature=relation_type model=gpt2 status=0
+[2026-05-10T20:27:58+02:00] start control=fixed_type feature=pos model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_pos_bert.log
+[2026-05-10T20:28:08+02:00] end control=fixed_type feature=pos model=bert status=0
+[2026-05-10T20:28:08+02:00] start control=fixed_type feature=pos model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_pos_gpt2.log
+[2026-05-10T20:28:18+02:00] end control=fixed_type feature=pos model=gpt2 status=0
+[2026-05-10T20:28:18+02:00] start control=fixed_type feature=length model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_length_bert.log
+[2026-05-10T20:49:58+02:00] end control=fixed_type feature=length model=bert status=0
+[2026-05-10T20:49:58+02:00] start control=fixed_type feature=length model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_length_gpt2.log
+[2026-05-10T20:50:08+02:00] end control=fixed_type feature=length model=gpt2 status=0
+[2026-05-10T20:50:08+02:00] start control=fixed_type feature=index model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_index_bert.log
+[2026-05-10T21:34:49+02:00] end control=fixed_type feature=index model=bert status=0
+[2026-05-10T21:34:49+02:00] start control=fixed_type feature=index model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_index_gpt2.log
+[2026-05-10T22:19:40+02:00] end control=fixed_type feature=index model=gpt2 status=0
+[2026-05-10T22:19:40+02:00] start control=fixed_type feature=arity model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_arity_bert.log
+[2026-05-10T22:23:40+02:00] end control=fixed_type feature=arity model=bert status=0
+[2026-05-10T22:23:40+02:00] start control=fixed_type feature=arity model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_arity_gpt2.log
+[2026-05-10T22:28:00+02:00] end control=fixed_type feature=arity model=gpt2 status=0
+[2026-05-10T22:28:00+02:00] start control=fixed_type feature=head_dist model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_head_dist_bert.log
+[2026-05-10T22:28:10+02:00] end control=fixed_type feature=head_dist model=bert status=0
+[2026-05-10T22:28:10+02:00] start control=fixed_type feature=head_dist model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_head_dist_gpt2.log
+[2026-05-10T22:28:20+02:00] end control=fixed_type feature=head_dist model=gpt2 status=0
+[2026-05-10T22:28:20+02:00] start control=fixed_type feature=relation_type model=bert word_rep=first log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_relation_type_bert.log
+[2026-05-10T22:28:30+02:00] end control=fixed_type feature=relation_type model=bert status=0
+[2026-05-10T22:28:30+02:00] start control=fixed_type feature=relation_type model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_relation_type_gpt2.log
+[2026-05-10T22:28:40+02:00] end control=fixed_type feature=relation_type model=gpt2 status=0
+[2026-05-10T22:28:40+02:00] start control=fixed_type feature=relation_type model=gpt2 word_rep=last log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/fixed_control_feature_plots_fixed_controls_all_20260510_141729/fixed_type_relation_type_gpt2.log
+[2026-05-10T22:28:50+02:00] end control=fixed_type feature=relation_type model=gpt2 status=0

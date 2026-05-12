@@ -1,0 +1,12 @@
+class,raw_token_frequency,raw_type_frequency,kept_type_frequency,kept_token_frequency,control
+-1,13038,2647,1171,1171,fixed_type
+-2,15690,5483,1171,1171,fixed_type
+-3,10487,4117,1171,1171,fixed_type
+-4,6684,3050,1171,1171,fixed_type
+-5,4545,2268,1171,1171,fixed_type
+-6,19585,4572,1171,1171,fixed_type
+1,57036,5218,1171,1171,fixed_type
+2,28588,2747,1171,1171,fixed_type
+3,13592,1840,1171,1171,fixed_type
+4,6439,1171,1171,1171,fixed_type
+6,5937,1779,1171,1171,fixed_type

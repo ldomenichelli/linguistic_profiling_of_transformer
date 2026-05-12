@@ -1,0 +1,24 @@
+run_id=20260510_pos_heatmap
+log_root=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260510_pos_heatmap
+features=pos
+models=bert gpt2
+metrics=iso lpca99 gride
+out_root=/home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/features
+skip_done=0
+mem_limit_gb=24
+caps: max_per_class=30000 fast_bootstrap=20 heavy_bootstrap=8 fast_sample_cap=30000 heavy_sample_cap=3000
+[2026-05-10T11:22:12+02:00] start feature=pos model=bert log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260510_pos_heatmap/pos_bert.log
+run_id=20260510_pos_heatmap
+log_root=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260510_pos_heatmap
+features=pos
+models=bert gpt2
+metrics=iso lpca99 gride
+out_root=/home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/features
+skip_done=0
+mem_limit_gb=24
+caps: max_per_class=30000 fast_bootstrap=20 heavy_bootstrap=8 fast_sample_cap=30000 heavy_sample_cap=3000
+[2026-05-10T11:28:11+02:00] start feature=pos model=bert log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260510_pos_heatmap/pos_bert.log
+[2026-05-10T12:23:13+02:00] end feature=pos model=bert status=137
+job failed feature=pos model=bert status=137
+[2026-05-10T12:23:28+02:00] end feature=pos model=bert status=137
+job failed feature=pos model=bert status=137

@@ -1,0 +1,13 @@
+class,raw_token_frequency,kept_token_frequency,raw_type_frequency,control
+-1,13038,3249,2647,fixed_freq
+-2,15690,3249,5483,fixed_freq
+-3,10487,3249,4117,fixed_freq
+-4,6684,3249,3050,fixed_freq
+-5,4545,3249,2268,fixed_freq
+-6,19585,3249,4572,fixed_freq
+1,57036,3249,5218,fixed_freq
+2,28588,3249,2747,fixed_freq
+3,13592,3249,1840,fixed_freq
+4,6439,3249,1171,fixed_freq
+5,3249,3249,795,fixed_freq
+6,5937,3249,1779,fixed_freq

@@ -1,0 +1,5 @@
+class,raw_token_frequency,raw_type_frequency,kept_type_frequency,kept_token_frequency,control
+ADJ,12648,2156,2156,2156,fixed_type
+NOUN,33607,6903,2156,2156,fixed_type
+PROPN,11203,3808,2156,2156,fixed_type
+VERB,22095,3538,2156,2156,fixed_type

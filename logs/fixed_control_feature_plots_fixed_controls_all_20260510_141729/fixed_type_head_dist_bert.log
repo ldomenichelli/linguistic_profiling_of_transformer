@@ -1,0 +1,12 @@
+skip existing iso: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/iso_head_dist_TYPES_balanced.png
+skip existing lpca: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/lpca_head_dist_TYPES_balanced.png
+skip existing lpca99: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/lpca99_head_dist_TYPES_balanced.png
+skip existing gride: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/gride_head_dist_TYPES_balanced.png
+skip existing corrint: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/corrint_head_dist_TYPES_balanced.png
+skip existing fishers: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/fishers_head_dist_TYPES_balanced.png
+skip existing mom: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/mom_head_dist_TYPES_balanced.png
+skip existing rand: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/rand_head_dist_TYPES_balanced.png
+skip existing spect: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/spect_head_dist_TYPES_balanced.png
+skip existing tle: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/tle_head_dist_TYPES_balanced.png
+skip existing twonn: /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/fixed_type/head_dist/first_last/bert/twonn_head_dist_TYPES_balanced.png
+all requested metrics already exist for control=fixed_type feature=head_dist model=bert

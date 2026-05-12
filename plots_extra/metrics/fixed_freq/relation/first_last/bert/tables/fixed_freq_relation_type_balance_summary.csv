@@ -1,0 +1,11 @@
+class,raw_token_frequency,kept_token_frequency,raw_type_frequency,control
+advmod,10307,7557,704,fixed_freq
+amod,9312,7557,1960,fixed_freq
+case,16577,7557,128,fixed_freq
+conj,7557,7557,3810,fixed_freq
+det,15562,7557,31,fixed_freq
+nsubj,15648,7557,2562,fixed_freq
+obj,9685,7557,2978,fixed_freq
+obl,8743,7557,3228,fixed_freq
+punct,22123,7557,94,fixed_freq
+root,10046,7557,3032,fixed_freq

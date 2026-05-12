@@ -1,0 +1,5 @@
+correlation,x,y,r,p_value,n_classes,n_features,features_used
+spearman_raw,n_tokens,n_types,0.15863180416238293,0.22605197980227967,60,6,"arity, head_dist, index, length, pos, relation_type"
+pearson_raw,n_tokens,n_types,0.5930840649495928,5.933687306422472e-07,60,6,"arity, head_dist, index, length, pos, relation_type"
+pearson_log10,log10_n_tokens,log10_n_types,0.1340872384991976,0.30706112404409897,60,6,"arity, head_dist, index, length, pos, relation_type"
+spearman_log10,log10_n_tokens,log10_n_types,0.15863180416238293,0.22605197980227967,60,6,"arity, head_dist, index, length, pos, relation_type"

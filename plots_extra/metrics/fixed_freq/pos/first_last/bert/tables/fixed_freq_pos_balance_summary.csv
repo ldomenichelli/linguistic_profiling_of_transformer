@@ -1,0 +1,15 @@
+class,raw_token_frequency,kept_token_frequency,raw_type_frequency,control
+ADJ,12648,3675,2156,fixed_freq
+ADP,17557,3675,116,fixed_freq
+ADV,9913,3675,716,fixed_freq
+AUX,11526,3675,90,fixed_freq
+CCONJ,6627,3675,21,fixed_freq
+DET,16123,3675,36,fixed_freq
+NOUN,33607,3675,6903,fixed_freq
+NUM,3675,3675,728,fixed_freq
+PART,4241,3675,7,fixed_freq
+PRON,18255,3675,138,fixed_freq
+PROPN,11203,3675,3808,fixed_freq
+PUNCT,22123,3675,94,fixed_freq
+SCONJ,3815,3675,62,fixed_freq
+VERB,22095,3675,3538,fixed_freq
