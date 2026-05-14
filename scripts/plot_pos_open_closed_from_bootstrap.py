@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create POS open/closed-class plots from saved per-POS bootstrap tables."""
+"""Create POS open/closed-class plots from saved per-POS summary tables."""
 
 from __future__ import annotations
 
@@ -26,12 +26,18 @@ DEFAULT_SOURCE_DIRS = (
     / "tables_POS"
     / "pos_bootstrap",
 )
+DEFAULT_MEAN_SOURCE_ROOT = PROJECT_ROOT / "plots_extra" / "metrics" / "features" / "pos" / "mean"
 
-OPEN_CLASS_POS = {"ADJ", "ADV", "NOUN", "PROPN", "VERB"}
-CLOSED_CLASS_POS = {"ADP", "AUX", "CCONJ", "DET", "PART", "PRON", "SCONJ"}
+OPEN_CLASS_POS = {"ADJ", "ADV", "INTJ", "NOUN", "PROPN", "VERB"}
+CLOSED_CLASS_POS = {"ADP", "AUX", "CCONJ", "DET", "NUM", "PART", "PRON", "SCONJ"}
 
 MODEL_SPECS = {
     "bert": "bert-base-uncased",
+    "gpt": "gpt2",
+}
+
+MODEL_TABLE_SLUGS = {
+    "bert": "bert",
     "gpt": "gpt2",
 }
 
@@ -65,6 +71,21 @@ def parse_args() -> argparse.Namespace:
         help="Directory containing pos_raw_<metric>_<model>.csv files.",
     )
     parser.add_argument(
+        "--source-format",
+        choices=("auto", "bootstrap", "mean"),
+        default="auto",
+        help=(
+            "Input table layout. 'auto' prefers the newer mean tables when present, "
+            "then falls back to legacy bootstrap tables."
+        ),
+    )
+    parser.add_argument(
+        "--mean-source-root",
+        type=Path,
+        default=DEFAULT_MEAN_SOURCE_ROOT,
+        help="Root containing <model>/tables/<metric>_<model>_pos.csv mean tables.",
+    )
+    parser.add_argument(
         "--output-dir",
         type=Path,
         default=PROJECT_ROOT / "plots_main" / "plots_features" / "pos_open_closed",
@@ -85,6 +106,65 @@ def resolve_source_dir(source_dir: Path | None) -> Path:
 
     candidates = "\n".join(str(path) for path in DEFAULT_SOURCE_DIRS)
     raise FileNotFoundError(f"no POS bootstrap tables found in:\n{candidates}")
+
+
+def mean_source_path(mean_source_root: Path, model_short: str, metric_name: str) -> Path:
+    model_slug = MODEL_TABLE_SLUGS[model_short]
+    return mean_source_root / model_slug / "tables" / f"{metric_name}_{model_slug}_pos.csv"
+
+
+def mean_tables_available(mean_source_root: Path) -> bool:
+    return all(
+        mean_source_path(mean_source_root, model_short, metric_name).exists()
+        for model_short in MODEL_SPECS
+        for metric_name, _ylabel in METRIC_SPECS.values()
+    )
+
+
+def select_source(args: argparse.Namespace) -> tuple[str, Path]:
+    if args.source_dir is not None and args.source_format == "mean":
+        raise ValueError("--source-dir is only used with bootstrap tables; use --mean-source-root for mean tables")
+
+    if args.source_format == "mean":
+        if not mean_tables_available(args.mean_source_root):
+            raise FileNotFoundError(f"missing one or more POS mean tables under: {args.mean_source_root}")
+        return "mean", args.mean_source_root
+
+    if args.source_format == "bootstrap":
+        return "bootstrap", resolve_source_dir(args.source_dir)
+
+    if args.source_dir is not None:
+        return "bootstrap", resolve_source_dir(args.source_dir)
+
+    if mean_tables_available(args.mean_source_root):
+        return "mean", args.mean_source_root
+
+    return "bootstrap", resolve_source_dir(None)
+
+
+def source_table_path(
+    source_kind: str,
+    source_root: Path,
+    model_short: str,
+    model_name: str,
+    metric_name: str,
+) -> Path:
+    if source_kind == "mean":
+        return mean_source_path(source_root, model_short, metric_name)
+    if source_kind == "bootstrap":
+        return source_root / f"pos_raw_{metric_name}_{model_name}.csv"
+    raise ValueError(f"unknown source kind: {source_kind}")
+
+
+def warn_missing_requested_classes(df: pd.DataFrame, csv_path: Path) -> None:
+    available = set(df["class"].astype(str))
+    for group_name, classes in (
+        ("open", OPEN_CLASS_POS),
+        ("closed", CLOSED_CLASS_POS),
+    ):
+        missing = sorted(classes - available)
+        if missing:
+            print(f"warning: {csv_path} missing requested {group_name} POS: {', '.join(missing)}")
 
 
 def ci_to_se(row: pd.Series) -> float:
@@ -510,7 +590,7 @@ def write_markdown_summary(summary_df: pd.DataFrame, out_path: Path) -> None:
     lines = [
         "# POS Open-vs-Closed Contrast",
         "",
-        "**Hypothesis.** Open-class POS (`ADJ`, `ADV`, `NOUN`, `PROPN`, `VERB`) have higher geometry scores than closed-class POS (`ADP`, `AUX`, `CCONJ`, `DET`, `PART`, `PRON`, `SCONJ`). The contrast is operationalized as a token-weighted open-class mean minus a token-weighted closed-class mean at each layer.",
+        "**Hypothesis.** Open-class POS (`ADJ`, `ADV`, `INTJ`, `NOUN`, `PROPN`, `VERB`) have higher geometry scores than closed-class POS (`ADP`, `AUX`, `CCONJ`, `DET`, `NUM`, `PART`, `PRON`, `SCONJ`). The contrast is operationalized as a token-weighted open-class mean minus a token-weighted closed-class mean at each layer.",
         "",
         "**Decision rule.** A layer-level contrast is marked as supporting the hypothesis when the approximate 95% confidence interval for open-minus-closed is strictly above zero. If the source POS table has zero-width intervals, the result is reported as an observed contrast without an uncertainty decision.",
         "",
@@ -538,19 +618,26 @@ def write_markdown_summary(summary_df: pd.DataFrame, out_path: Path) -> None:
             "",
             "## Manuscript-Ready Wording",
             "",
-            "To make the POS observation directly quantitative, we collapsed POS tags into two predefined groups: open-class tags (`ADJ`, `ADV`, `NOUN`, `PROPN`, `VERB`) and closed-class tags (`ADP`, `AUX`, `CCONJ`, `DET`, `PART`, `PRON`, `SCONJ`). For each model, metric, and layer, we computed the token-weighted mean score for each group and tested the directional contrast open minus closed. This turns the qualitative reading of the POS curves into a layer-wise hypothesis test against zero.",
+            "To make the POS observation directly quantitative, we collapsed POS tags into two predefined groups: open-class tags (`ADJ`, `ADV`, `INTJ`, `NOUN`, `PROPN`, `VERB`) and closed-class tags (`ADP`, `AUX`, `CCONJ`, `DET`, `NUM`, `PART`, `PRON`, `SCONJ`). For each model, metric, and layer, we computed the token-weighted mean score for each group and tested the directional contrast open minus closed. This turns the qualitative reading of the POS curves into a layer-wise hypothesis test against zero.",
             "",
         ]
     )
 
-    source_has_uncertainty = summary_df["ci_method"].ne("no_source_uncertainty").any()
-    if source_has_uncertainty:
+    no_ci_models = sorted(summary_df.loc[summary_df["ci_method"].eq("no_source_uncertainty"), "model"].unique())
+    all_layers_supported = bool((summary_df["n_supported_layers"] == summary_df["n_layers"]).all())
+    if no_ci_models:
         lines.append(
-            "For BERT, the available POS-level bootstrap intervals support a positive open-minus-closed contrast in all reported layers and metric families. GPT-2 source tables contain zero-width intervals, so the GPT-2 rows should be described as observed positive contrasts unless those metric tables are regenerated with bootstrap replicates."
+            "The available POS-level intervals support a positive open-minus-closed contrast where the approximate confidence interval is strictly above zero. Rows for "
+            + ", ".join(no_ci_models)
+            + " contain zero-width intervals and should be described as observed contrasts unless those metric tables are regenerated with bootstrap replicates."
+        )
+    elif all_layers_supported:
+        lines.append(
+            "For both models, the available POS-level intervals support a positive open-minus-closed contrast in all reported layers and metric families."
         )
     else:
         lines.append(
-            "The source tables contain zero-width intervals, so these contrasts should be described as observed differences unless the metric tables are regenerated with bootstrap replicates."
+            "The available POS-level intervals support a positive open-minus-closed contrast for rows whose approximate confidence interval is strictly above zero; rows crossing zero should be described as inconclusive."
         )
 
     out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -558,7 +645,7 @@ def write_markdown_summary(summary_df: pd.DataFrame, out_path: Path) -> None:
 
 def main() -> None:
     args = parse_args()
-    source_dir = resolve_source_dir(args.source_dir)
+    source_kind, source_root = select_source(args)
     output_dir = args.output_dir
     tables_dir = output_dir / "tables"
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -570,12 +657,13 @@ def main() -> None:
     for model_short, model_name in MODEL_SPECS.items():
         metric_tables: dict[str, tuple[pd.DataFrame, str]] = {}
         for metric_label, (metric_name, ylabel) in METRIC_SPECS.items():
-            csv_path = source_dir / f"pos_raw_{metric_name}_{model_name}.csv"
+            csv_path = source_table_path(source_kind, source_root, model_short, model_name, metric_name)
             if not csv_path.exists():
                 print(f"skip missing table: {csv_path}")
                 continue
 
             df = pd.read_csv(csv_path)
+            warn_missing_requested_classes(df, csv_path)
             groups = pd.concat(
                 [
                     weighted_group_curve(df, OPEN_CLASS_POS, "Open classes"),
@@ -681,7 +769,8 @@ def main() -> None:
         write_markdown_summary(summary, markdown_out)
         written.append(markdown_out)
 
-    print(f"source tables: {source_dir}")
+    print(f"source format: {source_kind}")
+    print(f"source tables: {source_root}")
     print(f"wrote {len(written)} files")
     for path in written:
         print(path)

@@ -1,13 +1,13 @@
 model,metric,metric_label,metric_family,scope,layer,open_minus_closed,ci_low,ci_high,se,p_value_two_sided,n_layers,n_positive_layers,n_supported_layers,support,ci_method
-bert-base-uncased,iso,isoscore,Isotropy,last_layer,12.0,0.014561232688300434,0.014179133350649865,0.014943332025951004,0.00019494864165845344,0.0,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
-bert-base-uncased,iso,isoscore,Isotropy,layer_mean,,0.026828030890806934,0.026682695114189105,0.026973366667424763,7.415090643766706e-05,0.0,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
-bert-base-uncased,lpca99,LID,Linear ID,last_layer,12.0,20.91246502499314,20.5035074930917,21.32142255689458,0.20865180199052977,0.0,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
-bert-base-uncased,lpca99,LID,Linear ID,layer_mean,,138.70924704197807,138.44246394286213,138.97603014109401,0.1361138260795679,0.0,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
-bert-base-uncased,gride,NLID,Nonlinear ID,last_layer,12.0,4.138113109493421,3.8285135001822415,4.447712718804601,0.15795898434243852,2.845747860383862e-151,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
-bert-base-uncased,gride,NLID,Nonlinear ID,layer_mean,,4.815845327661956,4.528048867101855,5.103641788222056,0.1468349288571939,6.353637593942519e-236,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
-gpt2,iso,isoscore,Isotropy,last_layer,12.0,7.965866880651324e-05,7.965866880651324e-05,7.965866880651324e-05,0.0,,1,1,0,observed_open_greater_than_closed_no_ci,no_source_uncertainty
-gpt2,iso,isoscore,Isotropy,layer_mean,,0.000725797557185814,0.000725797557185814,0.000725797557185814,0.0,,13,13,0,observed_open_greater_than_closed_no_ci,no_source_uncertainty
-gpt2,lpca99,LID,Linear ID,last_layer,12.0,41.94208153419817,41.94208153419817,41.94208153419817,0.0,,1,1,0,observed_open_greater_than_closed_no_ci,no_source_uncertainty
-gpt2,lpca99,LID,Linear ID,layer_mean,,113.30258463509281,113.30258463509281,113.30258463509281,0.0,,13,13,0,observed_open_greater_than_closed_no_ci,no_source_uncertainty
-gpt2,gride,NLID,Nonlinear ID,last_layer,12.0,0.8846630496346273,0.8846630496346273,0.8846630496346273,0.0,,1,1,0,observed_open_greater_than_closed_no_ci,no_source_uncertainty
-gpt2,gride,NLID,Nonlinear ID,layer_mean,,13.250436341612733,13.250436341612733,13.250436341612733,0.0,,13,13,0,observed_open_greater_than_closed_no_ci,no_source_uncertainty
+bert-base-uncased,iso,isoscore,Isotropy,last_layer,12.0,0.0849661089252002,0.08206555791537089,0.08786665993502953,0.0014798729641986338,0.0,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+bert-base-uncased,iso,isoscore,Isotropy,layer_mean,,0.126504205727309,0.1259233984118309,0.1270850130427871,0.00029633026299903507,0.0,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+bert-base-uncased,lpca99,LID,Linear ID,last_layer,12.0,21.116351663890782,20.55198634531524,21.680716982466326,0.2879414890691545,0.0,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+bert-base-uncased,lpca99,LID,Linear ID,layer_mean,,134.79821409923437,134.49029443804272,135.10613376042602,0.15710186795492154,0.0,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+bert-base-uncased,gride,NLID,Nonlinear ID,last_layer,12.0,5.3318973165029035,4.94173123725846,5.722063395747347,0.19906432614512445,4.8587842750684374e-158,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+bert-base-uncased,gride,NLID,Nonlinear ID,layer_mean,,7.428046113947497,7.254065899180708,7.6020263287142855,0.08876541569734113,0.0,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+gpt2,iso,isoscore,Isotropy,last_layer,12.0,0.00011474877207816889,6.666967085780745e-05,0.00016282787329853032,2.4530153683857877e-05,2.8987585713190755e-06,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+gpt2,iso,isoscore,Isotropy,layer_mean,,0.00318010671651569,0.002882798662102632,0.0034774147709287478,0.00015168778286380496,1.3744639367915394e-97,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+gpt2,lpca99,LID,Linear ID,last_layer,12.0,67.98123796391789,62.31815604934337,73.64431987849241,2.889327507435979,2.0894596932663223e-122,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+gpt2,lpca99,LID,Linear ID,layer_mean,,149.72876344506864,146.68548013718052,152.77204675295675,1.552695565249042,0.0,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+gpt2,gride,NLID,Nonlinear ID,last_layer,12.0,1.4225555531411311,1.0970468421366584,1.748064264145604,0.16607587296146575,1.0742433239698321e-17,1,1,1,supports_open_greater_than_closed,normal_approx_from_contrast_ci
+gpt2,gride,NLID,Nonlinear ID,layer_mean,,7.0716622376213545,6.8614857008676875,7.2818387743750215,0.10723292691513628,0.0,13,13,13,supports_open_greater_than_closed,normal_approx_from_contrast_ci

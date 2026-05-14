@@ -34,6 +34,7 @@ DEFAULT_GEOMETRY_ROOT = (
     / "geometric_profiling_of_a_neural_language_model"
 )
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "plots_main" / "plots_features" / "feature_contrasts"
+DEFAULT_POS_MEAN_SOURCE_ROOT = PROJECT_ROOT / "plots_extra" / "metrics" / "features" / "pos" / "mean"
 
 CI_Z = 1.96
 CONTRAST_COLOR = "#2F5D9E"
@@ -44,6 +45,11 @@ GROUP_COLORS = {
 
 MODEL_NAMES = {
     "bert": "bert-base-uncased",
+    "gpt": "gpt2",
+}
+
+MODEL_TABLE_SLUGS = {
+    "bert": "bert",
     "gpt": "gpt2",
 }
 
@@ -65,8 +71,8 @@ METRIC_SPECS = {
     },
 }
 
-OPEN_CLASS_POS = {"ADJ", "ADV", "NOUN", "PROPN", "VERB"}
-CLOSED_CLASS_POS = {"ADP", "AUX", "CCONJ", "DET", "PART", "PRON", "SCONJ"}
+OPEN_CLASS_POS = {"ADJ", "ADV", "INTJ", "NOUN", "PROPN", "VERB"}
+CLOSED_CLASS_POS = {"ADP", "AUX", "CCONJ", "DET", "NUM", "PART", "PRON", "SCONJ"}
 
 CONTENT_RELATIONS = {
     "acl",
@@ -170,6 +176,21 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--geometry-root", type=Path, default=DEFAULT_GEOMETRY_ROOT)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument(
+        "--pos-source-format",
+        choices=("auto", "geometry", "mean"),
+        default="auto",
+        help=(
+            "POS table layout. 'auto' prefers newer POS mean tables when present, "
+            "then falls back to geometry bootstrap tables."
+        ),
+    )
+    parser.add_argument(
+        "--pos-mean-source-root",
+        type=Path,
+        default=DEFAULT_POS_MEAN_SOURCE_ROOT,
+        help="Root containing <model>/tables/<metric>_<model>_pos.csv POS mean tables.",
+    )
     return parser.parse_args()
 
 
@@ -191,6 +212,11 @@ def source_dirs(geometry_root: Path) -> dict[tuple[str, str], Path]:
         / "tables_REL_GPT2_no_idx0"
         / "relation_bootstrap",
     }
+
+
+def pos_mean_source_path(pos_mean_source_root: Path, model_short: str, metric_name: str) -> Path:
+    model_slug = MODEL_TABLE_SLUGS[model_short]
+    return pos_mean_source_root / model_slug / "tables" / f"{metric_name}_{model_slug}_pos.csv"
 
 
 def normalize_class(value: object) -> str:
@@ -278,13 +304,38 @@ def ci_to_se(row: pd.Series) -> float:
     return max(high - low, 0.0) / (2.0 * CI_Z)
 
 
-def metric_file(source_dir: Path, feature: str, metric_label: str, model_name: str) -> tuple[Path | None, str | None]:
+def metric_file(
+    source_dir: Path,
+    feature: str,
+    metric_label: str,
+    model_name: str,
+    *,
+    model_short: str,
+    pos_source_format: str,
+    pos_mean_source_root: Path,
+) -> tuple[Path | None, str | None]:
+    if feature == "pos" and pos_source_format in {"auto", "mean"}:
+        for metric_name in METRIC_SPECS[metric_label]["candidates"]:
+            path = pos_mean_source_path(pos_mean_source_root, model_short, metric_name)
+            if path.exists():
+                return path, metric_name
+        if pos_source_format == "mean":
+            return None, None
+
     prefix = FEATURE_SPECS[feature]["prefix"]
     for metric_name in METRIC_SPECS[metric_label]["candidates"]:
         path = source_dir / f"{prefix}_raw_{metric_name}_{model_name}.csv"
         if path.exists():
             return path, metric_name
     return None, None
+
+
+def warn_missing_requested_pos_classes(df: pd.DataFrame, path: Path) -> None:
+    available = set(df["class"].astype(str))
+    for group_name, classes in (("open", OPEN_CLASS_POS), ("closed", CLOSED_CLASS_POS)):
+        missing = sorted(classes - available)
+        if missing:
+            print(f"warning: {path} missing requested {group_name} POS: {', '.join(missing)}")
 
 
 def support_label(diff: float, ci_low: float, ci_high: float, has_uncertainty: bool) -> str:
@@ -672,12 +723,22 @@ def main() -> None:
         for model_short, model_name in MODEL_NAMES.items():
             source_dir = dirs[(model_short, feature)]
             for metric_label in METRIC_SPECS:
-                path, metric_name = metric_file(source_dir, feature, metric_label, model_name)
+                path, metric_name = metric_file(
+                    source_dir,
+                    feature,
+                    metric_label,
+                    model_name,
+                    model_short=model_short,
+                    pos_source_format=args.pos_source_format,
+                    pos_mean_source_root=args.pos_mean_source_root,
+                )
                 if path is None or metric_name is None:
                     print(f"skip missing {feature} {model_short} {metric_label}: {source_dir}")
                     continue
 
                 df = pd.read_csv(path)
+                if feature == "pos":
+                    warn_missing_requested_pos_classes(df, path)
                 groups = weighted_group_curves(df, feature)
                 if groups.empty:
                     print(f"skip empty grouping for {path}")
