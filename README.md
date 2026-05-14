@@ -77,6 +77,7 @@ exports through a static site/release asset page.
 | `3dpca/` | Interactive 3D PCA visualizations by layer/class. |
 | `plots_main/` | Plots used in the main paper figures. |
 | `plots_extra/` | Additional / ablation plots (balancing controls, extra metrics, etc.). |
+| `no_index_1/` | Plots and tables from runs where the first token (`index=1`) was excluded. |
 
 ## Experiment notebooks
 
@@ -114,6 +115,9 @@ exports through a static site/release asset page.
 ├── plots_main/             --> first index removed
 │   ├── plots_all/
 │   └── plots_features/
+├── no_index_1/             --> copied no-index=1 plots and bootstrap tables
+│   ├── plots/
+│   └── tables/
 ├── correlation/
 │   ├── plots/
 │   └── tables/
