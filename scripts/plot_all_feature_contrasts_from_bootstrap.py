@@ -28,11 +28,7 @@ import seaborn as sns
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_GEOMETRY_ROOT = (
-    PROJECT_ROOT.parent
-    / "linguistic_profiling_of_the_geometry_copy"
-    / "geometric_profiling_of_a_neural_language_model"
-)
+DEFAULT_GEOMETRY_ROOT = PROJECT_ROOT
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "plots_main" / "plots_features" / "feature_contrasts"
 DEFAULT_POS_MEAN_SOURCE_ROOT = PROJECT_ROOT / "plots_extra" / "metrics" / "features" / "pos" / "mean"
 

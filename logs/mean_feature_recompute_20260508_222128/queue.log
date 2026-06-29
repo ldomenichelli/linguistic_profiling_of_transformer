@@ -1,11 +1,11 @@
 run_id=20260508_222128
-log_root=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260508_222128
+log_root=logs/mean_feature_recompute_20260508_222128
 features=length
 models=bert
 metrics=iso
 out_root=/tmp/mean_feature_queue_smoke
 mem_limit_gb=20
 caps: max_per_class=3 fast_bootstrap=1 heavy_bootstrap=8 fast_sample_cap=3 heavy_sample_cap=3000
-[2026-05-08T22:21:28+02:00] start feature=length model=bert log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260508_222128/length_bert.log
+[2026-05-08T22:21:28+02:00] start feature=length model=bert log=logs/mean_feature_recompute_20260508_222128/length_bert.log
 [2026-05-08T22:21:38+02:00] end feature=length model=bert status=0
 [2026-05-08T22:21:38+02:00] queue complete status=0

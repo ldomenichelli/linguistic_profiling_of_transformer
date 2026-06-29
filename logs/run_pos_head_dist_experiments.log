@@ -3279,8 +3279,8 @@ Embedded POS=NOUN: 31,997 tokens, layers=13
 
 NOUN iso head distances: 100%|██████████| 12/12 [42:44<00:00, 139.04s/it, hd=6, n=1167][A[A
 
-                                                                                       [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/noun/headdist_NOUN_iso_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/noun/iso_NOUN.pdf
+                                                                                       [A[ASaved tables_POS_HEAD_DIST/bert/first/all/noun/headdist_NOUN_iso_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/noun/iso_NOUN.pdf
 
 NOUN metrics:  33%|███▎      | 1/3 [42:46<1:25:32, 2566.07s/it][AComputing lpca99 for POS=NOUN
 
@@ -5207,8 +5207,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 NOUN lpca99 head distances: 100%|██████████| 12/12 [30:24<00:00, 92.08s/it, hd=6, n=1167][A[A
 
-                                                                                         [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/noun/headdist_NOUN_lpca99_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/noun/lpca99_NOUN.pdf
+                                                                                         [A[ASaved tables_POS_HEAD_DIST/bert/first/all/noun/headdist_NOUN_lpca99_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/noun/lpca99_NOUN.pdf
 
 NOUN metrics:  67%|██████▋   | 2/3 [1:13:10<35:29, 2129.93s/it][AComputing gride for POS=NOUN
 
@@ -6055,8 +6055,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 NOUN gride head distances: 100%|██████████| 12/12 [08:44<00:00, 21.69s/it, hd=6, n=1167][A[A
 
-                                                                                        [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/noun/headdist_NOUN_gride_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/noun/gride_NOUN.pdf
+                                                                                        [A[ASaved tables_POS_HEAD_DIST/bert/first/all/noun/headdist_NOUN_gride_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/noun/gride_NOUN.pdf
 
 NOUN metrics: 100%|██████████| 3/3 [1:21:55<00:00, 1396.92s/it][A
                                                                [APOS experiments:  20%|██        | 1/5 [1:24:46<5:39:06, 5086.67s/it]
@@ -8463,8 +8463,8 @@ Embedded POS=VERB: 15,167 tokens, layers=13
 
 VERB iso head distances: 100%|██████████| 12/12 [15:43<00:00, 34.91s/it, hd=6, n=687][A[A
 
-                                                                                     [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_iso_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/verb/iso_VERB.pdf
+                                                                                     [A[ASaved tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_iso_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/verb/iso_VERB.pdf
 
 VERB metrics:  33%|███▎      | 1/3 [15:43<31:27, 943.74s/it][AComputing lpca99 for POS=VERB
 
@@ -10391,8 +10391,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 VERB lpca99 head distances: 100%|██████████| 12/12 [15:43<00:00, 35.26s/it, hd=6, n=687][A[A
 
-                                                                                        [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_lpca99_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/verb/lpca99_VERB.pdf
+                                                                                        [A[ASaved tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_lpca99_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/verb/lpca99_VERB.pdf
 
 VERB metrics:  67%|██████▋   | 2/3 [31:27<15:43, 943.85s/it][AComputing gride for POS=VERB
 
@@ -11239,8 +11239,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 VERB gride head distances: 100%|██████████| 12/12 [04:18<00:00,  8.53s/it, hd=6, n=687][A[A
 
-                                                                                       [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_gride_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/verb/gride_VERB.pdf
+                                                                                       [A[ASaved tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_gride_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/verb/gride_VERB.pdf
 
 VERB metrics: 100%|██████████| 3/3 [35:46<00:00, 631.12s/it][A
                                                             [APOS experiments:  40%|████      | 2/5 [2:01:29<2:49:31, 3390.52s/it]
@@ -13527,8 +13527,8 @@ Embedded POS=ADJ: 11,302 tokens, layers=13
 
 ADJ iso head distances: 100%|██████████| 12/12 [10:46<00:00, 34.24s/it, hd=6, n=149][A[A
 
-                                                                                    [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/adj/headdist_ADJ_iso_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/adj/iso_ADJ.pdf
+                                                                                    [A[ASaved tables_POS_HEAD_DIST/bert/first/all/adj/headdist_ADJ_iso_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/adj/iso_ADJ.pdf
 
 ADJ metrics:  33%|███▎      | 1/3 [10:46<21:33, 646.63s/it][AComputing lpca99 for POS=ADJ
 
@@ -15380,8 +15380,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 ADJ lpca99 head distances: 100%|██████████| 12/12 [10:32<00:00, 33.55s/it, hd=6, n=149][A[A
 
-                                                                                       [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/adj/headdist_ADJ_lpca99_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/adj/lpca99_ADJ.pdf
+                                                                                       [A[ASaved tables_POS_HEAD_DIST/bert/first/all/adj/headdist_ADJ_lpca99_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/adj/lpca99_ADJ.pdf
 
 ADJ metrics:  67%|██████▋   | 2/3 [21:19<10:38, 638.65s/it][AComputing gride for POS=ADJ
 
@@ -16228,8 +16228,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 ADJ gride head distances: 100%|██████████| 12/12 [02:55<00:00,  9.91s/it, hd=6, n=149][A[A
 
-                                                                                      [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/adj/headdist_ADJ_gride_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/adj/gride_ADJ.pdf
+                                                                                      [A[ASaved tables_POS_HEAD_DIST/bert/first/all/adj/headdist_ADJ_gride_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/adj/gride_ADJ.pdf
 
 ADJ metrics: 100%|██████████| 3/3 [24:16<00:00, 427.59s/it][A
                                                            [APOS experiments:  60%|██████    | 3/5 [2:26:32<1:24:16, 2528.37s/it]
@@ -18541,8 +18541,8 @@ Embedded POS=PRON: 14,867 tokens, layers=13
 
 PRON iso head distances: 100%|██████████| 12/12 [13:22<00:00, 54.32s/it, hd=6, n=204][A[A
 
-                                                                                     [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/pron/headdist_PRON_iso_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/pron/iso_PRON.pdf
+                                                                                     [A[ASaved tables_POS_HEAD_DIST/bert/first/all/pron/headdist_PRON_iso_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/pron/iso_PRON.pdf
 
 PRON metrics:  33%|███▎      | 1/3 [13:22<26:45, 802.76s/it][AComputing lpca99 for POS=PRON
 
@@ -20367,8 +20367,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 PRON lpca99 head distances: 100%|██████████| 12/12 [13:25<00:00, 55.55s/it, hd=6, n=204][A[A
 
-                                                                                        [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/pron/headdist_PRON_lpca99_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/pron/lpca99_PRON.pdf
+                                                                                        [A[ASaved tables_POS_HEAD_DIST/bert/first/all/pron/headdist_PRON_lpca99_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/pron/lpca99_PRON.pdf
 
 PRON metrics:  67%|██████▋   | 2/3 [26:48<13:24, 804.78s/it][AComputing gride for POS=PRON
 
@@ -21185,8 +21185,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 PRON gride head distances: 100%|██████████| 12/12 [04:20<00:00, 16.97s/it, hd=6, n=204][A[A
 
-                                                                                       [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/pron/headdist_PRON_gride_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/pron/gride_PRON.pdf
+                                                                                       [A[ASaved tables_POS_HEAD_DIST/bert/first/all/pron/headdist_PRON_gride_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/pron/gride_PRON.pdf
 
 PRON metrics: 100%|██████████| 3/3 [31:10<00:00, 556.60s/it][A
                                                             [APOS experiments:  80%|████████  | 4/5 [2:58:34<38:09, 2289.10s/it]  
@@ -23324,8 +23324,8 @@ Embedded POS=PROPN: 10,328 tokens, layers=13
 
 PROPN iso head distances: 100%|██████████| 12/12 [11:30<00:00, 30.89s/it, hd=6, n=205][A[A
 
-                                                                                      [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/propn/headdist_PROPN_iso_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/propn/iso_PROPN.pdf
+                                                                                      [A[ASaved tables_POS_HEAD_DIST/bert/first/all/propn/headdist_PROPN_iso_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/propn/iso_PROPN.pdf
 
 PROPN metrics:  33%|███▎      | 1/3 [11:30<23:01, 690.95s/it][AComputing lpca99 for POS=PROPN
 
@@ -25177,8 +25177,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 PROPN lpca99 head distances: 100%|██████████| 12/12 [11:49<00:00, 31.35s/it, hd=6, n=205][A[A
 
-                                                                                         [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/propn/headdist_PROPN_lpca99_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/propn/lpca99_PROPN.pdf
+                                                                                         [A[ASaved tables_POS_HEAD_DIST/bert/first/all/propn/headdist_PROPN_lpca99_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/propn/lpca99_PROPN.pdf
 
 PROPN metrics:  67%|██████▋   | 2/3 [23:21<11:42, 702.39s/it][AComputing gride for POS=PROPN
 
@@ -26025,8 +26025,8 @@ Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_
 
 PROPN gride head distances: 100%|██████████| 12/12 [02:43<00:00,  8.08s/it, hd=6, n=205][A[A
 
-                                                                                        [A[ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/propn/headdist_PROPN_gride_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/propn/gride_PROPN.pdf
+                                                                                        [A[ASaved tables_POS_HEAD_DIST/bert/first/all/propn/headdist_PROPN_gride_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/propn/gride_PROPN.pdf
 
 PROPN metrics: 100%|██████████| 3/3 [26:05<00:00, 456.72s/it][A
                                                              [APOS experiments: 100%|██████████| 5/5 [3:25:11<00:00, 2039.40s/it]POS experiments: 100%|██████████| 5/5 [3:25:11<00:00, 2462.25s/it]

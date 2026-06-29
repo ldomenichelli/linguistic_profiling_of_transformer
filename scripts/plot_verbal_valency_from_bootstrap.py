@@ -33,12 +33,8 @@ import seaborn as sns
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_GEOMETRY_ROOT = (
-    PROJECT_ROOT.parent
-    / "linguistic_profiling_of_the_geometry_copy"
-    / "geometric_profiling_of_a_neural_language_model"
-)
-DEFAULT_SENTENCE_CSV = DEFAULT_GEOMETRY_ROOT / "en_ewt-ud-train_sentences.csv"
+DEFAULT_GEOMETRY_ROOT = PROJECT_ROOT
+DEFAULT_SENTENCE_CSV = PROJECT_ROOT / "code" / "data" / "en_ewt-ud-train_sentences.csv"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "plots_main" / "plots_features" / "verbal_valency"
 
 CI_Z = 1.96

@@ -15,3 +15,4 @@ dadapy
 scikit-dimension
 jupyter
 ipywidgets
+nbformat

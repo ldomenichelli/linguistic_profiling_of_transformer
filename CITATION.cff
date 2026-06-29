@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived artifacts, please cite the accompanying CoNLL paper."
+type: software
+title: "Linguistic Profiling of Transformer Embedding Geometry"
+authors:
+  - family-names: "Domenichelli"
+    given-names: "Lucia"
+  - family-names: "Brunato"
+    given-names: "Dominique"
+  - family-names: "Dell'Orletta"
+    given-names: "Felice"
+date-released: "2026-06-29"
+preferred-citation:
+  type: conference-paper
+  title: "Linguistic Profiling of Transformer Embedding Geometry"
+  authors:
+    - family-names: "Domenichelli"
+      given-names: "Lucia"
+    - family-names: "Brunato"
+      given-names: "Dominique"
+    - family-names: "Dell'Orletta"
+      given-names: "Felice"
+  conference: "Conference on Computational Natural Language Learning (CoNLL)"
+  year: 2026

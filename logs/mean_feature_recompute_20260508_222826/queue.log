@@ -1,13 +1,13 @@
 run_id=20260508_222826
-log_root=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260508_222826
+log_root=logs/mean_feature_recompute_20260508_222826
 features=length index relation_type arity
 models=bert gpt2
 metrics=iso lpca99 gride corrint fishers mom rand spect tle twonn
-out_root=/home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/metrics/features
+out_root=plots_extra/metrics/features
 mem_limit_gb=24
 caps: max_per_class=30000 fast_bootstrap=20 heavy_bootstrap=8 fast_sample_cap=30000 heavy_sample_cap=3000
-[2026-05-08T22:28:26+02:00] start feature=length model=bert log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260508_222826/length_bert.log
+[2026-05-08T22:28:26+02:00] start feature=length model=bert log=logs/mean_feature_recompute_20260508_222826/length_bert.log
 [2026-05-09T01:31:10+02:00] end feature=length model=bert status=0
-[2026-05-09T01:31:10+02:00] start feature=length model=gpt2 log=/home/ldomenichelli/linguistic_profiling_of_transformer/logs/mean_feature_recompute_20260508_222826/length_gpt2.log
+[2026-05-09T01:31:10+02:00] start feature=length model=gpt2 log=logs/mean_feature_recompute_20260508_222826/length_gpt2.log
 [2026-05-09T01:31:20+02:00] end feature=length model=gpt2 status=1
 job failed feature=length model=gpt2 status=1

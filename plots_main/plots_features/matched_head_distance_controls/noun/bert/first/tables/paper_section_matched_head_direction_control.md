@@ -13,14 +13,14 @@ The comparison fixes POS and compares `Before Head` (`head_dist > 0`) against `A
 
 ## Files
 
-- categorical_balance: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/categorical_balance.csv`
-- corpus_summary: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/corpus_summary.csv`
-- histogram_last_pdf: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/matched_noun_head_direction_histogram_last.pdf`
-- histogram_mean_pdf: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/matched_noun_head_direction_histogram_mean.pdf`
-- matched_contrast: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_before_minus_after_contrast.csv`
-- matched_metrics: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_head_direction_metrics.csv`
-- matched_strata: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_strata.csv`
-- matched_summary: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_before_minus_after_summary.csv`
-- matched_tokens: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_before_after_tokens.csv`
-- numeric_balance: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/numeric_balance.csv`
-- raw_tokens: `/home/ldomenichelli/linguistic_profiling_of_transformer/plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/raw_before_after_tokens.csv`
+- categorical_balance: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/categorical_balance.csv`
+- corpus_summary: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/corpus_summary.csv`
+- histogram_last_pdf: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/matched_noun_head_direction_histogram_last.pdf`
+- histogram_mean_pdf: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/matched_noun_head_direction_histogram_mean.pdf`
+- matched_contrast: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_before_minus_after_contrast.csv`
+- matched_metrics: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_head_direction_metrics.csv`
+- matched_strata: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_strata.csv`
+- matched_summary: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_before_minus_after_summary.csv`
+- matched_tokens: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/matched_before_after_tokens.csv`
+- numeric_balance: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/numeric_balance.csv`
+- raw_tokens: `plots_main/plots_features/matched_head_distance_controls/noun/bert/first/tables/raw_before_after_tokens.csv`

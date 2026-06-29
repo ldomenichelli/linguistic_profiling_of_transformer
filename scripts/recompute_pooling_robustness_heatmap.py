@@ -28,11 +28,7 @@ from scipy.stats import spearmanr
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MEAN_ROOT = PROJECT_ROOT / "plots_extra" / "metrics" / "features"
 DEFAULT_OUT_DIR = PROJECT_ROOT / "plots_extra" / "plot_recap"
-DEFAULT_LEGACY_ROOT = (
-    PROJECT_ROOT.parent
-    / "linguistic_profiling_of_the_geometry_copy"
-    / "geometric_profiling_of_a_neural_language_model"
-)
+DEFAULT_LEGACY_ROOT = PROJECT_ROOT
 
 
 @dataclass(frozen=True)

@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """Correlate class-level geometry scores with class frequency and type counts.
 
-The metric tables live in the geometry-copy checkout, while the clean sentence
-CSV and project outputs live in this checkout. This script recomputes class
-counts from the sentence CSV using the same coarse bins used by the metric
-tables, joins those counts to every selected metric row, then computes
-correlations across all feature classes together.
+The script recomputes class counts from the sentence CSV using the same coarse
+bins used by the metric tables, joins those counts to every selected metric row,
+then computes correlations across all feature classes together.
 """
 
 from __future__ import annotations
@@ -24,11 +22,7 @@ from scipy.stats import pearsonr, rankdata, spearmanr
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SENTENCE_CSV = PROJECT_ROOT / "code" / "data" / "en_ewt-ud-train_sentences.csv"
-DEFAULT_GEOMETRY_ROOT = (
-    PROJECT_ROOT.parent
-    / "linguistic_profiling_of_the_geometry_copy"
-    / "geometric_profiling_of_a_neural_language_model"
-)
+DEFAULT_GEOMETRY_ROOT = PROJECT_ROOT
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "correlation" / "class_frequency_type_correlations"
 
 ISOTROPY = {"iso", "sf", "vmf_kappa"}
@@ -191,6 +185,10 @@ def is_selected_metric_file(path: Path, geometry_root: Path) -> bool:
     rel = path.relative_to(geometry_root).as_posix()
     if ".ipynb_checkpoints" in rel:
         return False
+    if rel.startswith("no_index_1/tables/gpt2_no_index/"):
+        return True
+    if rel.startswith("no_index_1/tables/tables_"):
+        return True
     if "/tables_POS/pos_bootstrap/" in rel and rel.startswith("bert/"):
         return True
     if rel.startswith("bert/tables_"):

@@ -2469,8 +2469,8 @@ Embedded POS=VERB: 15,167 tokens, layers=13
 VERB iso head distances: 100%|██████████| 12/12 [26:09<00:00, 63.59s/it, hd=6, n=687][A[A
 
                                                                                      [A[A
-VERB metrics:  33%|███▎      | 1/3 [26:49<53:39, 1609.73s/it][ASaved /home/ldomenichelli/linguistic_profiling_of_transformer/tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_iso_bert-base-uncased_first.csv
-Saved /home/ldomenichelli/linguistic_profiling_of_transformer/plots_extra/pos_x_head_dist/bert/first/all/verb/iso_VERB.pdf
+VERB metrics:  33%|███▎      | 1/3 [26:49<53:39, 1609.73s/it][ASaved tables_POS_HEAD_DIST/bert/first/all/verb/headdist_VERB_iso_bert-base-uncased_first.csv
+Saved plots_extra/pos_x_head_dist/bert/first/all/verb/iso_VERB.pdf
 Computing lpca99 for POS=VERB
 
 
