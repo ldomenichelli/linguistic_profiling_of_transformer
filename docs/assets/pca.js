@@ -68,7 +68,7 @@
       }));
       await drawing.catch(() => {});
       if (current !== generation) return;
-      const camera = chart.dataset.view === viewId && chart._fullLayout ? structuredClone(chart._fullLayout.scene.camera) : undefined;
+      const camera = chart.dataset.view === viewId && chart._fullLayout ? structuredClone(chart._fullLayout.scene.camera) : {eye: {x: 1.6, y: 1.6, z: 1.3}};
       chart.hidden = false;
       const axis = name => ({title: {text: name}, showbackground: true, backgroundcolor: '#f7f9fb', gridcolor: '#d5dfe7', zerolinecolor: '#a6b8c7'});
       drawing = Plotly.react(chart, traces, {
