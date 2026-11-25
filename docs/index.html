@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linguistic Profiling of Transformer Embedding Geometry</title>
+  <meta name="description" content="Explore linguistic patterns in BERT and GPT-2 representation geometry, with layer comparisons, figures, and annotated texts.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site-data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#results">Skip to results</a>
+<header class="site-header">
+  <nav class="page-width" aria-label="Main navigation">
+    <a class="site-name" href="#study">Linguistic profiling</a>
+    <a href="#results">Results</a><a href="#figures">Figures</a><a href="#texts">Texts</a><a href="#resources">Data &amp; code</a>
+  </nav>
+</header>
+<main class="page-width">
+  <header id="study" class="paper-header">
+    <p class="eyebrow">CoNLL 2026</p>
+    <h1>Linguistic Profiling of Transformer Embedding Geometry</h1>
+    <p class="authors">Lucia Domenichelli · Dominique Brunato · Felice Dell’Orletta</p>
+    <p class="overview">How does linguistic structure appear in the geometry of language-model representations? We compare BERT and GPT-2 across layers, grouping words by their position, length, part of speech, and dependency structure.</p>
+    <div class="resource-links"><a href="https://github.com/ldomenichelli/linguistic_profiling_of_transformer">GitHub</a><a href="data/layer-comparisons.csv" download>Result tables</a><a href="https://github.com/ldomenichelli/linguistic_profiling_of_transformer/blob/main/CITATION.cff">Citation</a></div>
+  </header>
+
+  <section id="results" class="section">
+    <div class="section-heading"><h2>Geometry across layers</h2><p>BERT and GPT-2 · embedding layer to layer 12</p></div>
+    <p>Choose a linguistic comparison and follow the two groups through the models.</p>
+    <div class="controls results-controls">
+      <label>Linguistic comparison<select id="comparison"></select></label>
+      <label>Measure<select id="metric"><option value="iso">Isotropy · IsoScore</option><option value="lid">Linear intrinsic dimension</option><option value="nlid">Nonlinear intrinsic dimension</option></select></label>
+      <label class="checkbox"><input id="intervals" type="checkbox" checked>Show uncertainty intervals</label>
+    </div>
+    <div class="layer-control"><label for="layer">Inspect layer <output id="layer-value">12</output></label><input id="layer" type="range" min="0" max="12" value="12" step="1"><span class="muted">0 = embeddings</span></div>
+    <div id="charts" class="chart-grid" aria-live="polite"></div>
+    <div class="table-scroll"><table class="selected-values"><caption id="values-caption">Values at layer 12</caption><thead><tr><th scope="col">Model</th><th scope="col">Group</th><th scope="col">Mean</th><th scope="col">Lower</th><th scope="col">Upper</th><th scope="col">Tokens</th></tr></thead><tbody id="selected-values"></tbody></table></div>
+    <details class="reading-guide"><summary>About the measures</summary><div class="guide-columns">
+      <div><h3>Three views of geometry</h3><p><strong>IsoScore</strong> measures isotropy: how evenly representations occupy their space. <strong>Linear ID</strong> counts principal components explaining 99% of variance. <strong>Nonlinear ID</strong> uses the GRIDE estimator.</p><p>Each curve describes a group of word representations. It is not a score for an individual word or sentence.</p></div>
+      <div><h3>Reading the comparisons</h3><p>Values and uncertainty intervals come from the saved result tables. Intervals are shown only where the source provides them. Some comparisons exclude sentence-initial words; the affected panels are marked.</p><p>Verbal-valency tables reconstructed from figures are omitted from this explorer. The original figures remain available below.</p></div>
+    </div></details>
+  </section>
+
+  <section id="figures" class="section">
+    <div class="section-heading"><h2>Figures</h2><p>Browse the saved plots and download their PDFs</p></div>
+    <div class="controls figure-controls">
+      <label>Feature<select id="figure-feature"><option value="all">All features</option><option value="overview">All tokens</option><option value="pos">Part of speech</option><option value="length">Word length</option><option value="index">Sentence position</option><option value="arity">Dependents</option><option value="head">Head direction</option><option value="relation">Dependency relation</option><option value="verbal_valency">Verbal valency</option></select></label>
+      <label>Model<select id="figure-model"><option value="all">Both models</option><option value="bert">BERT</option><option value="gpt2">GPT-2</option></select></label>
+      <label>Measure<select id="figure-metric"><option value="iso">IsoScore</option><option value="lid">Linear ID</option><option value="nlid">Nonlinear ID</option><option value="all">All measures</option></select></label>
+    </div>
+    <p id="figure-count" class="muted" role="status"></p><div id="figure-grid" class="figure-grid"></div><button id="more-figures" type="button">Show more figures</button>
+  </section>
+
+  <section id="texts" class="section">
+    <div class="section-heading"><h2>Explore the texts</h2><p>English and Italian · Universal Dependencies</p></div>
+    <p>Search the annotated sentences and select a word to inspect its linguistic features.</p>
+    <div class="controls corpus-controls">
+      <label>Corpus<select id="corpus-language"><option value="en">English · EWT</option><option value="it">Italian · ISDT</option></select></label>
+      <label>Word or sentence<input id="text-search" type="search" placeholder="Search the texts" disabled></label>
+      <label>Part of speech<select id="text-pos" disabled><option value="all">All word classes</option></select></label>
+      <button id="load-corpus" type="button">Load annotated texts</button>
+    </div>
+    <p id="corpus-status" class="muted" role="status">Texts are loaded when you open a corpus.</p>
+    <p id="corpus-error" class="error" role="alert" hidden></p>
+    <div id="corpus-view" hidden>
+      <div class="reading-grid"><div><div id="sentence-list" class="sentence-list" aria-label="Matching sentences"></div><div class="pagination"><button id="previous-sentences" type="button">Previous</button><span id="sentence-page"></span><button id="next-sentences" type="button">Next</button></div></div><article id="sentence-detail" aria-label="Selected sentence"></article></div>
+      <div class="resource-links"><button id="download-sentences" type="button">Download filtered sentences (JSON)</button><a id="corpus-source" href="https://github.com/ldomenichelli/linguistic_profiling_of_transformer/tree/main/code/data">Source CSV</a></div>
+    </div>
+    <p class="small muted">The texts show linguistic annotations; geometric measurements appear in the group comparisons above. Words are displayed with the tokenization stored in the dataset.</p>
+  </section>
+
+  <section id="resources" class="section resources">
+    <h2>Data and code</h2>
+    <div class="resource-columns"><div><h3>Research materials</h3><ul><li><a href="data/layer-comparisons.csv" download>Layer comparisons (CSV)</a></li><li><a href="assets/site-data.json" download>Results and source metadata (JSON)</a></li><li><a href="https://github.com/ldomenichelli/linguistic_profiling_of_transformer">Code, notebooks, and additional analyses</a></li></ul></div><div><h3>Reproduce the website</h3><pre><code>make site
+make check
+make serve</code></pre><p>See the <a href="https://github.com/ldomenichelli/linguistic_profiling_of_transformer/blob/main/REPRODUCIBILITY.md">reproduction guide</a> for the analysis environment and full workflow.</p></div></div>
+    <p class="small muted">Texts and annotations derive from <a href="https://github.com/UniversalDependencies/UD_English-EWT">UD English EWT</a> and <a href="https://github.com/UniversalDependencies/UD_Italian-ISDT">UD Italian ISDT</a>. See the <a href="https://github.com/ldomenichelli/linguistic_profiling_of_transformer/blob/main/THIRD_PARTY.md">source credits and terms</a>.</p>
+  </section>
+</main>
+<footer class="page-width">Linguistic Profiling of Transformer Embedding Geometry</footer>
+<dialog id="figure-dialog"><button id="close-figure" type="button">Close figure</button><img id="large-figure" alt=""><p id="figure-caption"></p><a id="figure-download" href="#figures" download>Download figure PDF</a></dialog>
+<noscript><p class="page-width">Enable JavaScript to use the explorers. You can also <a href="data/layer-comparisons.csv">download the result tables</a> or <a href="https://github.com/ldomenichelli/linguistic_profiling_of_transformer">browse the repository</a>.</p></noscript>
+</body>
+</html>

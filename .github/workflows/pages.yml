@@ -1,0 +1,91 @@
+name: Deploy project site
+on:
+  push:
+    branches: [main]
+  pull_request:
+  public:
+  workflow_dispatch:
+    inputs:
+      publish_publicly:
+        description: Publish the project publicly on GitHub Pages
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    outputs:
+      pages_enabled: ${{ steps.pages.outputs.enabled }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-checks.txt
+      - run: python -m pip install -r requirements-checks.txt
+      - name: Install figure renderer
+        run: |
+          if ! command -v pdftoppm >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y poppler-utils
+          fi
+      - run: make site
+      - run: make check
+      - name: Check generated assets
+        run: git diff --exit-code -- docs
+      - name: Check Pages configuration
+        id: pages
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request, urllib.error
+          url = os.environ['GITHUB_API_URL'] + '/repos/' + os.environ['GITHUB_REPOSITORY'] + '/pages'
+          request = urllib.request.Request(url, headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json'})
+          try:
+              with urllib.request.urlopen(request) as response:
+                  enabled = json.load(response).get('build_type') == 'workflow'
+          except urllib.error.HTTPError as error:
+              if error.code != 404:
+                  raise
+              enabled = False
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('enabled=' + str(enabled).lower() + '\n')
+          if not enabled:
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+                  summary.write('## Enable GitHub Pages\n\nThe site passed its checks. In Settings → Pages, choose GitHub Actions as the source, then run this workflow with publish_publicly enabled.\n')
+          PY
+      - uses: actions/configure-pages@v5
+        if: steps.pages.outputs.enabled == 'true'
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+  deploy:
+    needs: build
+    if: >-
+      needs.build.outputs.pages_enabled == 'true' &&
+      github.event.repository.private == false &&
+      github.event_name != 'pull_request' &&
+      (github.event_name != 'workflow_dispatch' || inputs.publish_publicly == true)
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish site
+        id: deployment
+        uses: actions/deploy-pages@v4

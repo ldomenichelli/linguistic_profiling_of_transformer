@@ -10,3 +10,9 @@ venv/
 .DS_Store
 *.log
 nohup.out
+.agents/
+.codex/
+*.tex
+*.bib
+*.sty
+*.cls
