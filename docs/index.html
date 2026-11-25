@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/site-data.js" defer></script>
   <script src="assets/app.js" defer></script>
+  <script src="assets/pca.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#results">Skip to results</a>
 <header class="site-header">
   <nav class="page-width" aria-label="Main navigation">
     <a class="site-name" href="#study">Linguistic profiling</a>
-    <a href="#results">Results</a><a href="#figures">Figures</a><a href="#texts">Texts</a><a href="#resources">Data &amp; code</a>
+    <a href="#results">Results</a><a href="#pca">PCA</a><a href="#figures">Figures</a><a href="#texts">Texts</a><a href="#resources">Data &amp; code</a>
   </nav>
 </header>
 <main class="page-width">
@@ -43,6 +44,22 @@
       <div><h3>Three views of geometry</h3><p><strong>IsoScore</strong> measures isotropy: how evenly representations occupy their space. <strong>Linear ID</strong> counts principal components explaining 99% of variance. <strong>Nonlinear ID</strong> uses the GRIDE estimator.</p><p>Each curve describes a group of word representations. It is not a score for an individual word or sentence.</p></div>
       <div><h3>Reading the comparisons</h3><p>Values and uncertainty intervals come from the saved result tables. Intervals are shown only where the source provides them. Some comparisons exclude sentence-initial words; the affected panels are marked.</p><p>Verbal-valency tables reconstructed from figures are omitted from this explorer. The original figures remain available below.</p></div>
     </div></details>
+  </section>
+
+  <section id="pca" class="section">
+    <div class="section-heading"><h2>Word representations in 3D</h2><p>PCA · English EWT</p></div>
+    <p>Choose a layer, drag to rotate, and hover over a point to see the word.</p>
+    <div class="controls pca-controls">
+      <label>View<select id="pca-view"><option value="bert-pos">BERT · part of speech</option><option value="bert">BERT · all words</option><option value="gpt2">GPT-2 · all words</option></select></label>
+      <label>Part of speech<select id="pca-pos"><option value="all">All word classes</option></select></label>
+      <button id="load-pca" type="button">Load 3D plot</button>
+    </div>
+    <div class="layer-control"><label for="pca-layer">Layer <output id="pca-layer-value">0</output></label><input id="pca-layer" type="range" min="0" max="12" value="0" step="1"><span class="muted">0 = embeddings</span></div>
+    <p id="pca-status" class="muted" role="status">Open a plot to explore the saved projections.</p>
+    <p id="pca-error" class="error" role="alert" hidden></p>
+    <div id="pca-chart" class="pca-chart" aria-label="Interactive three-dimensional PCA projection" hidden></div>
+    <div id="pca-legend" class="pca-legend" aria-label="Part-of-speech colors" hidden></div>
+    <p class="small muted">A fixed sample of words is shown across layers. Each layer has its own PCA projection; positions are not trajectories between layers.</p>
   </section>
 
   <section id="figures" class="section">

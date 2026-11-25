@@ -13,3 +13,7 @@ The sentence CSVs and their website exports derive from Universal Dependencies t
 Reference: Bosco, C., Montemagni, S., and Simi, M. (2013). *Converting Italian Treebanks: Towards an Italian Stanford Dependency Treebank*. Proceedings of the 7th Linguistic Annotation Workshop & Interoperability with Discourse.
 
 The source CSVs do not record a Universal Dependencies release number. Counts and hashes for the exact files used by the website are included in `docs/assets/site-data.json`.
+
+## Plotly.js
+
+The 3D PCA viewer includes the GL3D bundle from [Plotly.js 2.35.2](https://github.com/plotly/plotly.js/tree/v2.35.2), distributed under the MIT license. The original license is included in [docs/assets/vendor/plotly-LICENSE.txt](docs/assets/vendor/plotly-LICENSE.txt).

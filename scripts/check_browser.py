@@ -71,6 +71,7 @@ def main():
     call('Page.navigate', {'url': args.url})
     wait("document.querySelectorAll('.layer-chart').length===2")
     assert js("typeof CORPUS_EN==='undefined' && typeof CORPUS_IT==='undefined'")
+    assert js("typeof Plotly==='undefined' && !performance.getEntriesByType('resource').some(r=>r.name.includes('assets/pca/'))")
     assert js("document.querySelectorAll('.interval-band').length") == 2
     assert js("document.querySelector('.chart-panel[data-model=gpt2]').textContent.includes('intervals are unavailable')")
     assert js("document.querySelectorAll('#selected-values tr').length") == 4
@@ -104,6 +105,44 @@ def main():
     assert js("document.querySelector('#figure-dialog').open")
     assert js("document.querySelector('#figure-caption').textContent.includes('Verbal valency')")
     js("document.querySelector('#close-figure').click()")
+    js("document.querySelector('#pca').scrollIntoView({behavior:'instant'});document.querySelector('#load-pca').click()")
+    wait("document.querySelector('#pca-chart').dataset.view==='bert-pos' && document.querySelector('#pca-chart').getAttribute('aria-busy')==='false'", timeout=60)
+    assert js("document.querySelector('#pca-chart').data.length") == 17
+    assert js("document.querySelectorAll('#pca-legend span').length") == 17
+    assert js("document.querySelector('#pca-chart').data.reduce((n,t)=>n+t.x.length,0)") == 5901
+    pca_root = Path(__file__).resolve().parents[1] / 'docs/assets/pca'
+    pca_source = json.loads((pca_root / 'bert-pos/0.json').read_text())
+    assert js("document.querySelector('#pca-chart').data[0].x[0]") == pca_source['traces'][0]['x'][0]
+    snapshot('pca-desktop')
+    change('pca-pos', 'NOUN')
+    wait("document.querySelector('#pca-chart').getAttribute('aria-busy')==='false'")
+    assert js("document.querySelector('#pca-chart').data.length") == 1
+    assert js("document.querySelector('#pca-chart').data[0].name") == 'NOUN'
+    js("Plotly.relayout(document.querySelector('#pca-chart'),{'scene.camera.eye':{x:2,y:1,z:.8}}).then(()=>true)")
+    change('pca-layer', '12', 'input')
+    wait("document.querySelector('#pca-chart').dataset.layer==='12' && document.querySelector('#pca-chart').getAttribute('aria-busy')==='false'")
+    pca_source = json.loads((pca_root / 'bert-pos/12.json').read_text())
+    noun = next(t for t in pca_source['traces'] if t['name'] == 'NOUN')
+    assert js("document.querySelector('#pca-chart').data[0].z[0]") == noun['z'][0]
+    assert js("document.querySelector('#pca-chart')._fullLayout.scene.camera.eye.x") == 2
+    change('pca-view', 'bert')
+    wait("document.querySelector('#pca-chart').dataset.view==='bert' && document.querySelector('#pca-chart').getAttribute('aria-busy')==='false'")
+    assert js("document.querySelector('#pca-pos').disabled && document.querySelector('#pca-legend').hidden")
+    assert js("document.querySelector('#pca-chart').data[0].x.length") == 6000
+    change('pca-view', 'gpt2')
+    wait("document.querySelector('#pca-chart').dataset.view==='gpt2' && document.querySelector('#pca-chart').getAttribute('aria-busy')==='false'")
+    pca_source = json.loads((pca_root / 'gpt2/12.json').read_text())
+    assert js("document.querySelector('#pca-chart').data[0].x[0]") == pca_source['traces'][0]['x'][0]
+    for layer in ['1', '9', '0']:
+        change('pca-layer', layer, 'input')
+    wait("document.querySelector('#pca-chart').dataset.layer==='0' && document.querySelector('#pca-chart').getAttribute('aria-busy')==='false'")
+    js("window.pcaOriginalFetch=window.fetch;window.fetch=(url,...args)=>String(url).endsWith('gpt2/7.json')?Promise.resolve(new Response('',{status:503})):window.pcaOriginalFetch(url,...args)")
+    change('pca-layer', '7', 'input')
+    wait("!document.querySelector('#pca-error').hidden")
+    assert js("!document.querySelector('#load-pca').hidden")
+    js("window.fetch=window.pcaOriginalFetch;document.querySelector('#load-pca').click()")
+    wait("document.querySelector('#pca-chart').dataset.layer==='7' && document.querySelector('#pca-chart').getAttribute('aria-busy')==='false'")
+    assert js("document.querySelector('#pca-error').hidden")
     change('figure-feature', 'pos')
     change('figure-model', 'bert')
     change('figure-metric', 'lid')
@@ -146,10 +185,17 @@ def main():
         time.sleep(.15)
         assert js("document.documentElement.scrollWidth<=innerWidth"), name + ' texts'
         snapshot(name + '-texts')
+        js("document.querySelector('#pca').scrollIntoView({behavior:'instant'})")
+        time.sleep(.3)
+        assert js("document.documentElement.scrollWidth<=innerWidth"), name + ' PCA'
+        snapshot(name + '-pca')
+        js("document.querySelector('#pca-chart').scrollIntoView({behavior:'instant',block:'center'})")
+        time.sleep(.15)
+        snapshot(name + '-pca-chart')
     assert not errors, errors
     assert not failures, failures
     ws.close()
-    print(json.dumps({'status': 'passed', 'checks': ['source values', 'missing uncertainty', 'layer and metric controls', 'digitized-result omissions', 'figure filters and viewer', 'lazy corpus loading', 'English search and POS', 'Italian annotations', 'empty results', 'asset links', 'mobile and tablet layout'], 'javascript_errors': len(errors), 'failed_requests': len(failures)}, indent=2))
+    print(json.dumps({'status': 'passed', 'checks': ['source values', 'missing uncertainty', 'layer and metric controls', 'digitized-result omissions', 'PCA lazy loading, source coordinates, POS filter, layers, camera, rapid changes and retry', 'figure filters and viewer', 'lazy corpus loading', 'English search and POS', 'Italian annotations', 'empty results', 'asset links', 'mobile and tablet layout'], 'javascript_errors': len(errors), 'failed_requests': len(failures)}, indent=2))
 
 
 if __name__ == '__main__':

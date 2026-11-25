@@ -4,6 +4,7 @@ import ast
 import csv
 import hashlib
 import json
+import math
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -77,6 +78,24 @@ def main():
         assert digest(pdf) == digest(ROOT / figure["source"]) == figure["sourceSha256"]
         assert digest(png) == figure["pngSha256"]
         assert pdf.read_bytes().startswith(b"%PDF-") and png.read_bytes().startswith(b"\x89PNG\r\n\x1a\n")
+    pca = json.loads((DOCS / "assets/pca/manifest.json").read_text())
+    assert {v["id"] for v in pca["views"]} == {"bert", "gpt2", "bert-pos"}
+    for view in pca["views"]:
+        assert len(view["layers"]) == 13
+        assert view["points"] == sum(len(g["indices"]) for g in view["groups"])
+        for group in view["groups"]:
+            assert group["indices"] == sorted(set(group["indices"]))
+            assert len(group["indices"]) <= view["capPerTrace"] and max(group["indices"]) < group["originalPoints"]
+        for layer, entry in enumerate(view["layers"]):
+            path = DOCS / entry["path"]
+            assert digest(path) == entry["sha256"]
+            data = json.loads(path.read_text())
+            assert data["view"] == view["id"] and data["layer"] == layer
+            assert len(data["traces"]) == len(view["groups"])
+            for trace, group in zip(data["traces"], view["groups"]):
+                assert trace["name"] == group["name"] and trace["color"] == group["color"]
+                assert all(len(trace[key]) == len(group["indices"]) for key in ["text", "x", "y", "z"])
+                assert all(math.isfinite(v) for key in ["x", "y", "z"] for v in trace[key])
     parser = Links()
     parser.feed((DOCS / "index.html").read_text())
     assert len(parser.ids) == len(set(parser.ids))

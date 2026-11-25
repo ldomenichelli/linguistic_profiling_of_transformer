@@ -67,12 +67,15 @@ These checks do not rerun the representation extraction or geometry experiments.
 
 ## Large interactive PCA plots
 
-The original Plotly HTML exports are stored through Git LFS. They are separate from the lightweight website:
+The website includes three saved 3D PCA views: BERT and GPT-2 on all English EWT words, and BERT by part of speech. Coordinates are copied from the original Plotly HTML exports without refitting PCA or rounding. For the browser, each all-word view uses a fixed random sample of 6,000 word occurrences; the POS view uses up to 350 occurrences per class. The same source indices are retained at every layer, with random seed 42. The POS sample is balanced by class rather than corpus frequency. Its original projection was fitted jointly across POS classes at each layer; each layer has its own projection. Coordinates from different layers or models should not be read as a shared reference frame.
+
+Only the selected layer and view are loaded. The samples and their source hashes are committed under `docs/assets/pca/`; a regular site build does not download the full exports. To regenerate or verify these samples, first retrieve the original HTML files through Git LFS:
 
 ```bash
 git lfs install
 git lfs pull
-python3 -m http.server 8000
+python3 scripts/prepare_pca.py
+python3 scripts/prepare_pca.py --check
 ```
 
-Open the HTML files under `plots_extra/pca3d_alltok/` or `plots_extra/pca3d_features/` through the local server. The site’s own HTML uses ordinary Git storage and does not require LFS downloads.
+The full exports under `plots_extra/pca3d_alltok/` and `plots_extra/pca3d_features/` remain available for local inspection. The site uses a locally bundled Plotly.js GL3D 2.35.2, matching the original exports; its MIT license is included under `docs/assets/vendor/`.
