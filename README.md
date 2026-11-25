@@ -12,18 +12,6 @@ The [project website](https://ldomenichelli.github.io/linguistic_profiling_of_tr
 
 Compare word groups, inspect the saved results, or select a word to view its linguistic features.
 
-## Rebuild the website
-
-```bash
-make site
-make check
-make serve
-```
-
-Open <http://localhost:8766>. The build uses Python 3.10 or later; figure previews also require `pdftoppm`, available in Poppler. Notebook checks require `python3 -m pip install -r requirements-checks.txt`.
-
-See the [reproduction guide](REPRODUCIBILITY.md) for the analysis environment and [publishing instructions](PUBLISHING.md) for GitHub Pages setup.
-
 ## Repository
 
 | Path | Contents |
